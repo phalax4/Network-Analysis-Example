@@ -1,0 +1,199 @@
+<base href="https://www.cs.utexas.edu/users/novak/cs375finans.html">
+<HTML>
+<!--  cs375finquest.html          G. Novak          11 May 16        -->
+<HEAD>
+<TITLE>CS 375, Compilers: Example Question Answers for Final Exam</TITLE>
+</HEAD>
+
+<BODY>
+<H2>CS 375, Compilers: Example Question Answers for Final Exam</H2>
+<HR>
+
+<P>
+
+<H3> Addressing: </H3>
+Consider the following declarations:
+<PRE>
+     type complex = record  re, im: real  end;
+
+          item  = record name:      alfa;
+                         age:       integer;
+                         location:  complex;
+                         displayed: boolean;
+                         color:     array[(red,green,blue)] of integer;
+                         link:      ^item;
+                         cost:      real     end;
+
+     var items = array [ 8..12, (low, med, hi), 7..11] of item;
+</PRE>
+
+<UL>
+<LI> Assuming <TT>integer</TT> and <TT>boolean</TT> are 4 bytes
+and <TT>alfa</TT>, pointers, and <TT>real</TT> are 8 bytes,
+how much storage is occupied by the array <TT>items</TT>?
+<P>
+<B>Answer:</B> <TT>complex</TT> contains 2 reals, for a total of 16 bytes.
+<P>
+The <TT>item</TT> record has the following layout:
+<PRE>
+Field       Offset     Size     Comment
+name         0          8
+age          8          4
+location    16         16       pad to multiple of 8
+displayed   32          4       boolean is a subrange of integer
+color       36         12
+link        48          8       pointers are size 8
+cost        56          8
+
+total       64
+</PRE>
+
+The total size of an item record is 64 bytes.
+<P>
+The array size should be calculated back-to-front to provide numbers
+that are used in the next step.  7..11 is 5 items, using the formula
+(high - low + 1), so we have:
+<PRE>
+Record           64
+7..11            *5   =  320
+(low, med, hi)            *3 = 960
+8..12                           *5 = 4800 bytes total
+</PRE>
+
+<LI> Show the intermediate code for the expression:
+<PRE>
+   items[10, hi, 8].link^.color[blue]
+</PRE>
+Show how it was derived and give the <TT>aref</TT> form.
+<P>
+<B>Answer:</B> We calculate the offset by adding the components,
+left-to-right:
+<PRE>
+(10 - 8)  * 960  =  1920
+hi (2 - 0) * 320 =   640
+(8 - 7) * 64     =    64
+link             =    48
+
+total               2672
+
+The first result is (aref items 2672).  Following the pointer ^ gives
+(^ (aref items 2672)).  color[blue] is 36 + 8 = 44 offset from the pointer,
+giving        (aref (^ (aref items 2672)) 44)
+</PRE>
+
+</UL>
+
+<H3> Other Questions:</H3>
+<UL>
+<LI> A robot moves on a square grid.  The robot can go forward (f),
+turn left (l), or turn right (r).
+Give a grammar to describe the language of all sequences of moves that
+leave the robot pointing in the same direction as when it started.
+<P>
+<B>Answer:</B> The robot can move in 4 directions on the square grid,
+so we use compass directions N, E, S, W and assume the robot starts
+out pointing S.  It should finish pointing S, so we will include a
+terminating production S -> epsilon (empty).  Moving forward (f) leaves
+the direction of the robot unchanged.  Our productions are:
+<PRE>
+S -> epsilon
+S -> f S
+S -> r W
+S -> l E
+W -> f W
+W -> r N
+W -> l S
+N -> f N
+N -> r E
+N -> l W
+E -> f E
+E -> r S
+E -> l N
+</PRE>
+<LI> What kind of grammar is the above (in the Chomsky hierarchy)?
+<P>
+<B>Answer:</B> These productions all fit the pattern for a Regular grammar.
+The robot can be modeled by a finite automaton with 4 states, or by a simple
+program with a variable representing the direction.
+<P>
+<LI> Describe a kind of local optimization.
+<P>
+<B>Answer:</B> Constant folding, e.g. 2 * 3 replaced by 6;  Reduction in strength,
+e.g. i * 8 replaced by i &lt;&lt; 3
+<P>
+<LI> Describe what it means for a subexpression to be (a) available,
+(b) busy, (c) killed.
+<P>
+<B>available:</B> computed above and not yet killed (flows down) <BR>
+<B>busy:</B> needed below if available (flows up) <BR>
+<B>killed:</B> value is invalidated because some component has been redefined <BR>
+<P>
+<LI> Describe sources of extra run-time overhead in (a) time and (b) space
+in an object-oriented language.
+<P>
+<B>time:</B> extra time for method call to determine the actual method
+to be used, depending on the class of the object whose method is called <BR>
+<B>space:</B> extra space in an object to store what its class is.
+Java also stores hashCode.
+<P>
+<LI> Draw boxes around the following code to show the basic blocks:
+<PRE>
+   n := k*2;
+   if n < j then write('less')
+            else begin k := k - 1; write('more') end;
+   writeln(k);
+</PRE>
+The blocks would be:
+<OL>
+<LI> n := k*2; n < j
+<LI> write('less')
+<LI> k := k - 1; write('more')
+<LI> writeln(k)
+</OL>
+Number the blocks and draw a flow graph; give the matrix form of the
+flow graph and its transitive closure.
+<PRE>
+   1      0 1 1 0       0 1 1 1
+  / \     0 0 0 1       0 0 0 1
+ 2   3    0 0 0 1       0 0 0 1
+  \ /     0 0 0 0       0 0 0 0
+   4
+</PRE>
+
+<LI> Give an advantage and a disadvantage for (a) call by reference
+(b) call by value.
+<P>
+<B>Answer:</B> Call by reference is fast for arrays (only the address is
+passed) but less safe (callee can change caller's variables).
+Call by value is safe (callee only gets a copy of caller's variables)
+but slow for arrays (must allocate more storage and copy the array).
+<P>
+<LI> What are the most important things to optimize in a scientific
+program?  Why?
+<P>
+<B>Answer:</B> Array references, because they have several kinds of leverage:
+Array references frequently occur in code; a large percentage saving
+in computation cost is possible; and they usually occur inside loops,
+thus are executed many times.
+<P>
+<LI> Give three examples of computer architecture innovations that
+require compiler innovations to be effective.
+<P>
+<OL>
+<LI> cache prefetch: fetch memory to cache before it is needed, avoiding
+a processor stall.
+<LI> branch prediction: tell the CPU which way a branch is likely to go
+(e.g. it is more likely to stay in a loop)
+<LI> instruction reordering to take advantage of superscalar architecture
+(instructions on independent processor units such as integer, float, and branch
+can be performed simultaneously).
+</OL>
+<P>
+<LI> Briefly and clearly define the following terms: ...  20 terms chosen
+from the vocabulary list on the study guide.
+</UL>
+
+
+</BODY>
+
+</HTML>

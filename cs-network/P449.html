@@ -1,0 +1,160 @@
+<base href="https://www.cs.utexas.edu/users/novak/cs375midans.html">
+<HTML>
+<!--  cs375midans.html          G. Novak          30 Oct 17        -->
+<HEAD>
+<TITLE>CS 375, Compilers: Example Question Answers for Midterm Exam</TITLE>
+</HEAD>
+
+<BODY>
+<H2>CS 375, Compilers: Example Question Answers for Midterm Exam</H2>
+<HR>
+
+<P>
+
+<H3> Addressing: </H3>
+Consider the following declarations:
+<PRE>
+     type complex = record  re, im: real  end;
+
+          person  = record name:     alfa;
+                           age:      integer;
+                           location: complex;
+                           weight:   real;
+                           salary:   real     end;
+
+     var  people = array [ 7..14, (austin, dallas, houston)]
+                          of person;
+</PRE>
+<UL>
+<LI> Assuming <TT>integer</TT> and <TT>boolean</TT> are 4 bytes, and
+<TT>alfa</TT>, pointers and <TT>real</TT> are 8 bytes,
+how much storage is occupied by the array <TT>people</TT>?
+<P>
+<B>Answer:</B> <TT>complex</TT> contains 2 reals, for a total of 16 bytes.
+<P>
+The <TT>person</TT> record has the following layout:
+<TABLE>
+<TR><TD><B>Field:</B></TD><TD><B>Offset:</B></TD><TD><B>Size:</B></TD>
+<TD><B>Comment:</B></TD></TR>
+<TR><TD>name</TD><TD>0</TD><TD>8</TD></TR>
+<TR><TD>age</TD><TD>8</TD><TD>4</TD></TR>
+<TR><TD></TD><TD>12</TD><TD>4</TD><TD>padding</TD></TR>
+<TR><TD>location</TD><TD>16</TD><TD>16</TD><TD>records are 16-aligned</TD></TR>
+<TR><TD>salary</TD><TD>32</TD><TD>8</TD><TD>reals are 8-aligned</TD></TR>
+<TR><TD>weight</TD><TD>40</TD><TD>8</TD></TR>
+<TR><TD>Total</TD><TD>48</TD><TD> </TD></TR>
+</TABLE>
+The total size of a person record is 48 bytes.
+<P>
+The array size should be calculated back-to-front to provide numbers
+that are used in the next step.  (austin, dallas, houston) is 3 items,
+3*48 = 144 bytes.  Using the formula (high - low + 1), the array is
+(14 - 7 + 1) * 144 = 8*144 = 1152 bytes.
+
+<LI> Calculate the effective address of the expression:
+<PRE>
+   people[10,dallas].location.im
+</PRE>
+Show how it was derived and give the <TT>aref</TT> form.
+<P>
+<B>Answer:</B> We calculate the offset by adding the components,
+left-to-right:
+<TABLE>
+<TR><TD><B>Item:</B></TD><TD><B>Value:</B></TD><TD><B>Multiplier:</B></TD><TD><B>Subtotal:</B></TD></TR>
+<TR><TD>[10]</TD><TD>(10 - 7)</TD><TD>144</TD><TD>432</TD></TR>
+<TR><TD>dallas</TD><TD>(1 - 0)</TD><TD>48</TD><TD>48</TD></TR>
+<TR><TD>location</TD><TD>16</TD><TD>1</TD><TD>16</TD></TR>
+<TR><TD>im</TD><TD>8</TD><TD>1</TD><TD>8</TD></TR>
+<TR><TD>Total</TD><TD></TD><TD></TD><TD>504</TD></TR>
+</TABLE>
+The code for this reference is <TT>(aref people 504)</TT>.
+</UL>
+
+<H3> Other Questions:</H3>
+<UL>
+<LI> Show how an operator precedence parser would parse the string:
+<PRE>
+     A - (B / C - D) / E + F
+</PRE>
+Show the contents of the stacks at each step; produce a tree as output.
+<P>
+<B>Answer:</B> This can be done using either a diagram or parenthesized
+notation for the tree structure.
+<P>
+<TABLE>
+<TR><TD><B>Item:</B></TD><TD><B>Operators:</B></TD><TD><B>Operands:</B></TD>
+<TD><B>Note:</B></TD></TR>
+<TR><TD>A</TD><TD></TD><TD>A</TD><TD>Shift A</TD></TR>
+<TR><TD>-</TD><TD>-</TD><TD>A</TD><TD>Shift -</TD></TR>
+<TR><TD>(</TD><TD>- (</TD><TD>A</TD><TD>Shift (</TD></TR>
+<TR><TD>B</TD><TD>- (</TD><TD>A B</TD><TD>Shift B</TD></TR>
+<TR><TD>/</TD><TD>- ( /</TD><TD>A B</TD><TD>Shift /</TD></TR>
+<TR><TD>C</TD><TD>- ( /</TD><TD>A B C</TD><TD>Shift C</TD></TR>
+<TR><TD>-</TD><TD>- ( </TD><TD>A (/ B C)</TD><TD>Reduce: / &gt; -</TD></TR>
+<TR><TD>-</TD><TD>- ( -</TD><TD>A (/ B C)</TD><TD>Shift -</TD></TR>
+<TR><TD>D</TD><TD>- ( -</TD><TD>A (/ B C) D</TD><TD>Shift D</TD></TR>
+<TR><TD>)</TD><TD>- ( </TD><TD>A (- (/ B C) D)</TD><TD>Reduce</TD></TR>
+<TR><TD>)</TD><TD>- </TD><TD>A (- (/ B C) D)</TD><TD>Discard ()</TD></TR>
+<TR><TD>/</TD><TD>- /</TD><TD>A (- (/ B C) D)</TD><TD>Shift /</TD></TR>
+<TR><TD>E</TD><TD>- /</TD><TD>A (- (/ B C) D) E</TD><TD>Shift E</TD></TR>
+<TR><TD>+</TD><TD>- </TD><TD>A (/ (- (/ B C) D) E)</TD><TD>Reduce: / &gt; +</TD></TR>
+<TR><TD>+</TD><TD> </TD><TD>(- A (/ (- (/ B C) D) E))</TD><TD>Reduce: - = +</TD></TR>
+<TR><TD>+</TD><TD>+</TD><TD>(- A (/ (- (/ B C) D) E))</TD><TD>Shift +</TD></TR>
+<TR><TD>F</TD><TD>+</TD><TD>(- A (/ (- (/ B C) D) E)) F</TD><TD>Shift F</TD></TR>
+<TR><TD>end</TD><TD></TD><TD>(+ (- A (/ (- (/ B C) D) E)) F)</TD><TD>Reduce</TD></TR>
+</TABLE>
+
+<LI> Give one advantage and one disadvantage of hashing as a method
+of symbol table organization.
+<P>
+<B>Answer:</B> Adv: Fast, O(1).  Dis: Must find a good hash function,
+must expand table when it gets too full (&gt; 70%).
+
+<LI> Consider the regular expression <TT> (a | b)*b+b* </TT> .
+What is the simplest regular expression that denotes the same language?
+<P>
+<B>Answer:</B> b+ can absorb b*.  b+ = b*b.  (a | b)* can absorb b*.
+What is left is (a | b)*b.
+<LI> Give the allowable form of productions for a Regular grammar.
+<P>
+<B>Answer:</B> A -> xB, A -> x where A and B are nonterminals, x is a terminal
+string.
+<LI> Consider the following grammar:
+<PRE>
+ S  -->  a S
+ S  -->  S b
+ S  -->  b
+</PRE>
+
+<UL>
+<LI> What kind of grammar is this in the Chomsky hierarchy?
+<P>
+<B>Answer:</B> It has a single nonterminal on the left of each production
+(thus is Context Free) but does not fit the Regular production pattern,
+so it is Context Free.
+<LI> What kind of language does it denote?
+<P>
+<B>Answer:</B> a*b+ is the language denoted.  Since a*b+ is a regular
+expression, the language must be Regular.
+<LI> Is there a simpler kind of grammar that denotes the same language?
+If so, give the grammar; if not, explain why not.
+<P>
+<B>Answer:</B> 
+<PRE>
+ S  -->  a S
+ S  -->  T
+ T  -->  b T
+ T  -->  b
+</PRE>
+This is a Regular grammar that denotes the same language.
+
+</UL>
+
+<LI> Briefly and clearly define the following terms: ...  8 terms chosen
+from the vocabulary list on the study guide.
+</UL>
+
+
+</BODY>
+
+</HTML>

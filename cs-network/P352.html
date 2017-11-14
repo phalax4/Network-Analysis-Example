@@ -1,0 +1,68 @@
+<base href="http://www.cs.utexas.edu/users/novak/asg-codegen.html">
+<HTML>
+<!--  asg-codegen.html          G. Novak           10 Aug 17    -->
+<!--    -->
+<HEAD>
+  <TITLE>CS 375: Code Generator</TITLE>
+</HEAD>
+<BODY>
+
+<H2>CS 375: Code Generator</H2>
+
+<H3>Due: December 11, 2017.</H3>
+<P>
+Write a code generator, using as input the
+intermediate code produced by your parser (the previous assignment).
+<P>
+We will assume that the target machine is x86-64.  (On the lab machines,
+you can enter the command <tt>whatami</tt> to check.)  We will assume that
+C calling conventions will be used.  A file <tt>genasm.c</tt> is provided;
+this contains many small functions that generate assembly language
+output (machine language relocatable binary output could be
+generated from the same calls).
+<P>
+The file <tt>codgen.c</tt> is an initial version of
+the code generator that you may use as a starting point; copy this file to
+<tt>codegen.c</tt> and expand it for your code generator.  This code
+generator is sufficient to generate code for the trivial Pascal program
+<tt>triv.pas</tt>, producing the file <tt>triv.s</tt> .  There are several
+makefile options for making the compiler with the starter file and
+with your version; most people will use <tt>make compiler</tt> .
+<P>
+Generate code for the input files <tt>graph1.pas</tt> and <tt>pasrec.pas</tt>.
+Extract the code from the output file using a text editor to form the file
+<tt>code.s</tt> and run the code with <tt>driver.c</tt> .
+<P>
+It will be necessary to execute the code on an appropriate machine;
+x86-64 is widely available.  If you wish, you can use <tt>ssh</tt>
+to remotely login to a lab machine to test your program.  Use the commands:
+<PRE>
+   cc driver.c code.s -lm
+   a.out
+</PRE>
+where <tt>code.s</tt> is your generated code file.
+<P>
+The files <tt>graph1.s</tt> and <tt>pasrec.s</tt>
+are examples of unoptimized code similar to what your generated code
+may look like; this is considered a good solution that satisfies
+the assignment.  There is much opportunity to improve this code
+for extra credit; be sure to mention any optimizations you have done
+in your <tt>readme</tt> file.
+<!-- The files <tt>graph1.s</tt> and <tt>pasrec.s</tt> are optimized code;
+examine the two versions to see how optimization reduces the code size
+and execution time. -->
+<P>
+The program <tt>driver.c</tt> is used to call the code you
+generate so that it can be executed.
+The file <tt>driver.s</tt> is available for your inspection so that you
+can see how your program is called.  <tt>graph1.c</tt> is <tt>graph1.pas</tt>
+rewritten in C; <tt>graph1-gcc.s</tt> is <tt>graph1.c</tt>
+compiled by the <tt>gcc</tt> compiler.  (You can use <tt>gcc</tt>
+to produce <tt>.s</tt> versions by specifying the <tt>-S</tt> option.)
+The file <tt>pasrec.c</tt> may be useful to help you see the relation
+between Pascal and C syntax of pointer usage; compiled versions of
+<tt>pasrec</tt> are also available.
+
+</BODY>
+
+</HTML>

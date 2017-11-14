@@ -1,0 +1,224 @@
+<base href="http://www.cs.utexas.edu/users/novak/cs375syllabus.html">
+<HTML>
+<!--  cs375syllabus.html          G. Novak         06 Sep 17        -->
+<HEAD>
+<TITLE>CS 375: Compilers</TITLE>
+</HEAD>
+
+<BODY>
+<H2>CS 375: Compilers</H2>
+<HR>
+
+<H3>Fall 2017: TTh 12:30 - 2:00 in GDC 1.304, Unique No. 51750. </H3>
+<P>
+Guns are prohibited in the instructor's office.  I do not want any guns
+to be brought to my class.  I will not write recommendations for anyone
+who brings a gun to campus.
+<P>
+<B>Instructor:</B>
+ <a href="http://www.cs.utexas.edu/users/novak/index.html">
+Gordon S. Novak Jr.</a>, GDC 3.824; Office Hours: TTh 3:30 - 5:00 PM.
+<P>
+<B>TA:</B> 
+<UL>
+  <LI> Tongliang Liao &nbsp;  &nbsp; &nbsp;
+    <A href=mailto:xkszltl@gmail.com <TT>xkszltl@gmail.com</TT></A> <BR>
+       Office Hours: TTh 10:30 - 12:00 at TA Desk 2 in GDC basement.
+<!--  
+<LI> Muqeet Ali, <A href=mailto:muqeet@cs.utexas.edu
+<TT>muqeet@cs.utexas.edu</TT></A> <BR>
+Office Hours: TTh 12:00 - 2:00 at TA Station Desk
+in the GDC basement, and by appointment.
+ -->
+<!--  
+<LI> Ms. Doris Yajie Niu, <A href=mailto:yajieniu0@gmail.com
+<TT>yajieniu0@gmail.com</TT></A> <BR>
+Office Hours: Monday 1:30 - 3:00 and Wednesday 2:00 - 3:30 at TA Desk 2.
+<LI> Caleb Olson, <A href=mailto:olsoncaleb5@gmail.com
+<TT>olsoncaleb5@gmail.com</TT></A> <BR>
+Office Hours: TTh 11 AM - 12:30 PM at TA Station Desk 3 in the GDC basement,
+and by appointment.
+  -->
+</UL>
+
+<P>
+
+<B>Prerequisites:</B>
+CS 314 and CS 429.  Recommended: CS 439 and CS 345.
+
+<P>
+<B>Optional Text:</B>
+<a href="https://www.amazon.com/Compilers-Principles-Techniques-and-Tools/dp/1292024348/ref=dp_ob_title_bk">
+Aho, Lam, Sethi, & Ullman, <I> Compilers: Principles, Techniques,
+and Tools</I></a> <BR>
+<P>
+<B>Course Notes:</B> Strongly recommended.  Available in GSB 3.136 .
+Available on-line by <a href="cs375contents.html"><B>Contents</B></a> or
+<a href="cs375index.html">Index</a>
+or <a href="cs375.pdf">PDF</a>.
+Also see the <a href="cs375vocab.html">Vocabulary</a>.
+<P>
+<A href="http://www.iclicker.com/"><B>iClicker:</B></A>
+Each student is required to buy/rent an iClicker (any version of iClicker
+device; not iClicker GO app).  This will be used for attendance
+and to reinforce and practice with the class material.  Two iClicker
+points are given just for voting, and an additional point is given
+for a correct answer.  Most iClicker questions and answers are online at
+<a href="cs375clcontents.html"><B>Clicker Questions</B></a>, and it is
+okay to review them in advance.  The clicker scores will be converted
+to a grade by making the highest student score at least 108 and
+linearly scaling other scores; this gives some extra points to account
+for minor illness, forgotten or malfunctioning clicker, etc.
+Bringing another student's clicker to class is considered to be cheating.
+<P>
+<B>Register your iClicker via Canvas.</B>
+<P>
+<B>Web Page:</B>
+<a href="http://www.cs.utexas.edu/users/novak/cs375.html">
+   <TT>http://www.cs.utexas.edu/users/novak/cs375.html</TT></a>
+<P>
+<B>Program Directory:</B> <TT>/projects/cs375/</TT> on CS Linux machines.
+<P>
+<B>FTP Directory:</B><a href="ftp://ftp.cs.utexas.edu/pub/novak/cs375/">
+ <TT>ftp://ftp.cs.utexas.edu/pub/novak/cs375/</TT> </a>
+<P>
+<H3> Course Description:</H3>
+<P>
+CS 375 covers the design of Compilers, which translate programming
+languages that are easy for humans to use (Java, C++, etc.) into the
+difficult-to-understand machine language that is executed by computer
+hardware.  Because machine language is the <I>only</I> language that
+can actually be executed, the compiler, along with the operating
+system, is one of the central pieces of systems software that makes
+computers usable.
+<P>
+This course will cover the full range of compiler topics.  Each student
+will write a real compiler for most of the Pascal programming language,
+producing machine code that we will run on hardware.  This compiler is an
+excellent capstone project for a degree in Computer Science: it is a
+large project that produces an industrial-scale software product.
+Algorithms, Data Structures, Programming Languages, Architecture,
+and Theory are
+combined in a compiler, so this course brings together the courses
+of the undergraduate CS curriculum into a coherent whole.
+<P>
+By the end of the course, the student will have completed a significant
+<A href="http://en.wikipedia.org/wiki/Rite_of_passage">rite of passage</A>
+and have the confidence of having written a major component of systems
+software.
+<P>
+The course covers the major parts of a compiler, in the order in
+which they operate in the compiler itself:
+<UL>
+<LI> <B>Lexical Analyzer:</B> The Lexical Analyzer or Lexer reads
+characters from the
+input file and groups the characters into words or <I>tokens</I> in
+internal form: keywords, identifiers, numbers, operators.
+<LI> <B>Parser:</B> The Parser receives a linear sequence of tokens from
+the Lexer and combines them into structured sentences
+in the form of <I>abstract syntax trees</I> or <I>ASTs</I>.
+<LI> <B>Semantics:</B> Semantic (meaning) processing includes type
+checking and generation of code to access data structures such as arrays,
+pointers and records.
+<LI> <B>Optimization:</B> The efficiency of the code produced by the
+compiler can be dramatically improved by optimization.  The optimizer
+makes use of concepts from CS theory such as graph theory and set theory.
+<LI> <B>Code Generation:</B> This is the final stage, in which actual
+machine code is generated.  Theory is used here too, e.g. graph coloring
+to map the program onto machine resources such as registers.
+<LI> <B>Advanced Topics:</B> The course will include the topics of
+object-oriented programming, partial evaluation, translation between
+programming languages, pattern matching, just-in-time compilation, Lisp,
+and parsing English.
+</UL>
+
+<P>
+<H3> Readings in Aho, Lam, Sethi, and Ullman:</H3>
+<P>
+<UL>
+<LI> Introduction: Chapter 1.
+<LI> Syntax:
+<UL>
+<LI>  Lexical Analysis: Ch. 3 through 3.4.
+<UL>
+<LI> Regular Expressions: Ch. 3.3.3
+<LI> <TT>lex</TT>: 3.5.
+</UL>
+<LI>  Grammars
+<LI>  Parsing: Ch. 4 through 4.3
+<UL>
+<LI> Operator Precedence Parsing: not in book.
+<LI> Recursive Descent Parsing:  4.4 through p. 220.
+<LI> LR Parsing: 4.5, 4.6.3
+<LI> <TT>yacc</TT>: 4.9.
+</UL>
+<LI>  Semantic Analysis
+<UL>
+<LI> Syntax-directed Translation: Ch. 5.1, 5.3
+<LI> Type Checking: Ch. 6.5
+</UL>
+<LI>  Error Handling
+</UL>
+<LI>  Symbol Tables: 2.7, 6.3, 6.5
+<LI>  Intermediate Code: Ch. 6 - 6.2, 6.4
+<LI>  Runtime Support: Ch. 7.
+<LI>  Code Generation: Ch. 8.
+<LI>  Optimization: Ch. 9
+</UL>
+
+<H2> Grading Policies:</H2>
+<!--  
+Q-drop after February 11 will be given only for good cause.
+   -->
+<P>
+Grades are kept on
+<A href="https://utexas.instructure.com">Canvas.</A>
+It is <B>your responsibility</B> to check your grades often to
+make sure that your assignments have been received and graded.
+<P>
+Course grades are assigned on the scale A = 93-100, A- = 90-93,
+B+ = 87-90, B = 83-87, B- = 80-83, etc.
+provided that the Final Exam grade is at least 65; if the Final Exam
+grade is below 65, a lower course grade may be assigned at the
+instructor's discretion.  Grades are averaged using the following weights:
+<TABLE>
+<TR><TD>Midterm Exam </TD><TD> 20% </TD><TD></TD>
+  <TD> Tuesday, October 31, in class</TD></TR>
+<TR><TD>Final Exam </TD><TD> 30% </TD><TD></TD><TD>Monday, December 18, 9-12 AM</TD></TR>
+<TR><TD>Clicker Participation</TD><TD> 10% </TD><TD></TD></TR>
+<TR><TD>Programming Assignments: </TD><TD>  </TD><TD></TD>
+  <TD>(10% per day late penalty)</TD></TR>
+<TR><TD>Lexical Analyzer           </TD><TD> 06% </TD></TR>
+<TR><TD>Lexical Analyzer using <TT>lex</TT> </TD><TD> 04% </TD></TR>
+<TR><TD>Parser (total of 3 parts)  </TD><TD> 18% </TD></TR>
+<TR><TD>Code Generator             </TD><TD> 12% </TD></TR>
+</TABLE>
+<P>
+All students must complete all exams and programming assignments.
+This course has a <B> very heavy programming load,
+especially in Summer</B>; students should not take other
+classes or work while taking CS 375 in Summer.  
+<P>
+<B>Programming projects must be your own individual work.</B>  Students may
+discuss concepts or help with specific problems in another student's
+code.  However, sharing code, working together on program design or
+flowcharts, or reading someone else's code is not allowed.  All code
+that is given in the class directory may be used as part of
+your programs.
+<P>
+
+<!--  
+Programs may be assigned letter grades, which are numerically averaged
+as A+ = 100, A = 95, A- = 93, B+ = 88, etc.  A program that just satisfies
+the assignment and has no errors will typically be given a grade of A-;
+grades of A and A+ are given to programs that have something extra,
+such as extra work (e.g., in optimization) or especially nice code.
+Note, however, that a grade of A- is  averaged several points higher
+than the bottom of the A range; for example, a student who made 93
+on both exams and received A- on all programs would have an average
+of 93 and receive a grade of A.
+  -->
+
+</BODY>
+
+</HTML>

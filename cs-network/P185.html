@@ -1,0 +1,267 @@
+<base href="http://www.cs.utexas.edu/~scottm/cs312//assignments/A1Song.html">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>CS312 Song Assignment </title>
+<link rel="stylesheet" type="text/css" href="../../test.css">
+</head>
+
+<body stylesrc="../../cs307/index.htm">
+
+<p align="center"><font size="5">CS 312 Assignment - Problem Decomposition - 
+static methods and printlns</font></p>
+
+<p align="left"><b>Programming Assignment 1: </b>Individual Assignment. You must complete this assignment by 
+    yourself. You cannot work with anyone else in the class or with someone 
+    outside of the class. The code your write must be your own. You are 
+    encouraged to get help from the instructional staff.</p>
+<p>Placed online: 
+    Monday, August 21<br>
+    10 points, ~1% of total grade<br>
+    Due: no later than <font size="3">11 pm, Thursday, September 14<br>
+    <a href="index.htm">General Assignment Requirements</a></font><p><b>
+Description: </b>The purposes of this assignment are:<ol>
+      <li>To create a program to produce required output.</li>
+      <li>To practice creating structured programs</li>
+      <li>To practice removing redundancy from programs.</li>
+	  <li>To learn the procedures and tools for writing an submitting programs.</li>
+    </ol>
+    <p><b>Complete the items on the class <a href="../handouts/startup.htm">
+    start up page</a>. If you get stuck post to the class discussion group on 
+    Piazza or go see the instructor or a TA in the lab.</b></p>
+    <p>If you are using BlueJ: </p>
+<ul>
+  <li>Create a new project and add the
+      <a href="../javaCode/A1_Song/Song.java">Song.java</a> file.
+      <a href="../../cs307/handouts/BlueJProjectInstructions.html">This page has 
+      instructions on how to create projects and add source code to BlueJ</a>.
+  </li>
+  <li> <span style="font-family: Times New Roman">BlueJ truncates the output in the console to approximately 
+      20 lines. This results in your output being cutoff in some cases.<br>
+  </span>
+      <br>
+      To prevent this, go to the <b>Options </b>menu on the
+      <b>Terminal Window </b>that pops up when you run your program, ensure 
+      ensure the menu options <b>Clear screen at method call</b> and <b>
+      Unlimited buffering </b>are checked. After making these changes you may 
+      have to stop and restart BlueJ for the choice to take effect. </li>
+</ul>
+    <p>&nbsp;</p>
+    <p><b><span style="background-color: #FFFF00">Complete a Java program (<a href="../javaCode/A1_Song/Song.java">here is 
+    the program shell to start with</a>. </span></b>Replace &lt;Name&gt; with your 
+    name and fill in the required information.<b><span style="background-color: #FFFF00">) that when run produces the following output (The 
+    lyrics of the song <i>
+    <a href="http://en.wikipedia.org/wiki/There_Was_an_Old_Lady_Who_Swallowed_a_Fly">
+    There Was an Old Woman Who Swallowed a Fly</a></i>):</span></b></p>
+    <p><code>There was an old woman who swallowed a fly.<br>
+    I don't know why she swallowed that fly,<br>
+    Perhaps she'll die.<br>
+    <br>
+    There was an old woman who swallowed a spider,<br>
+    That wriggled and iggled and jiggled inside her.<br>
+    She swallowed the spider to catch the fly,<br>
+    I don't know why she swallowed that fly,<br>
+    Perhaps she'll die.<br>
+    <br>
+    There was an old woman who swallowed a bird,<br>
+    How absurd to swallow a bird.<br>
+    She swallowed the bird to catch the spider,<br>
+    She swallowed the spider to catch the fly,<br>
+    I don't know why she swallowed that fly,<br>
+    Perhaps she'll die.<br>
+    <br>
+    There was an old woman who swallowed a cat,<br>
+    Imagine that to swallow a cat.<br>
+    She swallowed the cat to catch the bird,<br>
+    She swallowed the bird to catch the spider,<br>
+    She swallowed the spider to catch the fly,<br>
+    I don't know why she swallowed that fly,<br>
+    Perhaps she'll die.<br>
+    <br>
+    There was an old woman who swallowed a dog,<br>
+    What a hog to swallow a dog.<br>
+    She swallowed the dog to catch the cat,<br>
+    She swallowed the cat to catch the bird,<br>
+    She swallowed the bird to catch the spider,<br>
+    She swallowed the spider to catch the fly,<br>
+    I don't know why she swallowed that fly,<br>
+    Perhaps she'll die.<br>
+    <br>
+    There was an old woman who swallowed a goat,<br>
+    She just opened her throat to swallow a goat.<br>
+    She swallowed the goat to catch the dog,<br>
+    She swallowed the dog to catch the cat,<br>
+    She swallowed the cat to catch the bird,<br>
+    She swallowed the bird to catch the spider,<br>
+    She swallowed the spider to catch the fly,<br>
+    I don't know why she swallowed that fly,<br>
+    Perhaps she'll die.<br>
+    <br>
+    There was an old woman who swallowed a cow,<br>
+    I don't know how she swallowed a cow.<br>
+    She swallowed the cow to catch the goat,<br>
+    She swallowed the goat to catch the dog,<br>
+    She swallowed the dog to catch the cat,<br>
+    She swallowed the cat to catch the bird,<br>
+    She swallowed the bird to catch the spider,<br>
+    She swallowed the spider to catch the fly,<br>
+    I don't know why she swallowed that fly,<br>
+    Perhaps she'll die.<br>
+    <br>
+    There was an old woman who swallowed a horse,<br>
+    She died of course.</code></p>
+    <p><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+    Here is the output file the graders will use on assignment 1.<a href="../javaCode/A1_Song/A1_Song_Output.txt">(A1_Song_Output.txt</a>) 
+    Your output must match this exactly or you may lose points for correctness. 
+    Use a <a href="http://en.wikipedia.org/wiki/File_comparison">diff tool</a> 
+    such as the one at this website ( <a href="http://www.quickdiff.com">
+    www.quickdiff.com</a>) to ensure your program produces the correct output. 
+    Please note, if you view the output above via a web browser, the browser 
+    will very likely remove the last newline character. This causes a minor 
+    difference between the expected output and your output. 
+    <span style="background-color: #FFFF00"> <b>
+    The last line of the song, &quot;She died 
+    of course.&quot;, is printed out with a println statement, just like all the 
+    other lines of the song. I recommend you download the <a href="../javaCode/A1_Song/A1_Song_Output.txt">
+	A1_Song_Output.txt</a> file by putting your cursor over the link and 
+	bringing up a context menu (right click on Windows, control click on Macs) 
+	and select the option to download the file.</b></span></span></p>
+    <p><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+    <b>You may only use 
+    static methods and println statements.  </b></span></p>
+    <p><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+    <b>Do not use print statements in your 
+    program. (or variables, parameters, loops, conditional statements, etc. 
+    <span style="background-color: #FFFF00">Static methods, static method calls, and println statements only.</span>)</b></span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt; page-break-after: avoid;">
+    <span style="font-family: Times New Roman">Use</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> 
+    static methods to capture the structure of the song.<span style>&nbsp; </span>You 
+    should, for example, have a different method for each of the eight verses of 
+    the song (verses are separated by blank lines in the output).</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt; page-break-after: avoid;">
+    <span style="font-family: Times New Roman">M</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">ake use of static methods to avoid redundancy.<span style>&nbsp;
+    </span>In particular, you are to make sure that you use only one
+    <span class="SpellE">println</span> statement for each distinct line of the 
+    song.<span style>&nbsp; </span>For example, this line:</span></p>
+    <p class="MsoPlainText" style="margin: 12pt 0in 0.0001pt 0.5in;"><code>Perhaps 
+    she'll die.</code></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;"><span class="GramE">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+    appears</span></span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> 
+    several times in the output.<span style>&nbsp; </span>You are to have only one
+    <span class="SpellE">println</span> statement in your program for producing 
+    this line. <b>On the other hand, do not make methods with a single println 
+    statement and no other statements or method calls. </b>Methods such as those 
+    take program decomposition to far. It is likely you will have methods with a 
+    single println statement <u><b>in addition to</b></u> other method calls or 
+    statements.</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">In other words this is bad:</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman"><code>public static void 
+    someMethod() {<br>
+&nbsp;&nbsp;&nbsp; System.out.println(&quot;SOME STUFF&quot;);<br>
+    }</code></span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">but this is okay and necessary in 
+    some cases:</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman"><code>public static void 
+    someMethod() {<br>
+&nbsp;&nbsp;&nbsp; System.out.println(&quot;SOME STUFF&quot;);<br>
+&nbsp;&nbsp;&nbsp; callAnotherMethod();<br>
+    }</code></span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">There 
+    is a 
+    more complex redundancy that comes up with pairs of lines like these:</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">&nbsp;&nbsp;&nbsp; </span><code>
+    There was an old <span class="GramE">woman</span> who swallowed a horse,<br>
+&nbsp; There was an old <span class="GramE">woman</span> who swallowed a dog,</code></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;"><span class="GramE">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">and</span></span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"> 
+    like these:</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">&nbsp;&nbsp;&nbsp; </span><code>
+    She swallowed the dog to eat the cat,<br>
+&nbsp; She swallowed the cat to eat the bird,</code></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; font-weight:700">It 
+    is not possible to avoid this redundancy using just methods and simple
+    <span class="SpellE">println</span> statements, so you are not expected to 
+    do so.<span style>&nbsp; </span></span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">In other words the lines</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">&nbsp;&nbsp;&nbsp; </span><code>
+    There was an old <span class="GramE">woman</span> who swallowed a horse,<br>
+&nbsp; There was an old <span class="GramE">woman</span> who swallowed a dog,</code></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">are 
+    very similar. The only difference is the last word. It is okay to have one 
+    println for the line</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">&nbsp;&nbsp;&nbsp; </span><code>
+    There was an old <span class="GramE">woman</span> who swallowed a horse,</code></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">and another println for the line</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-family: Times New Roman">&nbsp;&nbsp;&nbsp; </span><code>
+    There was an old <span class="GramE">woman</span> who swallowed a dog,</code></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+    even though it seems  redundant.</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;">
+    <b>There is, however, a structural redundancy that you can eliminate with 
+    static methods.</b><span style><b>&nbsp;</b> </span>The key question to ask yourself is 
+    whether or not you have repeated lines of code or statements that could be 
+    eliminated if you structured your static methods differently. These lines of 
+    codes could be calls to static methods instead of println statements.</span></p>
+    <p class="MsoPlainText" style="margin-top: 12pt;">
+    <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;; font-weight:700">
+    For this assignment, you shall limit yourself to the static methods and 
+    println statements. Do not use print statements or other Java language 
+    features.</span></p>
+    <p align="left"><b><font size="5"><span style="background-color: #FFFF00">Submission:
+    </span></font> </b><font size="5"><span style="background-color: #FFFF00">Turn in your Song.java 
+    file with your code Canvas.&nbsp; If you do 
+    not turn in the correct file with the correct name you will very likely end up wasting slip days 
+    or getting a 0 on the assignment.
+    <a href="http://guides.instructure.com/m/8470/l/41972-how-do-i-submit-an-online-assignment">
+    See this page</a> for instructions to turn in a file for an assignment via 
+    Canvas. Your submission must be named Song.java. </span></font>
+<p align="left">&nbsp;<p align="left">Note, you may turn in the file multiple times 
+via Canvas. Canvas adds a &quot;-1&quot; to the file name. So if you turn in your program 
+a second time before the due date the file name will be something like 
+Song-1.java. That is fine. Our grading scripts will adjust for the extra
+<a href="http://catb.org/jargon/html/C/cruft.html">cruft</a> Canvas adds to the 
+file name. 
+<p align="left">&nbsp;<p align="left">We will run and test your programs on the CS 
+Department Linux machines. If you want to test your code in that environment 
+please see <a href="../handouts/SSH%20Guidelines.pdf">this handout</a> for help 
+on logging into those machines, moving, compiling, and running your Java 
+programs. <hr>
+<p align="left"><b>Checklist: </b>Did you remember to:</p>
+<ul>
+  <li>review the <a href="index.htm">general assignment requirements</a>?</li>
+  <li>work on the assignment individually?</li>
+  <li>fill in the header in your file Song.java program including replacing 
+  &lt;NAME&gt; with your name stating the work you are turning in is your own 
+  and fill in the header?</li>
+  <li>make your program structured and remove redundancy?</li>
+  <li>ensure your program does not suffer a compile error or runtime error?</li>
+  <li>ensure your program matches the expected output exactly?</li>
+  <li>ensure your program is part of the default package? In other words there 
+  are
+  <a href="https://docs.oracle.com/javase/tutorial/java/package/createpkgs.html">no package statements</a> in your program. </li>
+  <li>turn in your Java source code in a file named Song.java via Canvas before 
+  11 pm, Thursday, September 14.</li>
+</ul>
+    <p align="left">&nbsp;Thanks to Stuart Reges for sharing this assignment 
+    with me.<p align="center"><a href="../index.htm">Back to the CS 312 homepage.</a></body></html>

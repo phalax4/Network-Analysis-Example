@@ -1,0 +1,204 @@
+<base href="http://www.cs.utexas.edu/users/dsb/CS373S//P/JavaReflection/index.html">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="GENERATOR" content="Adobe FrameMaker 5.5/HTML Export Filter">
+<link rel="STYLESHEET" href="image/HomeworkRef1.css" charset="ISO-8859-1" type="text/css"><title>Java Reflection and an T2M Tool</title>
+
+<style type="text/css">
+.style2 {
+				font-family: Arial, Helvetica, sans-serif;
+}
+.style4 {
+				font-family: "Courier New", Courier, monospace;
+}
+.style6 {
+				text-align: center;
+}
+.style9 {
+				font-family: Arial;
+}
+.style18 {
+				color: #FF0000;
+}
+.style19 {
+				text-align: left;
+				font-family: Arial;
+}
+.style20 {
+				font-size: medium;
+}
+.style22 {
+				margin-left: 40px;
+}
+.style27 {
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: left;
+}
+.style28 {
+				font-family: Arial, Helvetica, sans-serif;
+				color: #FF0000;
+				margin-left: 80px;
+}
+.style29 {
+				font-family: "Courier New";
+}
+.style30 {
+				font-family: Arial;
+				color: #FF0000;
+				margin-left: 40px;
+}
+.style32 {
+				background-color: #FFFFFF;
+}
+.style33 {
+				text-decoration: underline;
+}
+.style34 {
+				text-decoration: underline;
+				color: #FF0000;
+}
+.style37 {
+				margin-left: 80px;
+				background-color: #FFFF00;
+}
+</style></head>
+<body bgcolor="#ffffff">
+<h1 class="style6"><span class="style2">Java Reflection and a T2M Tool<br><span class="style20"><span style="color: rgb(0, 153, 0);"></span></span></span></h1>
+
+<p class="style19">Many tools, especially IDEs, query the 
+contents of <strong>.class</strong>
+files to determine a class's methods, fields, and constructors.&nbsp;
+In this assignment, you will write a Java program that uses <a href="http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful">Java Reflection</a> to produce a database of the names of classes and their <strong>public non-static</strong> and <strong>public static</strong> members for all classes in a package. &nbsp;In MDE, mapping from Java .class files to a database is called a <span style="font-weight: bold;">Text-2-Model (T2M)</span> tool.</p>
+
+<p class="style19">You may work alone or in groups of two<span style="font-weight: bold;"></span>. &nbsp;Start this assignment by reading&nbsp;<a href="http://www.cs.utexas.edu/users/dsb/CS373S/Course/regressionTest.html">the course web page on JUnit testing</a>.</p><hr>
+<h2 style="font-family: Arial;">The Assignment Big Picture</h2><p class="style19">Write an application with the following command-line 
+invocation:</p>
+<pre style="font-weight: bold;" class="style22"><big>&gt; <strong>java introspect.</strong>Main &lt;directory-of-classfiles&gt;</big></pre>
+<span style="font-family: Helvetica,Arial,sans-serif;">where </span><big><span style="font-weight: bold;">&nbsp;</span><small><span style="font-family: Courier New,Courier,monospace;">directory-of-classfiles</span></small></big><span style="font-family: Arial;"> </span><span style="font-family: Helvetica,Arial,sans-serif;">is the absolute path to a directory containing class files of a Java package. Here's an example call:</span><pre class="style22">&gt; <big style="font-weight: bold;">java</big><big style="font-weight: bold;"><strong> introspect</strong>.Main </big><big style="font-weight: bold;"> /java/otherclasses/p1package</big><br></pre><span style="font-family: Helvetica,Arial,sans-serif;">The output of&nbsp; <span style="font-weight: bold; font-family: Courier New,Courier,monospace;">introspect.Main</span> &nbsp;goes to <span style="font-family: Courier New,Courier,monospace; font-weight: bold;">System.out</span>. &nbsp;If you want to produce a file from the command line, use redirection:</span><br><div style="margin-left: 40px;"><pre><big>&gt; <span style="font-weight: bold;">java introspect.Main </span></big><big style="font-weight: bold;">/java/otherclasses/p1package</big><big><span style="font-weight: bold;"> &gt; p</span><span style="font-family: monospace; font-weight: bold;">1package.prog1.pl</span></big><br></pre></div>
+<hr>
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Java Reflection</span></h2><p class="style19">Your program will retrieve the names of all <strong>.class</strong> files in the given directory and use&nbsp;<a href="https://en.wikipedia.org/wiki/Reflection_%28computer_programming%29">class 
+reflection</a> to examine the 
+contents of each class file. The key Java statement to inspect a <strong>.class</strong> 
+file is:</p>
+<pre style="font-weight: bold;" class="style22"><big>Class&lt;?&gt; c = Class.forName("qualifiedPackageName.className");&nbsp;</big></pre>
+<p class="style9">where <span style="font-weight: bold;" class="style4">c</span> is a Java object from which 
+you can extract the desired structural information and "<span style="font-family: Courier New,Courier,monospace; font-weight: bold;">qualifiedPackageName</span>" 
+is exactly that -- the qualified name of a Java class that is on your classpath 
+(e.g., "<span style="font-weight: bold;" class="style4">java.util.Stack</span>").&nbsp; You must read JDK documents on the Class 
+class (<a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Class.html">click 
+here for more details</a>) and the way Java encodes type names (<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html#getName%28%29">click here for more details</a>). Finding the names of&nbsp;public fields and methods using 
+reflection is simple, once you have the <span style="font-family: Courier New,Courier,monospace; font-weight: bold;">Class&lt;?&gt;</span> object for a given 
+class.</p>
+<p style="margin-left: 40px;" class="style9"><span style="color: black;"><span style="font-weight: bold;">Remember</span>:<span style="font-weight: bold;">
+to introspect a class in this assignment means that it MUST be accessible via your class path <span style="color: rgb(204, 0, 0);">AND it is not in a JAR file or zip file.</span></span>&nbsp; I will give you zip or jar files
+for you to test your program.&nbsp; For your program to work, you will
+have to unzip/unjar it in a directory that is on your classpath.</span><br>
+</p>
+
+
+<p class="style9"><span class="style32">Here are key limitations for this assignment 
+to make your life easier:</span></p>
+<ul>
+
+  <li style="font-family: Arial; color: black;"><span class="style32">Assume that the class files you will read are NOT Java interfaces.</span></li>
+  <li style="font-family: Arial; color: black;"><span class="style32">Assume
+all classes/types are NOT parameterized (that is, assume that all files
+that you will need to analyze will have no references to Java
+Generics).&nbsp; <br>
+    </span></li>
+<li style="font-family: Arial; color: black;"><span class="style32">Class
+files are generated for nested classes -- do NOT&nbsp;worry about introspecting
+these classes.&nbsp; You can recognize them easily as they have a "$"
+in their name.</span></li><li><span class="style32"><span style="font-family: Arial; color: black;">Display only <span style="text-decoration: underline; font-weight: bold;">public static</span> and <span style="text-decoration: underline; font-weight: bold;">public non-static</span> members; <span style="font-weight: bold; color: black;">private </span><span style="color: black;">and</span><span style="font-weight: bold; color: black;"> protected </span><span style="color: black;">members are NOT to be reported</span><span style="color: black;">.</span></span></span></li>
+</ul><div style="margin-left: 40px; font-weight: bold; color: black;"><span style="font-family: Helvetica,Arial,sans-serif;">Note:
+<span style="color: red; font-weight: bold;">static methods are methods of a class. &nbsp;Constructors are methods
+of a class. So by (my) definition, constructors are static methods&nbsp;even if reflection suggests otherwise.</span></span></div>
+
+<p class="style9"><span class="style32">The goal of this assignment is not to make this a
+complete tool, but rather to give you an idea of what reflective programs like
+this can do and how they work.</span>&nbsp; <span style="text-decoration: underline;">You can always 
+ask for clarifications</span>.</p>
+<hr>
+<div>
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">MDELite Databases and Tables</span></h2><span style="font-family: Helvetica,Arial,sans-serif;"><a href="http://www.cs.utexas.edu/users/schwartz/MDELite/index.html">You will use and install MDELite7</a>. &nbsp;It allows you
+to create database tables and populate these tables with rows (called
+tuples).Here's the &nbsp;MDELite schema of a 2 table database called <span style="font-weight: bold;">prog1</span>:</span> <div style="margin-left: 40px; font-weight: bold;"><pre><big>dbase(prog1,[bcClass,bcMember]).<br><br>table(bcClass,[cid,"name","superName"]).<br>table(bcMember,[mid,cid,static,"type","sig"]).</big></pre></div><p style="font-family: Helvetica,Arial,sans-serif;" class="style2">Here's what the above means:</p><ul style="font-family: Helvetica,Arial,sans-serif;"><li>A
+database schema is a collection of table definitions. &nbsp;The name of
+this schema is <span style="font-weight: bold;">prog1</span> and it contains 2 table definitions: <span style="font-weight: bold;">bcClass</span> and
+<span style="font-weight: bold;">bcMember</span>.</li><li>Table <span style="font-weight: bold;">bcClass</span> has 3&nbsp;columns or fields or attributes (they all mean the same thing):</li><ul><li><span style="font-weight: bold;">cid</span> &nbsp;-- class identifier</li><li><span style="font-weight: bold;">name</span> -- qualified class name</li><li><span style="font-weight: bold;">superName</span> -- qualified name of superclass</li></ul><li>Table <span style="font-weight: bold;">bcMember</span> has 5 columns or fields or attributes (they all mean the same thing)</li><ul><li><span style="font-weight: bold;">mid</span> -- member identifier</li><li><span style="font-weight: bold;">cid</span> -- identifier of class that mid is a member</li><li><span style="font-weight: bold;">static</span> -- true or false -- is the member static?</li><li><span style="font-weight: bold;">type</span> -- return type of the member (or simply for fields, type of the member)</li><li><span style="font-weight: bold;">sig</span> -- signature of the member, for a constructor of class File it is "File(String)".</li></ul></ul><p class="style2">I provide you with a package with a single class, <a href="ReflectionTest.java">p1package.ReflectionTest</a>. &nbsp;When you run your program on its directory (where <span style="font-family: Courier New,Courier,monospace; font-weight: bold;">/mydata/classEven/p1package</span> is this directory) and you have compiled ReflectionTest so that the directory has .class files:</p><pre style="margin-left: 40px;"><big>&gt; java introspect.Main /mydata/classEven/p1package</big></pre><span style="font-family: Arial,Helvetica,sans-serif;">Your program will output a database&nbsp; that will match this:</span><br><br><div style="margin-left: 40px;"><span style="font-family: Courier New,Courier,monospace;"></span><span style="font-family: Courier New,Courier,monospace; font-weight: bold; color: black;">dbase(prog1,[bcClass,bcMember]).<br><br>table(bcClass,[cid,"name","superName"]).<br>bcClass(c10,'p1package.ReflectionTest','Object').<br><br>table(bcMember,[mid,cid,static,"type","sig"]).<br>bcMember(m10,c10,true,'p1package.ReflectionTest','ReflectionTest(int,int,int)').<br>bcMember(m11,c10,false,'double','d0').<br>bcMember(m12,c10,false,'double[]','d1').<br>bcMember(m13,c10,false,'double[][]','d2').<br>bcMember(m14,c10,false,'double[][][]','d3').<br>bcMember(m15,c10,true,'int','i1').<br>bcMember(m16,c10,true,'void','main(String[])').<br>bcMember(m17,c10,false,'String[][]','test(int[])').<br>bcMember(m18,c10,true,'void','main2(String[])').<br>bcMember(m19,c10,false,'String[]','testr(char[],byte[],short[],float[],boolean[],double[][],String[][])').</span><span style="font-family: Courier New,Courier,monospace;"><span style="font-weight: bold; color: rgb(204, 0, 0);"></span></span><span style="font-family: Courier New,Courier,monospace;"><br>
+</span></div>
+<span style="font-family: Arial,Helvetica,sans-serif;"></span><span style="font-family: Arial;"><br></span><div style="margin-left: 40px;"><span style="font-family: Arial;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Note</span>: </span></span><span style="font-family: Helvetica,Arial,sans-serif;">Before I print out the type names of variables, I 
+shorten "java.lang.X" to "X".&nbsp; Example: "java.lang.String" is shortened to "String".</span><br></div><br><span style="font-family: Helvetica,Arial,sans-serif;">Now,
+you may be wondering why not use Java print statements to produce this same
+output, as opposed to using a package to create database tuples and
+print database tables. &nbsp;The reason is that there is a LOT of
+hacking to make printed output match a textual standard. &nbsp;By
+focusing on creating the right database tuples, the details of creating
+your own intermediate data structure to store data and then print it are
+removed. &nbsp;You win if you use database tables to input and output
+databases in future assignments, which I assure you, you will be doing.<br><br>I
+have given you enough starter code to allow you to use MDELite without
+reading its documentation, even though it comes with documentation.
+&nbsp;By the time you get this assignment, we should have covered some
+MDELite basics in class.<br></span><hr style="width: 100%; height: 2px;"><h2><span style="font-family: Helvetica,Arial,sans-serif;">Where to Start</span></h2><span style="font-family: Helvetica,Arial,sans-serif;">I
+give you the <a href="P1Shell.zip">shell of a Netbeans file for you to complete</a>. &nbsp;It lays out a logical program design that you should understand and follow. Read
+all 3 classes I provide you, <span style="font-weight: bold;">Main.java</span>, <span style="font-weight: bold;">Helper.java</span>, and
+<span style="font-weight: bold;">HarvestByteCodes.java</span>. &nbsp;You will see that I have gutted key methods. &nbsp;You need
+to fill them in. I have also provided unit tests for you to verify that
+your output is correct. &nbsp;Use them, and add to them files that you
+use to debug your program.<br></span><hr style="width: 100%; height: 2px;"><h2 style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; font-family: Arial; background-color: rgb(255, 255, 255);">What to Submit to<span class="Apple-converted-space">&nbsp;</span><a href="http://canvas.utexas.edu/">Canvas</a></h2><p class="style2"><strong><span style="font-weight: normal;">A zip file with all source code <span style="font-weight: bold; color: black;">(including your Netbeans or Eclipse Project).</span>&nbsp; The zip file must unzip into <span style="font-weight: bold;">&lt;yourLastName&gt;/&lt;YourFilesAndDirectories&gt; </span>&nbsp;if you work alone or </span>&lt;LastName1-LastName2&gt;/&lt;YourFilesAndDirectories&gt; if you work in a group.<br>
+</strong></p><ul>
+				
+				</ul><ol><li style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: rgb(0, 153, 0);"><span style="color: black;">Your
+program needs to run correctly on Linux machines, even though you may
+have developed them on Macs and Windoze. &nbsp;The TA will grade your
+program running on Linux.</span>
+				</li><li><p class="style2">The Grader should be able to invoke your program 
+				just like <strong>"<span class="style29">java </span></strong><big><strong style="font-family: Courier New,Courier,monospace;">introspect</strong><span style="font-family: Courier New,Courier,monospace;">.Main</span></big><span class="style29"> <span style="font-weight: bold;">&lt;directory&gt;</span></span><strong>"
+				</strong>exactly like the above <span class="style34"><strong>
+				from a command line</strong></span> in the unzipped directory. The Grader will reject any submission where this is not the case.<br></p></li><li><p class="style2">Your program outputs for the packages in 
+				this <a href="ClassesEven.zip">zip file</a>; a readme.txt file would be useful to show me where your results are.<br></p></li><li>
+				<p class="style2">Use the correct output file, above, as a basis for a JUnit test.&nbsp; <a href="http://www.cs.utexas.edu/users/dsb/CS373S/Course/regressionTest.html">Read the course web page on JUnit testing</a>. &nbsp;It will help you.</p></li><li><span style="font-family: Helvetica,Arial,sans-serif;">Create&nbsp;other unit tests for your program.<br><br></span></li><li><span style="font-family: Helvetica,Arial,sans-serif;">A PDF file (in the&nbsp;</span><a style="font-family: Helvetica,Arial,sans-serif;" href="http://www.cs.utexas.edu/users/dsb/CS373S/#HWFormat">required
+format</a><span style="font-family: Helvetica,Arial,sans-serif;">) that the Grader should read to provide any information that is not obvious. &nbsp;The contents of the PDF file can be minimal.<br></span></li></ol><ul>
+				
+				
+				</ul><ul>
+</ul>
+<div class="style6">
+								
+								<p class="style27">You should expect that other 
+								packages, known only to the grader, will be used to 
+								evaluate your program.</p>
+</div>
+</div>
+<p class="style19"><strong>A critical part of any design is clarity and 
+understandability.&nbsp;&nbsp; Hence, you will be graded on the clarity of your 
+project and its ability to work correctly.&nbsp; 
+Sloppy code, documentation, or anything that makes grading or understanding your 
+program difficult will cost you points!&nbsp; Beware, some of these "beauty" 
+points are subjective.&nbsp; </strong></p>
+<p class="style19"><span class="style18"><strong>No late 
+assignments/submissions will be accepted.</strong></span><strong><br>
+</strong></p>
+</body></html>

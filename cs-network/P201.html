@@ -1,0 +1,39 @@
+<base href="http://www.cs.utexas.edu/~gouda/cs337fa08/quiz4/">
+------------------------------------------------------------------------------
+Mohamed G. Gouda                                                CS 337
+Fall 2008                                                       Quiz 4
+------------------------------------------------------------------------------
+
+Check bits need to be added to the following original codeword in order to
+transform it to a Hamming codeword:
+
+		11101
+
+What are the values of the check bits that need to be added?
+
+------------------------------------------------------------------------------
+Student Name:
+Student EID:
+Student Section Time (circle one):  T:10-11,  T:12-1,  T:1-2,  W:11-12
+------------------------------------------------------------------------------
+
+Solution:
+
+The codeword after adding the check bits to it, becomes as follows:
+
+		1 C8 1 1 0 C4 1 C2 C1
+
+The exclusive-or of the positions of the original 1 bits is computed as 
+follows:
+
+		0011
+		0110
+		0111
+		1001
+		____
+
+		1011
+
+Thus the values of the added check bits can be computed as follows:
+
+		C1 = 1, C2 = 1, C4 = 0, C8 = 1

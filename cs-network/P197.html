@@ -1,0 +1,92 @@
+<base href="http://www.cs.utexas.edu/~gouda/cs337fa08/midterm1/">
+------------------------------------------------------------------------------
+Mohamed G. Gouda                                                CS 337
+Fall 2008                                                     Midterm 1
+------------------------------------------------------------------------------
+Open Book                                                       80 minutes
+------------------------------------------------------------------------------
+
+1. A set S of k-bit words is called 1-dependent iff xor(S) = 1, where xor(S)
+is the k-bit word that results from applying the exclusive-or to the words in 
+S, and 1 is the k-bit word whose bits are all 1's. Let T be the set of k-bit 
+words that remains after removing one k-bit word x from a 1-dependent set S. 
+Compute the removed word x as a function of the remaining set T.
+
+Solution:
+   x = inv(xor(T))
+   where inv(y) is the k-bit word that results from inverting each bit
+   in the k-bit word y.
+
+   { By the definition of T and S}
+   <=>   S = T U {x}
+   { Apply xor to both sides }
+   <=> xor(S) = xor(T) xor x
+   { S is 1-dependent }
+   <=> 1 = xor(T) xor x
+   { x xor x = 0 }
+   <=> x = 1 xor xor(T)
+   { 1 xor x = inv(x) }
+   x = inv(xor(T))
+
+------------------------------------------------------------------------------
+
+2. A sender and a receiver know the following four 10-bit codewords.
+	C0 = 0000000000
+	C1 = 0000011111
+	C2 = 1111100000
+	C3 = 1111111111
+The sender sends one of these codewords to the receiver. Zero or more bits in 
+the sent codeword are inverted before the receiver receives a 10-bit word C. 
+Then the receiver executes only one of the following three actions.
+	(a) The receiver accepts word C as is. 
+	(b) The receiver accepts one of the codewords C0, C1, C2, or C3 
+	    instead of C.
+	(c) The receiver accepts no word.
+Under what condition, does the receiver execute each of these actions?
+
+Solution:
+   (a) c is one of the codewords c0, c1, c2, or c3.
+   (b) The hamming distance between c and one of the codewords is at
+   least 1 and at most 2 (since the smallest hamming distance between
+   any two codewords is 5).
+   (c) neither condition (a) nor condition (b) holds.
+
+------------------------------------------------------------------------------
+
+3. Assume that RSA is used to generate a public key (e,n) to encode a message
+M consisting of two symbols, where each symbol is a digit in the range 0..8.
+What is the smallest possible value of n in this case? Explain your answer.
+
+Solution:
+The max value of M is 88. Thus, the possible values of n are
+   89, 90, 91, ...
+Only 91 can be factored into two prime numbers 7 and 13.
+------------------------------------------------------------------------------
+
+4. Alice knows its own private key (da,na) and the public key (eb,nb) of Bob, 
+and Bob knows its own private key (db,nb) and the public key (ea,na) of Alice.
+To send a signed private message M to Bob, Alice can send either one of the 
+following two messages.
+
+	("Alice" | (M^da  mod na))^eb  mod nb
+
+	("Alice" | (M^eb  mod nb))^da  mod na
+
+Which of these two messages is better in this situation? Explain your answer.
+
+Soluton:
+
+ The first message is better because
+   (1) If using the second message, an attacker in the middle can
+       change the sigature of Alice since Alice's public key is known
+       to everyone. Consequently, the attacker can sign the message
+       using his/her own private key and thus Bob can not figure out
+       who is the original sender since Bob may think the attacker is
+       the original sender.
+   (2) If using the second message, everybody can know the message is
+       sent from Alice although nobody except Bob can know the content
+       of the message.
+   (3) The first message allows Bob to easily decrypt the message when
+       there are many Alices.
+
+------------------------------------------------------------------------------

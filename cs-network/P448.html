@@ -1,0 +1,78 @@
+<base href="https://www.cs.utexas.edu/users/novak/cs375midquest.html">
+<HTML>
+<!--  cs375midquest.html          G. Novak          30 Oct 17        -->
+<HEAD>
+<TITLE>CS 375, Compilers: Example Questions for Midterm Exam</TITLE>
+</HEAD>
+
+<BODY>
+<H2>CS 375, Compilers: Example Questions for Midterm Exam</H2>
+<HR>
+
+<P>
+
+<H3> Addressing: </H3>
+Consider the following declarations:
+<PRE>
+     type complex = record  re, im: real  end;
+
+          person  = record name:     alfa;
+                           age:      integer;
+                           location: complex;
+                           weight:   real;
+                           salary:   real     end;
+
+     var  people = array [ 7..14, (austin, dallas, houston)]
+                          of person;
+</PRE>
+
+<UL>
+<LI> Assuming <TT>integer</TT> and <TT>boolean</TT> are 4 bytes, and
+<TT>alfa</TT>, pointers and <TT>real</TT> are 8 bytes,
+how much storage is occupied by the array <TT>people</TT>?
+
+<LI> Calculate the effective address of the expression:
+<PRE>
+   people[10,dallas].location.im
+</PRE>
+Show how it was derived and give the <TT>aref</TT> form.
+</UL>
+
+<H3> Other Questions:</H3>
+<UL>
+<LI> Show how an operator precedence parser would parse the string:
+<PRE>
+     A - (B / C - D) / E + F
+</PRE>
+Show the contents of the stacks at each step; produce a tree as output.
+
+<LI> Give one advantage and one disadvantage of hashing as a method
+of symbol table organization.
+
+<LI> Consider the regular expression <TT> (a | b)*b+b* </TT> .
+What is the simplest regular expression that denotes the same language?
+
+<LI> Give the allowable form of productions for a Regular grammar.
+
+<LI> Consider the following grammar:
+<PRE>
+ S  -->  a S
+ S  -->  S b
+ S  -->  b
+</PRE>
+
+<UL>
+<LI> What kind of grammar is this in the Chomsky hierarchy?
+<LI> What kind of language does it denote?
+<LI> Is there a simpler kind of grammar that denotes the same language?
+If so, give the grammar; if not, explain why not.
+</UL>
+
+<LI> Briefly and clearly define the following terms: ...  8 terms chosen
+from the vocabulary list on the study guide.
+</UL>
+
+
+</BODY>
+
+</HTML>

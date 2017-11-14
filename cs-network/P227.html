@@ -1,0 +1,40 @@
+<base href="http://www.cs.utexas.edu/~gouda/cs356sp08/quiz7/">
+-------------------------------------------------------------------------------
+Mohamed G. Gouda						CS 356
+Spring 2008							quiz 7
+------------------------------------------------------------------------------
+
+In the protocol for maintaining local topology information, a process p[i]
+assigns its element up[g] the value true iff a chk message makes at least one 
+complete cycle from p[i] to p[g] and back to p[i]. Modify the protocol so that
+p[i] assigns its element up[g] the value true iff a chk message makes at least
+two complete cycles that start at p[i] and end at p[i]. 
+
+(Hint: Make the range of values of variable b be 0..3.)
+
+-----------------------------------------------------------------------------
+Student Name:
+Student ID:
+----------------------------------------------------------------------------- 
+ 
+Solution:
+
+Process P[i : 0..n-1]
+
+inp N      : set {g | p[g] is a neighbor of p[i]}
+var up     : array [N] of boolean
+    b      : 0..3
+par g      : N
+
+begin
+    rcv chk(b) from p[g]                        ->
+               if b = 3 -> up[g] := true;  send chk(3) to p[g]
+               [] b < 3 -> up[g] := false; send chk(b+1) to p[g]
+               fi
+[]  rcv error from p[g]                         -> skip
+[]  timeout (#ch.p[i].p[g] + #ch.p[g].p[i] = 0) ->
+               up[g] := false;
+               if i <  g -> send chk(0) to p[g]
+               [] i >= g -> skip
+               fi
+end

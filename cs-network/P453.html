@@ -1,0 +1,88 @@
+<base href="https://www.cs.utexas.edu/~gouda/cs337fa08/midterm3/">
+------------------------------------------------------------------------------
+Mohamed G. Gouda                                                CS 337
+Fall 2008                                                       Midterm 3
+------------------------------------------------------------------------------
+Open Book                                                       75 minutes
+------------------------------------------------------------------------------
+
+1. Specify a Haskell function named "max2l". Function max2l has one parameter
+xs, which is a list that has at least two integers, and computes the second 
+largest element in the list. For example,
+
+	max2l [2, 1] 	= 1
+	max2l [2, 2] 	= 2
+	max2l [2, 1, 1] = 1
+	max2l [2, 2, 1] = 2
+	max2l [2, 2, 2] = 2
+
+Solution:
+
+ max2l (x:(y:xs))
+        | xs==[] = min x y
+        | (xs /= []) && (x <= (max2l (y:xs))) = max2l (y:xs)
+        | (xs /= []) && (x > max2l (y:xs)) && (x <= maxl (y:xs)) = x
+        | (xs /= []) && (x > maxl (y:xs)) = maxl (y:xs)
+------------------------------------------------------------------------------
+
+2. Let f be any Haskell function that has two parameters of types "a" and "b" 
+and computes a result of type "c". Specify a second order Haskell function 
+named "apply" that has three parameters: a function f, a list whose elements 
+are of type "a", and an element of type "b". Function apply computes a list 
+whose elements are of type "c". Use Haskell to specify the type of function 
+apply.
+
+Solution:
+
+apply:: (a->b->c)->[a]->b->[c]
+------------------------------------------------------------------------------
+
+3. Consider a database that has two relations R and S, where R has three 
+attributes (a, b, c) and S has three attributes (b, c, d). Use the identities 
+discussed in class to optimize the following query:
+	
+	Agg.(max a) [Prj.a [Sel.(a=3 ^ b=c ^ d=5) [R Join S]]]
+		
+where 
+	Agg is the aggregation (unary) operator
+	Prj is the projection (unary) operator
+	Sel is the selection (unary) operator
+	Join is the join (binary) operator
+
+Solution:
+
+ Sel. (a=3 ^ b=c ^ d=5) [R Join S]
+ = Sel. (a=3 ^ d=5) [Sel. (b=c) [R Join S]]
+ = Sel. (a=3 ^ d=5) [[Sel. (b=c) R] Join [Sel. (b=c) S]]
+ = [Sel. (a=3 ^ b=c) R] Join [Sel. (d=5 ^ b=c) S]
+
+ So the query = Agg. (max a) [Sel. (a=3 ^ b=c) R] Join [Sel. (d=5 ^ b=c) S]
+------------------------------------------------------------------------------
+		 
+4. Specify a Haskell function "cmin" to compute the cumulative minimum integer
+for a list of integers. Function cmin has one parameter xs, which is a list of
+integers, and computes a list of integers ys such that the length of xs equals
+the length of ys and the ith integer in ys is the smallest integer among the 
+first i integers in xs. For example,
+	
+	cmin [1]       = [1]
+	cmin [1, 3, 2] = [1, 1, 1]
+	cmin [2, 1, 3] = [2, 1, 1]
+	cmin [2, 2, 1] = [2, 2, 1]
+
+Solution:
+
+   cmin [] = []
+   cmin (x:xs) = x:(cummin x xs)
+
+   cummin y [] = []
+   cummin y (z:zs)
+        | y <= z = y:(cummin y zs)
+        |otherwise = z:(cummin z zs)
+
+A better solution by Anthony Hoyle:
+
+  cmin [] = []
+  cmin [x] = [x]
+  cmin (x:y:xs) = x:(cmin ((min x y):xs))
+------------------------------------------------------------------------------

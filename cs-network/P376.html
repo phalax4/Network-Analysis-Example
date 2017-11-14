@@ -1,0 +1,123 @@
+<base href="http://www.cs.utexas.edu/users/novak/cs343asg.html">
+<HTML>
+<!--  cs343asg.html          G. Novak           25 Oct 07    -->
+<HEAD>
+<TITLE>CS 343: Programming Assignments</TITLE>
+</HEAD>
+
+<BODY>
+<H2>CS 343: Programming Assignments</H2>
+<HR>
+
+<!-- 
+<H3>To Turn In Assignments:</H3>
+Turn in <B>both</B> paper and electronic copies.  The paper copies will
+allow the TA to write comments about your program.  The electronic
+copy will allow him to run it.  For electronic submission:
+<PRE>
+turnin -submit ***** cs343 files...
+</PRE>
+To check the submission,
+<PRE>
+turnin -list ***** cs343
+</PRE>
+More detail can be found by typing <TT>man turnin</TT>.
+<HR>
+ -->
+
+<H4>Song: <a href="http://www.prometheus-music.com/audio/eternalflame.mp3">
+"God Wrote in Lisp"</a>,
+<a href="http://www.songworm.com/lyrics/songworm-parody/EternalFlame.html">
+Lyrics</a> by 
+<a href="http://www.songworm.com/songworm.html">Bob Kanefsky</a>,
+sung by <a href="http://www.songworm.com/db/person/JuliaEcklar.html">
+Julia Ecklar</a>.
+</H4>
+<P>
+<a href="http://xkcd.com/297/">Lisp Cartoon</a>
+
+<P>
+Programming assignments are to be done in Common Lisp (you may use Scheme
+for the first few assignments if you prefer).
+<P>
+You can download Gnu Common Lisp free <a href="gcldownload.html">for Linux</a>
+or <a href="gclwin.html">for Windows</a>.
+<P>
+Lisp is easier to use through the <a href="emacs.html">Emacs</a> editor.
+<a href="http://www.gnu.org/software/emacs/">Gnu Emacs</a> can be
+dowloaded free, for either Linux or Windows.
+If you wish to use Gnu Common Lisp (GCL), you can copy the files
+<TT>/projects/cs343/.emacs</TT> and <TT>/projectscs343/.lisp.el</TT>
+to your directory;
+these facilitate use of Lisp within emacs.  You will also need to have
+<TT>/p/bin</TT> in your path, since <TT>xgcl</TT> is <TT>/p/bin/xgcl</TT>.
+This can be done by adding the following line to your <TT>.login</TT> file:
+<PRE>
+setenv PATH {$PATH}:/p/bin
+</PRE>
+<P>
+
+If you wish to use Allegro Common Lisp (ACL), see
+<a href="http://www.cs.utexas.edu/users/mooney/cs351/lisp.html">
+Using Lisp on Local Machines</a> and copy Prof. Mooney's file instead.
+<p>
+To use Lisp within emacs, first start <TT>emacs</TT> .  Then give the
+command <B>C-x 3</B> (control-x 3) to split the window vertically into
+two halves (or <B>C-x 2</B> (control-x 2) to split horizontally).
+With the cursor in one half-window, give the command
+<B>M-x run lisp</B> (meta-x run lisp) to start Lisp.  You now can
+run Lisp within one window and edit your Lisp code in the other half.
+Putting your cursor at the start of a function definition in one
+window and giving the command <B>C-M-z</B> (control-meta-z)
+will send the definition to Lisp.  You should often save your Lisp source
+code to a file; you can load the file into Lisp: <TT>(load "myfile.lsp")</TT> .
+<p>
+
+Program files to be used with the assignments are provided in the directory
+<tt>/projects/cs343/</tt> or
+<a href="ftp://ftp.cs.utexas.edu/pub/novak/cs343/">
+<tt>ftp://ftp.cs.utexas.edu/pub/novak/cs343/</tt></a>; these are
+described by <a href="cs343files.html">Program File Descriptions.</a>
+<!--    -->
+<p>
+<H3>Assignments:</H3>
+<p>
+All programs must be individual work.
+<p>
+<UL>
+<LI> <a href="asg-lisppractice.html">Lisp practice exercises</a>
+<LI> <a href="asg-symalg.html">Symbolic Algebra</a>
+<LI> <a href="asg-patalg.html">Symbolic Algebra and Patterns</a>
+<LI> <a href="asg-astar.html">Heuristic Search: Route Finding</a>
+<LI> <a href="asg-8puz.html">Heuristic Search: 8-Puzzle</a>
+<LI> <a href="asg-backch.html">Backchaining and the Web</a>
+<LI> <a href="asg-frames.html">Knowledge Representation with Frames</a>
+<LI> <a href="cs343asg-nldb.html">Natural Language Interfaces</a>
+<LI> <a href="cs343asg-exps.html">Expert Systems</a>  See the
+     <a href="tmycin.html">TMYCIN Manual</a>.
+</UL>
+
+<P>
+<H3>Other Resources:</H3>
+<UL>
+<LI> <a href="http://www-2.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/cltl2.html">
+     Common Lisp: the Language</a> is a reference manual.
+<a href="http://www.supelec.fr/docs/cltl/cltl2.html">(Second source)</a>
+<a href="http://elib.cs.sfu.ca/Collections/CMPT/cs-books/cltl.html">(Third source)</a>
+<LI> <a href="quicklisp.html">Quick Lisp:</a> Lisp equivalents of C code.
+<LI> <a href="usefullisp.html">Some useful Lisp functions</a>
+<LI> <a href="schemevscl.html">Differences between Scheme and Common Lisp.</a>
+<LI> Lecture notes on Scheme: by <a href="cs307contents.html">Contents</a> or
+     <a href="cs307index.html">Index</a>.
+<LI> Notes on <a href="lispeff.html">Lisp Style and Efficiency</a>
+<LI> <a href="http://www.cs.queensu.ca/software_docs/gnudev/gcl-ansi/gcl_toc.html">
+     ANSI and GNU Common Lisp Document</a>
+<LI> <a href="http://www.apl.jhu.edu/~hall/lisp.html">
+     Marty Hall's Introduction and Tutorial for Common Lisp</a>
+</UL>
+
+<HR>
+<address><a href="http://www.cs.utexas.edu/users/novak/index.html">
+Gordon S. Novak Jr.</a></address>
+
+</BODY>

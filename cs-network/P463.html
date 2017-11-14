@@ -1,0 +1,52 @@
+<base href="https://www.cs.utexas.edu/~gouda/cs337fa08/quiz2/">
+---------------------------------------------------------------------------
+Mohamed G. Gouda						CS 337
+Fall 2008							Quiz 2
+----------------------------------------------------------------------------
+
+A sender needs to send to a receiver the following file of fourteen symbols
+
+		ABAAABBABABAA#
+
+using the Lempel-Ziv coding. Assume that the original dictionary in both the
+sender and receiver has only one entry, namely
+
+		(0, <empty string>)
+
+Assume also that the dictionary can have no more than five entries. Write
+down the sequence of messages that the sender needs to send to the receiver
+in order to transmit the whole file.
+
+------------------------------------------------------------------------------
+Student Name:				
+Student EID:
+Student Section Time (circle one):  T:10-11,  T:12-1,  T:1-2,  W:11-12 
+------------------------------------------------------------------------------
+
+Solution:
+
+
+The sender needs to send the following sequence of eight messages:
+
+	1. (0,a)
+	2. (0,b)
+	3. (1,a)
+	4. (1,b)
+	5. (2,a)
+	6. (2,a)
+	7. (2,a)
+	8. (1,#)
+
+The final dictionary will have the following five entries:
+
+	---------------------
+	  0 | <empty string> 
+	---------------------
+	  1 |       a
+	---------------------
+	  2 |       b
+	---------------------
+	  3 |       aa
+	---------------------
+	  4 |       ab
+	---------------------

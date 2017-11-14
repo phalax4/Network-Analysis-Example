@@ -1,0 +1,348 @@
+<base href="http://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P7R3Visitor/index.html">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type"><title>Create and Undo Visitors Using R3</title></head>
+<body>
+<h1 style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; text-align: center; font-family: Helvetica,Arial,sans-serif;">Create and Undo Visitors Using R3<small style="color: rgb(0, 153, 0);"><br></small></h1>
+<br style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px;">
+<span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; font-family: Helvetica,Arial,sans-serif;">In
+this assignment you will use R3 to write two refactoring scripts: (a)
+one that automatically retrofits a Visitor design pattern into a legacy
+program, and (b) one that automatically removes a Visitor pattern
+from a legacy program. &nbsp; You will use R3 (Eclipse
+plug-in) and ONLY
+R3 refactorings in this assignment. &nbsp;Using anything else gets
+you 0
+(zero, nada, null) for this assignment. &nbsp;<span style="font-weight: bold;">If you vary from what is
+described below, you must get permission otherwise you get no credit.<br><br></span></span><hr style="width: 100%; height: 2px;">
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Preliminaries
+Part 1: R3 Installation </span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Please
+follow the steps below:</span><br style="font-family: Helvetica,Arial,sans-serif;">
+<ol>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Install
+Java Runtime Environment (JRE)&nbsp;if it is not installed.<br>
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"><br>
+JRE version (x64)<br>
+<br>
+</a></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Download
+Eclipse and unzip it. &nbsp;You must use the version of Eclipse below
+even
+if you have an existing Eclipse in your machine.</span></li>
+</ol>
+<div style="margin-left: 40px;"><table style="text-align: left; width: 100px; background-color: red;" border="1" cellpadding="2" cellspacing="2"><tbody><tr><td><big style="font-family: Helvetica,Arial,sans-serif;"><a href="http://www.eclipse.org/downloads/packages/eclipse-ide-eclipse-committers/oxygen1a">http://www.eclipse.org/downloads/packages/eclipse-ide-eclipse-committers/oxygen1a</a></big></td></tr></tbody></table></div>
+<ol start="3">
+<li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Run Eclipse.</span><br>
+<br>
+<a href="https://youtu.be/drAkZox0d7M">Video</a></span></li>
+</ol>
+<ul style="margin-left: 40px;">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">You
+have to watch every video tutorial very carefully.<br></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">The
+video shows examples so they may not be consistent with what
+you actually do.</span></li>
+</ul>
+<ol start="4">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Download
+R3 and then import into Eclipse as a project.<br>
+<br>
+<a href="https://youtu.be/m_2n-JjeTfI">Video</a><br>
+<br>
+<a href="../R3Installation/R3.zip">R3.zip </a>or
+<a href="../R3Installation/R3.zipp">R3.zipp</a>
+(rename to R3.zip after downloading)<br>
+<br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Copy
+and paste the following codes into the body of method <span style="font-weight: bold;">myMethod()</span> in class <span style="font-weight: bold;">MyClass</span>.</span></li>
+</ol>
+<div style="margin-left: 80px; font-family: Courier New,Courier,monospace; width: 816px; font-weight: bold;">///////////////////////////////////////////////////////////////////////<br>
+//<br>
+//&nbsp;&nbsp;&nbsp; Write your script here<br>
+//<br>
+//Create a new class named &#8220;D&#8221;.<br>
+&nbsp; RPackage pkg = RProject.getPackage("TestProject",
+"testPackage");<br>
+&nbsp; RClassOrInterface cls = pkg.newClass("D");<br>
+//<br>
+///////////////////////////////////////////////////////////////////////</div>
+<ol start="6">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run
+R3 (as "Eclipse Application").<br>
+<br>
+<a href="https://youtu.be/wpTiZscWReU">Video<br>
+</a><br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Download
+TestProject program. &nbsp;<span style="font-weight: bold;">TestProject</span> is the target program to be
+refactored.<br>
+<br>
+<a href="../R3Installation/TestProject.zip">TestProject.zip<br>
+</a><br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Import
+the TestProject program into Eclipse plug-in. &nbsp;Now you have
+two Eclipse instances (R3 and TestProject) running.<br>
+<br>
+<a href="https://youtu.be/SiPYX8JPM2A">Video<br>
+</a><br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Try "Preview".<br>
+<br>
+<a href="https://youtu.be/YOHYj1_bl0k">Video<br>
+</a><br>
+</span></li>
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Clicking "Preview" menu runs the R3 scripts written inside the body of method
+<span style="font-weight: bold;">myMethod()</span>
+in class <span style="font-weight: bold;">MyClass</span>
+and prints out refactored TestProject to
+console of the Eclipse R3 instance.<br></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">However,
+it does not change the source codes in the Eclipse TestProject instance.<br></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">"Preview"
+is useful when you want to preview how your R3 script refactors the
+target program.<br>
+<br>
+</span></li>
+</ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Execute
+the R3 script.<br>
+<br>
+<a href="https://youtu.be/rkdZPvxTw3g">Video<br>
+</a><br>
+</span></li>
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Clicking "Refactor" menu refactors the source codes in the Eclipse TestProject
+instance directly.<br></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Do
+not forget to "refresh (F5)" the Eclipse Project Explorer.<br>
+</span></li>
+</ul>
+<br>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Check
+whether a new class named "D" is created successfully.</span></li>
+</ol>
+<span style="font-family: Helvetica,Arial,sans-serif;"><br style="font-weight: bold; color: rgb(204, 0, 0);">
+<span style="font-weight: bold; color: rgb(204, 0, 0);">Do
+NOT proceed to the next part of this assignment if you fail the test in
+Step 11.</span><br>
+</span><br>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span>
+<hr style="width: 100%; height: 2px;">
+<h2><a name="Preliminaries_Part_2:_Initialize_R3_"></a><span style="font-family: Helvetica,Arial,sans-serif;">Preliminaries
+Part 2: Initialize R3 </span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Please
+follow the steps below:</span><br style="font-family: Helvetica,Arial,sans-serif;">
+<ol>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Read
+<span style="font-weight: bold;">very carefully</span> tutorials below.</span></li>
+</ol>
+<ul style="margin-left: 40px;">
+<li><span style="font-family: Helvetica,Arial,sans-serif;"><a href="../Tutorial/makevisitor.html">Make a Visitor pattern</a>
+(e.g., <a href="../Tutorial/graphics.html">Graphics</a>)</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;"><a href="../Tutorial/undovisitor.html">Undo a Visitor pattern</a><br>
+</span></li>
+<li><a href="../Tutorial/r3tutorial.html"><span style="font-family: Helvetica,Arial,sans-serif;">R3 Tutorial</span></a></li>
+</ul>
+<ol start="2">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Delete
+Eclipse "runtime-EclipseApplication" directory (if it does exist): <br>
+<br>
+<a href="https://youtu.be/DV5DLR3xFU4">Video</a><br>
+<br>
+The location is:</span></li>
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Windows:
+the same directory with Eclipse</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Linux:
+the same directory with Eclipse</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Mac
+OS: /Users/username/Documents/R3<br>
+</span></li>
+<br>
+</ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run
+Eclipse (installed at <span style="font-weight: bold;">Preliminaries Part 1</span>).<br>
+</span></li>
+</ol>
+<hr style="width: 100%; height: 2px;">
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Part
+1: Make-Visitor Using R3</span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Please
+follow the steps below:</span><br style="font-family: Helvetica,Arial,sans-serif;">
+<ol>
+<li><a href="#Preliminaries_Part_2:_Initialize_R3_"><span style="font-family: Helvetica,Arial,sans-serif;">Follow
+Preliminaries Part 2: Initialize R3<br>
+</span></a><br>
+</li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Find
+R3 project in the Eclipse "Package Explorer".</span></li>
+<ul>
+</ul>
+</ol>
+<ul style="margin-left: 40px;">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Find
+class MyClass.<br></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Copy
+source code of <a href="MyClassDo.java">MyClass.java</a>
+to MyClass.</span></li>
+</ul>
+<ol start="2">
+<ul style="margin-left: 40px;">
+</ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run
+R3 (as "Eclipse Application").<br>
+<br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Download
+RefactoringCrawler program and then import into Eclipse plug-in.
+&nbsp;RefactoringCrawler is the target program to be refactored You
+don&#8217;t need to understand the semantics of RefactoringCrawler.<br></span><br><a style="font-family: Helvetica,Arial,sans-serif;" href="https://www.youtube.com/watch?v=SiPYX8JPM2A&amp;feature=youtu.be">Watch this video on how to import an Eclipse Project</a><span style="font-family: Helvetica,Arial,sans-serif;">.</span><br style="font-family: Helvetica,Arial,sans-serif;"><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Download&nbsp;</span><a style="font-family: Helvetica,Arial,sans-serif;" href="../EProjects/RefactoringCrawler.zip">RefactoringCrawler.zip</a><span style="font-family: Helvetica,Arial,sans-serif;"><a href="../EProjects/RefactoringCrawler.zip"><br>
+</a><br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Write
+your R3 script that makes a Visitor pattern for method <span style="font-weight: bold;">computeLikeliness(Node, Node)</span>
+in class <span style="font-weight: bold;">edu.uiuc.detectRefactorings.detection.FieldDetection</span>.</span></li>
+</ol>
+<ul style="margin-left: 40px;">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Your
+R3 script should be written inside the body of method<span style="font-weight: bold;"> myMethod()</span> in
+class <span style="font-weight: bold;">MyClass</span>.<br></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">You
+must close the Eclipse RefactoringCrawler instance (if it is opened)
+and run R3 again before proceeding to the next step.</span></li>
+</ul>
+<ol start="5">
+<ul style="margin-left: 40px;">
+</ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Execute
+your R3 script. &nbsp;(Tip: "Preview" is useful to see if your R3
+script can run.)<br>
+</span></li>
+<ol start="4">
+</ol>
+<br>
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">You
+may make mistakes in your R3 script and want to reimport the original
+RefactoringCrawler program, and repair your R3 script.</span></li>
+</ul>
+<ol start="4">
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Close the
+Eclipse RefactoringCrawler instance (if it is opened).</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Delete your "runtime-EclipseApplication" directory.</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run R3 and
+import the original RefactoringCrawler program.<br>
+<br>
+</span></li>
+</ul>
+</ol>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run
+regression tests on package <span style="font-weight: bold;">edu.uiuc.tests</span>
+to see if the refactored
+RefactoringCrawler works correctly. If it works, proceed to the next
+step.&nbsp;<br><br>Run as "JUnit Test" (not as "JUnit Plug-in Test") which executes 10 (not 15) regression tests. &nbsp;</span><a href="https://youtu.be/leoZtiSvtgE" style="font-family: Helvetica,Arial,sans-serif;">Watch this video.</a><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;"><span>&nbsp;</span>&nbsp;<br></span></span><span style="font-family: Helvetica,Arial,sans-serif;"><br></span></li><li><span style="font-family: Helvetica,Arial,sans-serif;">Export your RefactoringCrawler</span><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">+ a PDF File containing/explaining your R3 script&nbsp;</span> named "MakeVisitorUsingR3.zip"</span><span style="font-family: Helvetica,Arial,sans-serif;">. &nbsp;<a href="https://youtu.be/eJ8A2vi-GVU">Watch this video.</a><b style="color: rgb(0, 153, 0);"></b><br>
+<br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Export
+your RefactoringCrawler <span style="font-weight: bold;">+ a PDF File containing/explaining your R3 script&nbsp;</span> named "MakeVisitorUsingR3.zip".<a href="https://youtu.be/eJ8A2vi-GVU"><br>
+</a><br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Create "MakeVisitorUsingR3.zip".<br>
+</span></li>
+</ol>
+<hr style="width: 100%; height: 2px;">
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Part
+2: Undo-Visitor Using R3 </span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Please
+follow the steps below:</span><span style="font-family: Helvetica,Arial,sans-serif;"></span><br style="font-family: Helvetica,Arial,sans-serif;">
+<ol>
+<li><a href="index.html#Preliminaries_Part_2:_Initialize_R3_"><span style="font-family: Helvetica,Arial,sans-serif;">Follow
+Preliminaries Part 2: Initialize R3<br>
+</span></a><br>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Find
+R3 project in the Eclipse "Package Explorer".</span></li>
+</ol>
+<ul style="margin-left: 40px;">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Find
+class MyClass.</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Copy
+source code of <a href="MyClassUndo.java">MyClass.java</a>
+to MyClass.</span></li>
+</ul>
+<ol start="3">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run
+R3 (as "Eclipse Application").<br>
+<br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Download
+RefactoringCrawlerWithVisitor program and then import into Eclipse as a
+project. <span style="font-weight: bold;">&nbsp;</span>RefactoringCrawlerWithVisitor
+is the target program
+to
+be refactored. &nbsp;You don&#8217;t need to understand the semantics of
+RefactoringCrawlerWithVisitor.<br><br></span><a style="font-family: Helvetica,Arial,sans-serif;" href="https://www.youtube.com/watch?v=SiPYX8JPM2A&amp;feature=youtu.be">Watch this video on how to import an Eclipse Project</a><span style="font-family: Helvetica,Arial,sans-serif;">.</span><br style="color: rgb(0, 0, 0); font-family: Helvetica,Arial,sans-serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span style="font-family: Helvetica,Arial,sans-serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; color: rgb(0, 153, 0);"></span><b style="font-family: Helvetica,Arial,sans-serif; font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; color: rgb(0, 153, 0);"></b><br><span style="font-family: Helvetica,Arial,sans-serif;">Then download <a href="../EProjects/RefactoringCrawlerWithVisitor.zip">&nbsp;RefactoringCrawlerWithVisitor.zip</a>
+</span></li>
+</ol>
+<ol start="5">
+<li style="font-family: Helvetica,Arial,sans-serif;">Write
+your R3 script that undoes a Visitor pattern of class <span style="font-weight: bold;">Visitor</span> in
+package <span style="font-weight: bold;">edu.uiuc.detectRefactorings.detection</span>
+and set the original
+method name as "<span style="font-weight: bold;">isRename</span>".<br>
+</li>
+</ol>
+<ul style="font-family: Helvetica,Arial,sans-serif; margin-left: 40px;">
+<li>Your
+R3 script should be written inside the body of method myMethod() in
+class MyClass.</li>
+<li>You
+must close the Eclipse <span style="font-family: Helvetica,Arial,sans-serif;">RefactoringCrawlerWithVisitor
+</span>instance (if it is opened)
+and run R3 again before proceeding to the next step.</li>
+</ul>
+<ol start="6">
+<li style="font-family: Helvetica,Arial,sans-serif;">Execute
+your R3 script. &nbsp;(Tip: "Preview" is useful to see if your R3
+script can run.)</li><br>
+<ul>
+<li style="font-family: Helvetica,Arial,sans-serif;">You
+may make mistakes in your R3 script and want to reimport the original
+RefactoringCrawlerWithVisitor program, and repair your R3 script.</li>
+<ul>
+<li style="font-family: Helvetica,Arial,sans-serif;">Close
+the Eclipse RefactoringCrawlerWithVisitor instance (if it is opened).</li>
+<li style="font-family: Helvetica,Arial,sans-serif;">Delete
+your "runtime-EclipseApplication" directory.</li>
+<li style="font-family: Helvetica,Arial,sans-serif;">Run
+R3 and import the original RefactoringCrawlerWithVisitor program.<br>
+<br>
+</li>
+</ul>
+</ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run
+regression tests on package <span style="font-weight: bold;">edu.uiuc.tests</span>
+to see if the refactored
+RefactoringCrawlerWithVisitor works correctly. If it works, proceed to
+the next step.&nbsp;<br>&nbsp; <br>
+Run as "JUnit Test" (not as "JUnit Plug-in Test") which executes 10 (not 15) regression tests. &nbsp;</span><a href="https://youtu.be/leoZtiSvtgE" style="font-family: Helvetica,Arial,sans-serif;">Watch this video.</a><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;"><span>&nbsp;</span></span></span><span style="font-family: Helvetica,Arial,sans-serif;"><br></span></li></ol><b style="color: rgb(0, 153, 0);"></b><ol start="6">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Export
+your RefactoringCrawlerWithVisitor&nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">+ a PDF File containing/explaining your R3 script&nbsp;</span></span><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"> </span></span><span style="font-family: Helvetica,Arial,sans-serif;">named "UndoVisitorUsingR3.zip". &nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;<a href="https://youtu.be/eJ8A2vi-GVU">Watch this video.</a><a href="https://youtu.be/eJ8A2vi-GVU"></a><br>
+<br>
+</span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Create "UndoVisitorUsingR3.zip".</span></li>
+</ol><br><hr style="width: 100%; height: 2px;"><h2 style="color: rgb(0, 0, 0); font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">What to Submit</h2><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Helvetica,Arial,sans-serif;">All of the below in a zip file<span class="Apple-converted-space">&nbsp;</span></span><strong style="color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span style="font-weight: normal;"><span style="font-weight: bold;"><span style="font-family: Helvetica,Arial,sans-serif;">(including your R3 Eclipse Projects)</span></span></span></strong><span style="color: black; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Helvetica,Arial,sans-serif;"></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Helvetica,Arial,sans-serif;">. The zip file must unzip into<span class="Apple-converted-space">&nbsp;</span><span style="font-weight: bold;">&lt;yourName&gt;/&lt;YourFilesAndDirectories&gt;</span>.</span><br style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><ol style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><li style="font-family: Arial;"><span style="color: black; font-family: Helvetica,Arial,sans-serif;">Your
+program needs to run correctly on Linux machines, even though you may
+have developed them on Macs and Windoze. &nbsp;The TA will grade your
+program running on Linux.</span><br><br></li><li style="font-family: Arial;">A&nbsp;short description that the Grader needs to know to run your program, other than the above.<span class="Apple-converted-space">&nbsp;</span><br><br></li><li style="font-family: Arial;">A&nbsp;short writeup explaining any difficulties in using R3 for this assignment.<br><br></li><li style="font-family: Arial;"><span style="font-family: Helvetica,Arial,sans-serif;">A PDF file (in the&nbsp;</span><a href="http://www.cs.utexas.edu/users/dsb/CS373S/#HWFormat" style="font-family: Helvetica,Arial,sans-serif;">required format</a><span style="font-family: Helvetica,Arial,sans-serif;">) that the Grader should read to provide any information that is not obvious. &nbsp;The contents of the PDF file can be minimal.</span></li></ol><p class="style19" style="text-align: left; font-family: Arial; color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><strong>A
+critical part of any design is clarity and understandability.&nbsp;&nbsp; Hence,
+you will be graded on the clarity of your project and its ability to
+work correctly.&nbsp; Sloppy code, documentation, or anything that makes
+grading or understanding your program difficult will cost you points.&nbsp;
+Beware, some of these "beauty" points are subjective.&nbsp;</strong></p><p class="style19" style="text-align: left; font-family: Arial; color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span class="style18" style="color: rgb(255, 0, 0);"><strong>Remember: No late assignments/submissions will be accepted.</strong></span></p>
+</body></html>

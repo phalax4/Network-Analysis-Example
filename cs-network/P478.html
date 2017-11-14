@@ -1,0 +1,111 @@
+<base href="https://www.cs.utexas.edu/~gouda/cs356summer09/midterm1/">
+------------------------------------------------------------------------------
+Mohamed G. Gouda                                                CS 356
+Summer 2009                                                 	Midterm 1
+------------------------------------------------------------------------------
+Open Book                                                       75 minutes
+------------------------------------------------------------------------------
+1. (10 points)
+Two processes p and q exchange one type of message, data(txt), where txt is 
+in the range 0..t-1. Each of the two processes stores the txt fields of all
+exchanged messages in an array rcvd such that for every i, the final value of 
+element rcvd[i] in process p equals the final value of element rcvd[i] in 
+process q. The data structure for each of the two processes is as follows:
+
+		const t
+		var rcvd: array [integer] of 0..t-1,
+		    x   : integer,  {index of rcvd, init. 0}
+		    txt : 0..t-1
+
+Assuming that the communication between p and q is error-free, specify the 
+(two) actions of each of the two processes.
+
+Solution:
+
+process p
+const t
+var rcvd: array [integer] of 0..t-1,
+    x   : integer,        {index of rcvd, init. 0}
+    txt : 0..t-1
+
+begin
+    true -> txt := any;
+            rcvd[x],x := txt,x+1;
+            send data(txt) to q
+[]  rcv data(txt) from q -> rcvd[x],x := txt,x+1;
+                            send data(txt) to q
+end
+
+process q
+const t
+var rcvd: array [integer] of 0..t-1,
+    x   : integer,        {index of rcvd, init. 0}
+    txt : 0..t-1
+
+begin
+    true -> txt := any;
+            send data(txt) to p 
+[]  rcv data(txt) from p -> rcvd[x],x := txt,x+1
+end
+------------------------------------------------------------------------------
+2. (10 points)
+Process p sends two messages, data(0,txt) followed by data(1,txt) to process q,
+then waits to receive an ack message from process q before it sends the next
+two data messages, and so on. Assume that the messages sent from p to q can be
+reordered but neither corrupted nor lost. Process q sends the txt fields of 
+all received messages to process r in the same order in which these fields 
+were sent from p to q. Assume that the data(txt) messages sent from q to r can
+not be corrupted, lost nor reordered. Process p and r in this protocol can be 
+specified as follows:
+
+process p
+const t
+var txt  : 0..t-1,
+    b    : 0..1,
+    ready: boolean    {init. true}		
+begin
+    ready -> ready := false;
+	     txt := any; send data(0,txt) to q;
+	     txt := any; send data(1,txt) to q;
+[]  rcv ack from q -> ready := true	 
+end
+
+process r
+const t
+var txt : 0..t-1
+begin
+    rcv data(txt) from q -> {store txt} skip	
+end
+
+The data structure of process q is as follows:
+
+	     const t
+	     var first   : boolean,   {init. true}
+	     	 b       : 0..1,
+    	         tx, txt : 0..t-1
+
+Specify the action of process q. 	
+
+Solution:
+
+process q
+const t
+var first  : boolean,     {init. true}
+    b      : 0..1,
+    tx, txt: 0..t-1
+begin
+    rcv data(b,tx) from p ->
+        if b=0^first  -> send data(tx) to r;
+                         first := false
+        [] b=1^~first -> send data(tx) to r;
+                         first := true;
+                         send ack to p
+        [] b=0^~first -> send data(tx) to r;
+                         send data(txt) to r;
+                         first := true;
+                         send ack to p
+        [] b=1^first  -> txt := tx;
+                         first := false
+        fi
+end
+------------------------------------------------------------------------------

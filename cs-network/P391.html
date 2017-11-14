@@ -1,0 +1,397 @@
+<base href="http://www.cs.utexas.edu/users/dsb/CS373S//P/P2MetamodelConstraints/index.html">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+<style type="text/css">
+.style1 {
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+.style3 {
+font-family: Arial, Helvetica, sans-serif;
+}
+.style4 {
+margin-left: 40px;
+}
+.style5 {
+margin-left: 80px;
+}
+.style7 {
+border-width: 0px;
+}
+.style8 {
+text-decoration: underline;
+background-color: #FFFF00;
+}
+.style9 {
+font-family: "Courier New", Courier, monospace;
+}
+.style10 {
+font-family: "Arial Narrow";
+}
+.style11 {
+font-family: "Courier New";
+}
+.style12 {
+text-decoration: underline;
+}
+.style13 {
+font-family: Arial, Helvetica, sans-serif;
+color: #FF0000;
+margin-left: 40px;
+}
+.style14 {
+color: #FF0000;
+}
+</style><title>Writing MetaModel Constraints</title></head>
+<body>
+<h1 class="style1">Writing MetaModel Constraints in Java
+Streams<br><small><span style="font-weight: normal; color: rgb(0, 102, 0);">updates in green</span></small></h1>
+<div style="text-align: center; font-weight: bold;"><span style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 153, 0);"><br>
+</span></div>
+<p style="color: red; font-weight: bold;" class="style3">Work in groups of 2 in this assignment. &nbsp;So find a&nbsp;long-term partner.</p>
+<p class="style3">A fundamental tenet of future software
+design is the
+elevation of programming beyond standard languages like C, C++, C#, and
+Java. &nbsp;In Model Driven Engineering, the <span style="font-weight: bold;">Object Constraint Language (OCL)</span>
+is used to define and evaluate metamodel constraints. There are other
+languages besides OCL. &nbsp;In this course,
+we
+use Java Streams to express constraints. &nbsp;Java streams exhibit
+a
+flavor similar to OCL, but I trust the Java language designers more
+than I do the OCL designers.</p>
+<p class="style3">In this assignment, you will write
+metamodel
+constraints as Java Streams.&nbsp; You will need to read a bit
+about Java Streams to become familar with it.&nbsp;<br>
+</p>
+<hr style="width: 100%; height: 2px;">
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Preface&nbsp;</span></h2>
+<h3><span style="font-family: Helvetica,Arial,sans-serif;">1.
+Read about Java Streams</span><span style="font-family: Arial,Helvetica,sans-serif;"></span></h3>
+<span style="font-family: Arial,Helvetica,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;">I gave a
+short tutorial in class on Java Streams and
+provided some in-class examples for you to try. &nbsp;But you still
+need to
+brush-up on your
+knowledge. Listed below are
+some tutorials that you can consult, (try #1 first). &nbsp;Frankly,
+I don't think any of them are particularly good.</span><span style="font-weight: bold;"></span><br>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span>
+<ol style="font-family: Helvetica,Arial,sans-serif;">
+<li><a href="https://www.tutorialspoint.com/java8/java8_streams.htm">https://www.tutorialspoint.com/java8/java8_streams.htm</a></li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html">https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html</a></li>
+<li><a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html</a><a href="http://kti.mff.cuni.cz/%7Ebartak/prolog/contents.html"><br>
+</a></li>
+</ol>
+<ol style="font-family: Arial;">
+</ol>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span>
+<h3><span style="font-family: Helvetica,Arial,sans-serif;">2
+Install MDELite7 Software</span></h3>
+<span style="font-family: Helvetica,Arial,sans-serif;">MDELite7
+is a fifth-generation
+of experimental tools for writing MDE applications.&nbsp; <span style="color: black;"><a href="http://www.cs.utexas.edu/users/schwartz/MDELite/index.html">Install
+MDELite7</a>. </span></span><span style="font-family: Helvetica,Arial,sans-serif; color: rgb(204, 51, 204);"></span><span style="font-family: Helvetica,Arial,sans-serif; color: black;">(You
+should have done this in the previous programming assignment). Follow
+its installation
+instructions and read its (short) main document.</span><br>
+<ol style="font-family: Arial;">
+</ol>
+<hr style="width: 100%; height: 2px;">
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Violet</h2>
+<span style="font-family: Helvetica,Arial,sans-serif; font-weight: bold; color: red;">USE
+THE VERSION OF VIOLET THAT COMES WITH MDELite7 -- the version that is
+downloadable from the violet web site is not usable for this assignment.</span><span style="font-family: Helvetica,Arial,sans-serif;"> Violet
+is a Java-based tool that allows
+you to draw a
+number of different UML diagrams, including class diagrams, state
+diagrams, and so on. You can run Violet from MDELite7 by the
+invocation:<br>
+</span>
+<div style="margin-left: 40px;">
+<pre><span style="font-family: Helvetica,Arial,sans-serif;"><big><span style="font-family: Courier New,Courier,monospace;"><small>&gt; java MDL.Violet</small>&nbsp;</span></big><span style="text-decoration: underline;"></span></span></pre>
+<span style="font-family: Helvetica,Arial,sans-serif;"><span style="text-decoration: underline;"></span></span></div>
+<span style="font-family: Helvetica,Arial,sans-serif;"><span style="text-decoration: underline;"></span>Like many
+drawing tools, Violet is not very smart.&nbsp; Look at the
+figure below.&nbsp; Violet allows
+you to
+customize relationships between pairs of classes by drawing lines
+between boxes.&nbsp; Once a line is drawn, you can say 'put a
+diamond at
+this
+end of the line', 'put an inheritance arrow at this other end', and so
+on, yielding a diagram that is UML-like, but nonsensical.&nbsp; The
+figure below has several errors:&nbsp; (1)
+inheritance
+links never have diamonds on them, (2) inheritance links
+don't have labels, and (3) inheritance links between classes are not
+dashed and are always solid.&nbsp;</span>
+<p class="style1"><a href="bogus.class.violet"><img style="border: 0px solid ; width: 395px; height: 65px;" alt="" src="figs/violetbad.jpg" class="style7"></a></p>
+<p class="style3">Violet allows you to draw any
+nonsensical set of beautiful boxes and links, and to output them as an
+XML documents with a <strong>.violet</strong>
+extension.&nbsp; If you click on the figure above, you will see the
+XML file that is produced. &nbsp;I ask you -- who in God's name can
+read XML?? Continuing,&nbsp;you will also see that Violet is
+not very good at defining methods and variables -- it only provides a
+big fat text string in which you can scribble almost
+anything.&nbsp; If
+you click on the figure below, you will see the MDELite Schema for
+Violet class diagrams and the tuples that define the above class
+diagram. &nbsp;Notice that the content of the XML file is minimal in
+database form.</p>
+<p class="style1"><a href="bogus.pl">
+</a><a href="bogus.vpl.pl"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 245px; height: 225px;" alt="" src="figs/vpl.png"></span></a><a href="bogus.pl"><br>
+</a></p>
+<hr style="width: 100%; height: 2px;">
+<h2 style="font-family: Helvetica,Arial,sans-serif;">MetaModel
+Constraints</h2>
+<p class="style3">In the first part of this assignment,
+you will write Java Stream expressions to evaluate <span style="font-weight: bold;">vpl</span> database
+constraints.
+Fortunately, a
+violet-to-database translator has been written for
+you.&nbsp; It
+is available in the MDELite7 toolset and can be invoked by:</p>
+<p style="margin-left: 40px; font-family: Courier New,Courier,monospace;" class="style3">&gt; java <span style="font-weight: bold; color: black;">Violett.ClassParser</span>
+<span style="font-weight: bold;">X</span>.class.violet
+<span style="font-weight: bold;">X</span>.vpl.pl</p>
+<p class="style3">and yes, <span style="font-weight: bold;">Violett</span> with 2 t's is correct (ask me why in class), where <span style="font-weight: bold;">X</span> is the name that
+you gave to the violet file (its full name is <a href="bogus.class.violet"><span style="font-weight: bold;">X.class.violet</span></a>).&nbsp;&nbsp;<span style="font-weight: bold;">Violett.ClassParser</span>
+is hardcoded to output tuples that conform to the <span style="font-weight: bold;">vpl</span> schema&nbsp;(<a href="vpl.schema.pl"><span style="font-weight: bold;">vpl.schema.pl</span><span style="font-weight: bold;"></span></a>).</p>
+<p style="margin-left: 40px;" class="style3"><span style="font-weight: bold;">Note</span>:
+what this means is that if the schema is changed, then <span style="font-weight: bold;">VioletClassParser</span>
+must be manually changed. &nbsp;There is no reason
+for you to change <span style="font-weight: bold;">vpl.schema.pl</span>
+or <span style="font-weight: bold;">Violett.ClassParser</span>
+in this assignment.</p>
+<p class="style3">The naming scheme is important: "<span style="font-weight: bold;">X.vpl.pl</span>" -- <span style="font-weight: bold;">X</span> is as before, <span style="font-weight: bold;">vpl</span> is the name of
+database schema, and "<span style="font-weight: bold;">pl</span>"
+simply designates a fact file.&nbsp; <span style="font-weight: bold;"></span>To test conformance,
+you will write the following Java program:</p>
+<p style="font-family: Courier New,Courier,monospace; margin-left: 40px;" class="style3">&gt; <span style="font-weight: bold;">java VPL</span><span style="color: red; font-weight: bold;"><span style="color: black;">.Conform X.vpl.pl</span>&nbsp;</span></p>
+<p class="style3">which evaluates the database constraints
+that you apply to validate all <span style="font-weight: bold;">vpl</span>
+databases. &nbsp; The way you get started is:</p>
+<ul>
+<li style="font-family: Helvetica,Arial,sans-serif;">understand
+the <span style="font-weight: bold;">vpl</span> schema</li>
+<li style="font-family: Helvetica,Arial,sans-serif;">look
+at how <span style="font-weight: bold;">Violet</span>
+and <span style="font-weight: bold;">Violett.ClassParser</span>
+encodes tuples in a <span style="font-weight: bold;">vpl</span> database</li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">draw
+some beautiful, simple, and nonsensical Violet Class diagrams to
+realize what constraints to write and how to write these constraints as
+Java Streams.</span><span style="font-family: Arial,Helvetica,sans-serif;"></span></li>
+</ul>
+<span style="font-family: Arial,Helvetica,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;">So again,
+you will (a) translate each of your </span><strong style="font-family: Helvetica,Arial,sans-serif;">.class.violet</strong><span style="font-family: Helvetica,Arial,sans-serif;">
+files to a <span style="font-weight: bold;">vpl</span> database using the provided MDELite7 tool and
+(b) write a set of English constraints for <span style="font-weight: bold;">vpl</span> databases, (c) translate
+these constraints into Java Stream expressions (this is your <span style="font-weight: bold;">VPL.Conform</span> program), and (d) check
+whether the </span><strong style="font-family: Helvetica,Arial,sans-serif;">.violet</strong><span style="font-family: Helvetica,Arial,sans-serif;">
+diagram conforms to your metamodel constraints. &nbsp;The
+next two sections provide background that you need to understand before
+you can do anything.</span><br>
+<hr style="width: 100%; height: 2px;">
+<h2 style="font-family: Helvetica,Arial,sans-serif;">VPL Schemas and Databases</h2>
+<p class="style3">Before continuing, you should understand
+the set of tables that are generated.&nbsp; The <span style="font-weight: bold;">vpl</span> schema consists
+of 2 tables, namely <strong>vBox</strong> and <strong>vAssociation</strong>.
+&nbsp;In class, I explained the basic syntax of database schemas
+and
+their tuples. Here's the schema:</p>
+<pre style="margin-left: 40px;"><big><span style="font-weight: bold;">% vpl class database</span><br style="font-weight: bold;"><br style="font-weight: bold;"><span style="font-weight: bold;">dbase(vpl,[vBox,vAssociation]).</span><br style="font-weight: bold;"><br style="font-weight: bold;"><span style="font-weight: bold;">% type = c(class),i(nterface),n(ote). packages are skipped</span><br style="font-weight: bold;"><span style="font-weight: bold;">table(vBox,[id,type,"name","fields","methods",x,y]).</span><br style="font-weight: bold;"><br style="font-weight: bold;"><span style="font-weight: bold;">% type1,type2 = c(lass) or i(nterface</span><span style="font-weight: bold;"></span><br style="font-weight: bold;"><span style="font-weight: bold;">% lineStyle = ""(solid) or "DOTTED"</span><br style="font-weight: bold;"><span style="font-weight: bold;">% arrow1,2 = V, TRIANGLE, DIAMOND, BLACK_DIAMOND</span><br style="font-weight: bold;"><span style="font-weight: bold;">% bentStyle = "", HV, VH, HVH, VHV</span><br style="font-weight: bold;"><span style="font-weight: bold;">table(vAssociation,[id,cid1,type1,"role1","arrow1",cid2,type2,"role2","arrow2","bentStyle","lineStyle","middleLabel"]).</span></big></pre>
+<p class="style3">Here's what the above means: &nbsp;</p>
+<ul>
+<li style="font-family: Helvetica,Arial,sans-serif;">A
+vpl database consists of two tables, <span style="font-weight: bold;">vBox</span> and <span style="font-weight: bold;">vAssociation</span>.</li>
+<li style="font-family: Helvetica,Arial,sans-serif;">Table
+<span style="font-weight: bold;">vBox</span> has 7 attributes:</li>
+<ul style="font-family: Helvetica,Arial,sans-serif;">
+<li><span style="font-weight: bold;">id</span>
+-- tuple identifier</li>
+<li><span style="font-weight: bold;">type</span>
+-- is 'c' for class, 'i' for interface, and 'n' for note</li>
+<li><span style="font-weight: bold;">name</span>
+-- name of the box given in the diagram</li>
+<li><span style="font-weight: bold;">fields</span>
+-- a Java string of multiline field declarations given in the diagram,
+newlines are indicated by character '%'</li>
+<li><span style="font-weight: bold;">methods</span>
+-&nbsp;a Java string of multiline method declarations given in the
+diagram, newlines are indicated by character '%'</li>
+<li><span style="font-weight: bold;">x,y</span>
+-- the X,Y position the box has in the violet diagram</li>
+</ul>
+<li style="font-family: Helvetica,Arial,sans-serif;">Table
+<span style="font-weight: bold;">vAssociation</span>
+has 12 attributes</li>
+<ul>
+<li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">id</span> -- tuple
+identifier (always distinct from the identifiers of vBox tuples)</li>
+<li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">cid1</span> -- the vBox
+identifier of one end of an association</li>
+<li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">type1</span> -- 'c' for
+class or 'i' for interface</li>
+<li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">role1</span> -- a Java
+string indicating the name of the role of cid1<span style="color: rgb(0, 153, 0);"><br>
+<span style="font-family: Helvetica,Arial,sans-serif; color: black;">I
+assume the format of a role can be any of "rolename" OR "cardinality"
+OR "cardinality rolename",</span></span><span style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-weight: bold;"> </span>where cardinality
+is any one of the strings "1", "0..1", "n", "m", "0..*", "1..*", "*".
+This is </span><span style="color: black;">all
+you need for this assignment.</span></li>
+</ul>
+<ul>
+<li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">arrow1</span> --&nbsp;V
+for pointer, TRIANGLE for inheritance, DIAMOND for 0..1, BLACK_DIAMOND
+for exactly 1, or&nbsp;&nbsp;"" (meaning NONE)</li>
+<li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">cid2, type2, role2, arrow2</span>
+-- for the other side of the association</li>
+<li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">bentStyle</span> -- the
+legal bent styles, '"" (for straight), HV, VH, HVH, and VHV</li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">lineStyle</span> -- the
+legal line styles: "" (for SOLID) or DOTTED</span></li>
+<li>
+<div><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">middlelabel</span> -- <span style="font-weight: bold; color: rgb(0, 102, 0);">associations in violet can have middle labels -- this is where to place the middle label string.</span></span></div>
+</li>
+</ul>
+</ul>
+
+<hr style="width: 100%; height: 2px;"><span style="font-family: Arial;">Your Java program, <span style="font-weight: bold;">VPL</span></span><span style="color: red; font-weight: bold;"><span style="font-family: Courier New,Courier,monospace; color: black;">.Conform</span><span style="color: black;">,</span></span><span style="font-family: Arial;"> evaluates metamodel
+constraints using Java Streams that will check the correctness of </span><strong style="font-family: Arial;">.violet</strong><span style="font-family: Arial;"> models of class
+diagrams.&nbsp; There are all sorts of constraints that you could
+write on checking the validity of fields and methods. But because
+Violet simply mashes field and method declarations into a big fat text
+string, this makes it <span style="font-weight: bold; color: red;"></span>almost
+impossible to do fancy checking.&nbsp; So
+to keep things simple -- <span style="font-weight: bold;">and
+you should thank me for this </span>--&nbsp;
+do NOT write checks about method and field declarations!&nbsp; </span><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Limit
+yourself to checking the following constraints:<br>
+</span></span>
+<ul>
+<li style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Middle Labels Constraint</span>
+-- no middle labels on associations is permitted.</span></li>
+<li style="font-weight: bold; color: black;"><span style="font-family: Helvetica,Arial,sans-serif;">All vBox Identifiers are unique</span></li><li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">All vAssociation identifiers are unique</span></span></li><li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">No illegal references: each cid1 and cid2 field must reference a legal vBox identifier</span></span></li><li style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Unique Name Constraint </span>--
+classes and interfaces must have unique names, no class can have the
+same name of an interface, and vice versa.</span></li>
+<li style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-weight: bold;">Null Names Constraint </span>--
+classes and interfaces cannot have null names.</li><li style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-weight: bold;">Triangle Constraint</span>
+-- inheritance is a line with one arrow ending in a TRIANGLE. Its other
+arrow must be NONE.</li>
+<li style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-weight: bold;">No Labels in Inheritance
+Constraint</span> -- inheritance cannot have role labels at
+either end.</li>
+<li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Solid
+Association Constraint </span>--&nbsp; non-implements,
+non-extends associations must be SOLID.</span></li>
+<li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Extends Constraint</span>
+-- class-extends relationships must be&nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;">SOLID</span><span style="font-family: Helvetica,Arial,sans-serif;">.<br>
+</span></li>
+<li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Implements
+Constraint1 </span>--
+class </span><span style="font-family: Helvetica,Arial,sans-serif;">implements relationships
+must be DOTTED.</span><span style="font-family: Helvetica,Arial,sans-serif;"></span></li>
+<li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Implements Constraint2</span>
+--&nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;">only classes can implement
+interfaces.</span></li><li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">All interfaces have no fields </span>-- the field attribute is empty ("")</span></li><li style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">All notes should have no methods and no fields </span>-- the field and method attributes are empty ("")</span></li>
+</ul><span style="font-family: Helvetica,Arial,sans-serif;">Please
+check MDELite html documentation for constraints. &nbsp;There is a
+class, <span style="font-weight: bold;">PrologDB.Constraints</span>, that has a set of methods that can
+be used to express each of the above constraints in one method call.<br></span><br>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">In the
+process of developing&nbsp;</span></span><span style="font-family: Arial;"></span><span style="font-weight: bold; color: black;"><span style="font-family: Courier New,Courier,monospace;">VPL.Conform</span></span><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">, do the
+following:</span></span><br>
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Create
+a violet class diagram X using <span style="font-weight: bold;">MDL.Violet</span>
+and translate it into <span style="font-weight: bold;">X.vpl.pl</span>
+using </span><span style="font-weight: bold; color: black; font-family: Helvetica,Arial,sans-serif;">MDL.VioletClassParser</span><span style="color: black; font-family: Helvetica,Arial,sans-serif;">
+and then evaluate it using </span><span style="font-weight: bold; color: black;"><span style="font-family: Courier New,Courier,monospace;">vpl.Conform</span></span><span style="color: black; font-family: Helvetica,Arial,sans-serif;">,
+as shown in the following sequence of program invocations:</span></li>
+</ul>
+<table style="text-align: left; width: 1087px; height: 92px;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="font-family: Courier New,Courier,monospace; width: 658px; font-weight: bold;">&gt;
+java MDL.Violet</td>
+<td style="font-family: Courier New,Courier,monospace; width: 409px; font-weight: bold;">create
+class diagram X.class.violet</td>
+</tr>
+<tr>
+<td style="font-family: Courier New,Courier,monospace; width: 658px; font-weight: bold;">&gt;
+java&nbsp;Violett.ClassParser X.class.violet X.vpl.pl</td>
+<td style="font-family: Courier New,Courier,monospace; width: 409px; font-weight: bold;">transform
+X.class.violet to X.vpl.pl</td>
+</tr>
+<tr>
+<td style="font-family: Courier New,Courier,monospace; font-weight: bold;">&gt;
+java <span style="color: black;">VPL.Conform</span>
+X.vpl.pl</td>
+<td style="font-family: Courier New,Courier,monospace; font-weight: bold;">see
+if X.vpl.pl conforms to constraints</td>
+</tr>
+</tbody>
+</table>
+<span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"><br>
+</span></span><a style="font-family: Arial;" href="examples.zip">The
+following zip file</a><span style="font-family: Arial;">
+contains a set of 8 Violet designs that you are to
+validate.&nbsp; For each file, present the list of error messages
+(if any) that your tool produces.&nbsp; I presume that you will
+test your work on other Violet designs.&nbsp; You should include
+them in your documentation too.<br>
+<br>
+<span style="color: rgb(0, 153, 0);"><a href="P2Shell.zip">Start
+with this "shell" of a NetBeans Project</a>.&nbsp;<span style="color: red;"></span><span style="font-weight: bold; color: red;"></span></span><br>
+</span>
+<hr style="width: 100%; height: 2px;">
+<h2><span style="font-family: Arial;"></span><span style="font-family: Arial;">What to Submit to Canvas</span></h2>
+<ol>
+</ol>
+<span style="font-family: Helvetica,Arial,sans-serif;">All
+of the below in a zip file</span><strong><span style="font-weight: normal;"><span style="font-weight: bold; color: rgb(0, 153, 0);"> </span><span style="color: rgb(0, 153, 0);"><span style="font-family: Helvetica,Arial,sans-serif; color: black;">(including
+your Netbeans or Eclipse Project)</span></span></span></strong><span style="font-family: Helvetica,Arial,sans-serif;">. The
+zip file must unzip into
+<span style="font-weight: bold;">&lt;yourName&gt;/&lt;YourFilesAndDirectories&gt;</span>.</span>
+<ul>
+</ul>
+<ol>
+<li style="font-family: Helvetica,Arial,sans-serif; color: black;">Your
+program needs to run correctly on Linux machines, even though you may
+have developed them on Macs and Windoze. &nbsp;The TA will grade
+your
+program running on Linux. </li>
+<li>
+<p class="style3">Your Java <span style="font-weight: bold; color: black;"><span style="font-family: Courier New,Courier,monospace;">vplConform</span></span><strong style="color: black;">&nbsp;</strong>source.</p>
+</li>
+<li>
+<p class="style3">An easy to read english description
+of your program --<span style="color: rgb(0, 153, 0);">
+<span style="color: black;">document anything that you have added beyond what was given in the shell.</span></span></p>
+</li>
+<li>
+<p class="style3"><span style="color: black;">For each Violet example,
+the
+output of your
+conformance test and
+maybe the violet diagram for that example.</span><span style="font-family: Helvetica,Arial,sans-serif;"></span></p>
+</li>
+<li>
+<p class="style3"><span style="font-family: Helvetica,Arial,sans-serif;">A PDF file
+(in the&nbsp;</span><a style="font-family: Helvetica,Arial,sans-serif;" href="http://www.cs.utexas.edu/users/dsb/CS373S/#HWFormat">required
+format</a><span style="font-family: Helvetica,Arial,sans-serif;">) that the
+Grader should read to provide any information that is not obvious.
+&nbsp;The contents of the PDF file can be minimal.</span></p>
+</li>
+</ol>
+<ul>
+</ul>
+<p class="style3">You should expect other violet files, of
+the Grader's choosing, will be used to evaluate your rules/constraints.</p>
+</body></html>

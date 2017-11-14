@@ -1,0 +1,181 @@
+<base href="http://www.cs.utexas.edu/~mooney/ir-course//proj1//">
+<html>
+
+<head>
+<title>CS 371R  Information Retrieval and Web Search: Project 1</title>
+</head>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" style="max-width:800px; margin: 20 auto;">
+<center>
+<h2>Project 1 <br>
+CS 371R:  Information Retrieval and Web Search <br>
+Enhancing Vector-Space Retrieval </h2> <br>
+Due: September 28, 2017
+</center>
+<br>
+<h3> Existing System </h3>
+
+As discussed in class, a basic system for vector-space retrieval (VSR) is
+available in <code> /u/mooney/ir-code/ir/vsr/</code>.  See the <a
+href="../doc/ir/vsr/package-summary.html">Javadoc </a> for this system.  Use
+the <a href="../doc/ir/vsr/InvertedIndex.html#main(java.lang.String[])"> main
+method </a> for <a href="../doc/ir/vsr/InvertedIndex.html"> InvertedIndex</a>
+to index a set of documents and then process queries.
+
+<p> You can use the web pages in <code>
+/u/mooney/ir-code/corpora/dmoz-science/</code> as a set of test documents.
+This corpus contains 900 pages, 300 random samples each from the DMOZ indices
+for <a href="http://dmoztools.net/Science/Biology/"> biology</a>,
+<a href="http://dmoztools.net/Science/Physics/"> physics</a>, and <a
+href="http://dmoztools.net/Science/Chemistry/"> chemistry</a>.
+<p>
+
+See the <a href="../sample-trace.txt">sample trace</a> of running the
+system on this corpus.  You can also use a corpus of UTCS department
+faculty webpages in <code>
+/u/mooney/ir-code/corpora/cs-faculty/</code>.  This corpus contains
+ pages spidered from the department web site.
+
+<h3>Problem</h3>
+
+One of the problems with VSR for multi-term queries is that cosine similarity
+can sometimes prefer documents that contain one query term with high frequency
+over documents that contain all of the query terms but each with less
+frequency. The queries in the <a href="../sample-trace.txt">sample trace</a>
+where specifically constructed to illustrate this problem.
+
+<p>
+The first query in the trace, "einstein podolsky", was intended as a query on a
+specific issue in quantum mechanics on which these two physicists wrote an
+article (actually the paper is by Einstein-Podolsky-Rosen and the issue is now
+called the <a href="http://en.wikipedia.org/wiki/EPR_paradox">"EPR
+paradox"</a>). Einstein was very critical of quantum theory and this paper
+presented an arugment about why the theory must be "incomplete." Among the ten
+top-ranked documents, 9 of them are just "Einstein" documents and do not 
+reference "Podolsky".  The only one that contains both words and is actually about 
+EPR is the 4th ranked retrieval rather than the first.
+
+<p>
+For the second query in the trace "gravity waves", most of the results contain
+"gravity" but not "waves."  The 6th results contains "waves" but not "gravity."
+The 2nd, 4th, and 9th results contain both terms but the terms are not together
+and none of the documents actually talk about gravity waves.  Only the 10th
+result actually contains both terms and is actually relevant; however, it uses
+the phrase "gravitational waves" and never actually uses the exact phrase
+"gravity waves", illustrating the limitations of relying on exact phrase
+matching.
+
+<p>
+In the third query in the trace "oxygen atom,"
+the 2nd, 3rd, 7th, 8th, and 9th results only contain "atom", the 1st, 5th and 6th
+contain only "oxygen" and only the 4th and 10th contain both.
+
+<h3>Your Task</h3>
+
+Your task is to change the existing VSR code to help fix these problems. For
+any retrieved document, the system should also compute the fraction of the
+distinct terms in the query that actually occur somewhere in the document. For
+example, for the query "Einstein Podolsky", documents that contain "Einstein" but
+not "Podolsky" should get 0.5 for this fraction, whereas documents that contain
+both terms should get a 1.0. This "query count" score should be combined with
+the existing cosine similarity to produce a final hybrid score that also
+considers the TF-IDF of the overlapping terms.  How you combine "query count"
+and cosine similarity to produce a final score is up to you.  Your approach
+should be general-purpose and should produce clearly better results for the
+examples in the <a href="../sample-trace.txt">sample trace</a>.
+
+<p>
+Here is a <a href="sample-soln-trace.txt">sample solution trace</a>
+produced by my solution to this problem.  Replicating the minute
+details of this trace is not important (it uses a very simple approach
+to combine cosine and query fraction), but the trace for your system
+should be similar, in particular the top retrieved documents should
+contain <i>all</i> of the query terms.  Your solution should be
+general purpose and not just a hack that works with these specific
+queries.
+
+<p>
+Implement your new version as a specialized class that extends
+<code>InvertedIndex</code> called <code>InvertedIndexWithQueryCount</code> that
+accepts the same command line options as <code>InvertedIndex</code>.
+
+
+<h3>Submission Instructions</h3>
+Follow the general instructions for submitting files using Canvas
+as described in <a href="http://www.cs.utexas.edu/users/mooney/ir-course/proj-submit-info.html">Project Submission Info</a>.
+For this assignment, you need to submit the following files:
+<ol>
+    <li> <code>[PREFIX]_code.zip</code> - Your code including the <code>InvertedIndexWithQueryCount</code> code in zip file (*.java and *.class file). Please try to put all modified code in a single file if at all possible.</li>
+    <li> <code>[PREFIX]_trace.txt</code> - Your solution trace file. </li>
+    <li> <code>[PREFIX]_report.pdf</code> - A PDF report of your experiment (see <a href="http://www.cs.utexas.edu/users/mooney/ir-course/proj-submit-info.html">Project Submission Info</a> for a description of the contents of the report). </li>
+</ol>
+For example, the files listed under "Turned In" on Canvas should be:<br/><br/>
+
+    <code>
+        proj1_jd1234_code.zip</br>
+        proj1_jd1234_trace.txt</br>
+        proj1_jd1234_report.pdf</br>
+    </code>
+    <br/>
+    and the zip file should have the following contents:<br/>
+            <code style="white-space:pre;">
+$ unzip -l proj1_jd1234_code.zip 
+Archive:  proj1_jd1234_code.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+    21067  2015-09-14 12:57   ir/vsr/InvertedIndexWithQueryCount.java
+    10049  2015-09-14 17:26   ir/vsr/InvertedIndexWithQueryCount.class
+---------                     -------
+    31106                     2 files
+            </code>
+<h3>Grading Criteria</h3>
+<ul>  
+  <li>10%: Your program compiles successfully and functions normally without throwing out any exception. </li>
+  <li>10%: Your implementation is efficient. For example, it shouldn't change the overall time complexity. Also, it shouldn't significantly increase the average time it takes to respond to a query. </li>
+    <li>30%: A clean trace file where the top retrieved documents contain all query terms. This trace should be reproducible with your code. </li>
+    <li>20%: Your code generalizes to other queries as well. Your results don't have to be perfect for every query. It's okay as long as the results differ from the pure TFIDF implementation in a sensible way. </li>
+    <li>10%: Good programming style, with necessary comments, intuitive variable/function names and appropriate indent. </li>
+    <li>20%: In your report, include the command to run your code, and discuss your approach. Qualitatively evaluate your code's performance and compare with the pure TFIDF implementation </li>
+</ul>
+
+<!--
+<h3>Submission</h3>
+<p>
+In submitting your solution, follow the general course instructions on
+<a href="../proj-submit-info.html">submitting projects</a> on the course homepage.
+<p>
+Along with that, follow these specific instructions for Project 1:
+
+<ul>
+<li> For this project, submit a directory called "proj1", which should
+contain:
+
+<ol>
+<li> <i>REPORT.* file</i>:       writeup in text or html or ps or pdf
+<li> <i>soln-trace</i>:          trace file of program execution
+<li> <i>ir directory</i>:        should contain /vsr subfolder with all the classes
+that you have made changes to. Submit <b>both</b> the .java and the 
+				.class files.
+</ol>
+<li> <b> It is important to submit the correct directory structure!</b>.  Executing
+"turnin -list yinon cs371r-proj1" should produce output similar to the following (it is
+important that proj1 is the top-level directory, with other files contained in it as shown).
+<pre>
+enceladus.cs.utexas.edu$ turnin -list qleng cs371r-proj1
+4064224    4 drwx------   3 qleng grad         4096 Sep 17 21:43 .
+4064225    4 drwxr-xr-x   3 qleng grad         4096 Sep 17 21:43 ./proj1
+4064226    6 -rw-r--r--   1 qleng grad         5249 Sep 12 15:05 ./proj1/soln-trace
+4064227    6 -rw-r--r--   1 qleng grad         5249 Sep 12 15:05 ./proj1/REPORT.html
+4064228    4 drwxr-xr-x   3 qleng grad         4096 Sep 17 21:43 ./proj1/ir
+4064229    4 drwxr-xr-x   2 qleng grad         4096 Sep 17 21:43 ./proj1/ir/vsr
+4064230   22 -rw-r--r--   1 qleng grad         7200 Sep 12 15:06 ./proj1/ir/vsr/InvertedIndexWithQueryCount.java
+4064232   10 -rw-r--r--   1 qleng grad         2905 Sep 12 15:06 ./proj1/ir/vsr/InvertedIndexWithQueryCount.class
+enceladus.cs.utexas.edu$
+</pre>
+</ul>
+-->
+
+
+</body>
+</html>
+

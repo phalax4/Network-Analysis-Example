@@ -1,0 +1,269 @@
+<base href="https://www.cs.utexas.edu/~diz/378//">
+<HEAD>
+<TITLE>
+CS 378
+</TITLE>
+</HEAD>
+
+<h2 align=center>CS378 - Randomized Algorithms (Fall 2018)</h2>
+<TABLE border=0 align=center  cellpadding=0 cellspacing=8>
+
+<!--
+<TR valign=top>
+    <TD><B>Syllabus:</B></TD>
+	<TD> 
+	<a href=syllabus.pdf>syllabus in pdf</a><br>
+	<a href=syllabus.html>syllabus in html</a>
+	</TD>
+</TR>
+-->
+
+<TR valign=top>
+    <TD><B>Logistics:</B></TD>
+	<TD> 
+	MW 2-3:30
+	<br>
+	GDC 5.302<br>
+        Unique Number: 51695<BR>
+	Course web page:  
+	<a href=index.html>
+	http://www.cs.utexas.edu/~diz/378
+	</a>
+	</TD>
+</TR>
+
+<TR valign=top>
+    <TD><B>Professor:</B></TD>  
+    <TD><A href="http://www.cs.utexas.edu/~diz">David Zuckerman</a><BR>
+        Email: <A href="mailto:diz@cs.utexas.edu"><em>diz@cs.utexas.edu</em></a><BR>
+        Phone: 471-9729<BR>
+        Office: GDC 4.508<BR>
+    Office Hours: TBD.
+    </TD>
+</TR>
+
+<!--
+<TR valign=top>
+    <TD><B>TA:</B></TD>  
+    <TD>Xue Chen<br>
+        Email: <A href="mailto:xchen@cs.utexas.edu"><em>xchen@cs.utexas.edu</em></a><BR>
+    Office Hours: Tu 10-11, F 1-2, TA Station of GDC.
+    </TD>
+</TR>
+-->
+
+<tr valign=top>
+	<td><b>Who should take this?</b></td>
+	<td> Students who like theory, probability, and algorithms.
+	This course is excellent preparation for graduate school.
+	</td>
+</tr>
+
+<TR valign=top>
+    <TD><B>Text:</B></TD>  
+	<td>
+	Mitzenmacher and Upfal, <em>Probability and Computing</em>, 2nd edition
+	<!--
+	<br>
+	<a href=http://www.eecs.harvard.edu/~michaelm/MUErrataPrint1.pdf>
+	Errata</a>
+	-->
+	</td>
+</TR>
+
+<TR valign=top>
+   <td><b>Course Overview:</b></td>
+	<td>
+	Randomness is extremely useful in computer science.
+Algorithms that make random choices during their execution, known as randomized algorithms, are often faster or simpler than algorithms that don't use randomness.  
+Examples include Quicksort, primality testing, and Monte Carlo simulations. 
+However, such randomized algorithms usually come with a small probability of error, so it is important to bound this error probability.  
+In this undergraduate course, we develop tools and techniques 
+to design and analyze efficient randomized algorithms.
+This course is theoretical and mathematical; there will be no programming
+assignments.
+Each section of the course is built around a method, with example
+applications to randomized algorithms.
+We list the topics below.
+<br>
+
+	<p>
+	<table border="1" align=center cellpadding="3">
+	<tr>
+	<td><strong>Topic </strong></td>
+	<td align="center"><strong>Chapter(s)</strong></td>
+	<td align="center"><strong>Approximate Time</strong></td>
+	</tr>
+	<tr>
+	<td>Introduction, Simple Randomized Algorithms</td>
+	<td align="center"> 1-2 </td>
+	<td align="center"> 1-2 weeks </td>
+	<tr>
+	<td>Moments and Deviations</td>
+	<td align="center"> 3 </td>
+	<td align="center"> 1 week </td>
+	</tr>
+	<tr>
+	<td>Tail Inequalities</td>
+	<td align="center"> 4 </td>
+	<td align="center"> 1 week </td>
+	</tr>
+	<tr>
+	<td>Balls, Bins, and Random Graphs</td>
+	<td align="center"> 5 </td>
+	<td align="center"> 1-2 weeks </td>
+	</tr>
+	<tr>
+	<td>Probabilistic Method</td>
+	<td align="center"> 6 </td>
+	<td align="center"> 1-2 weeks </td>
+	</tr>
+	<tr>
+	<td>Markov Chains and Random Walks</td>
+	<td align="center"> 7 </td>
+	<td align="center"> 2 weeks </td>
+	</tr>
+	<tr>
+	<td>Entropy</td>
+	<td align="center"> 9 </td>
+	<td align="center"> 1 week </td>
+	</tr>
+	<tr>
+	<td>Monte Carlo Method</td>
+	<td align="center"> 10 </td>
+	<td align="center"> 1-2 weeks </td>
+	</tr>
+	<tr>
+	<td>Pairwise Independence and Universal Hashing</td>
+	<td align="center"> 13 </td>
+	<td align="center"> 1-2 weeks </td>
+	</tr>
+	</table>
+	</p>
+
+	</td>
+</TR>
+
+<TR valign=top>
+    <TD><B>Prerequisites:</B></TD>  
+    <TD>
+Computer Science 331 or 331H.
+This means that you need the prerequisites 
+and corequisites for CS 331,
+including Discrete Math (CS 311 or 311H), Probability (SDS 321 or M 362K),
+and Linear Algebra (SDS 329C, Math 340L, or Math 341).
+</TD>
+</TR>
+
+<!--
+<TR valign=top>
+     <TD><B>Grading:</B></TD>
+     	<TD>65% 3 Exams<br>
+	25% Homework<br>
+	10% Participation
+	</TD>
+ </TR>
+
+<TR valign=top>
+    <TD><B>Exams:</B></TD>  
+<td>
+The three exams will be held in class on the following dates:
+Exam 1 on Thursday, October 1;
+Exam 2 on Thursday, October 29; and
+Exam 3 on Thursday, December 3.
+No make-up exams will be given, so plan accordingly.  
+You may bring a single,
+8.5x11 inch, handwritten sheet of paper (you may use both sides).
+No calculators are allowed (they won't be necessary).  
+</td></tr>
+
+<TR valign=top>
+    <TD><B>Homework:</B></TD>  
+	<TD>
+	Most weeks a problem set will be assigned.
+	<em>Collaboration policy</em>: 
+	While you should first think about the problems on your own,
+	you are encouraged to discuss the problems with your classmates.  
+	Please limit your collaborations on any particular homework to
+	at most three other students.
+	You must write up your own solutions.  
+	In particular, nobody should email partial or full solutions 
+	to anybody.
+	You must acknowledge any collaboration by writing
+	your collaborators' names on the front page of the assignment.  
+	You don't lose points by having collaborators.
+
+	<p>
+        <em>Citation policy</em>:
+	Try to solve the problems without reading any published literature
+	or websites, besides the class text and links off of the class
+	web page.
+	If, however,
+	you do use a solution or part of a solution that you found
+	in the literature or on the web, you must cite it.
+	Furthermore, you must write up the solution in your own words.
+	You will get at most half credit for solutions found in the literature
+	or on the web.
+	</p>
+
+	<p>
+	<em>Submission policy</em>:
+	Homeworks are due at the beginning of class.
+	No late homeworks will be accepted.
+	</p>
+	</TD></TR>
+
+<TR valign=top>
+    <TD><B>Participation and Attendance:</B></TD>  
+<td>
+Your participation grade is based on the quality and quantity of your participation.
+While attendance is not required, poor attendance will be reflected in
+your participation grade.
+</td></tr>
+
+<TR valign=top>
+    <TD><B>Laptops/Phones:</B></TD>  
+<td>
+The use of laptops and mobile devices is generally prohibited;
+however, I will allow use of tablets if you sit in the first row and
+use them only for class-related purposes.
+Other exceptions may be made in unusual circumstances.
+All phones must be silenced.
+</td></tr>
+-->
+
+<TR valign=top>
+    <TD><B>Canvas:</B></TD> 
+	<td>
+We will use <a href=http://canvas.utexas.edu>Canvas</a>,
+which contains Piazza.  Homeworks and grades will be posted on Canvas.
+We will use Piazza for class discussion.  Instead of emailing questions
+to the teaching staff, please post your questions to Piazza.
+
+<TR valign=top>
+    <TD><B>Useful Pointers:</B></TD> 
+	<td>
+	My <a href=https://academicminute.org/2017/01/david-zuckerman-university-of-texas-at-austin-randomness/>
+	100-second talk</a> on randomness on The Academic Minute.
+	<br>
+	My essay
+	<a href=http://arxiv.org/abs/1007.1678>
+	Can Random Coin Flips Speed Up a Computer?</a>
+	</td>
+
+
+</TABLE>
+
+<TR valign=top>
+    <TD><B>
+Students with <br>
+Disabilites:
+    </B></TD>  
+<td>Any student with a documented disability (physical or cognitive) who requires academic accommodations should contact the Services for Students with Disabilities area of the Office of the Dean of Students at 471-6259 (voice) or 471-4641 (TTY for users who are deaf or hard of hearing) as soon as possible to request an official letter outlining authorized accommodations.
+</td></tr>
+
+</TABLE>
+
+<hr>
+
+Last modified:  October 31, 2017.

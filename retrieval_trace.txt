@@ -1,0 +1,3510 @@
+CapricaDefense:ir-code jeremylim$ java ir.webutils.GraphSiteSpider  -safe -u http://www.cs.utexas.edu/users/mooney/ir-course/students.html -d cs-network/ -c 500
+Created destination directory cs-network
+Trying: http://www.cs.utexas.edu/users/mooney/ir-course/students.html
+Indexing(1): http://www.cs.utexas.edu/users/mooney/ir-course/students.html
+Trying: http://www.cs.utexas.edu/users/kristena/ir-course.html
+Indexing(2): http://www.cs.utexas.edu/users/kristena/ir-course.html
+Trying: http://www.cs.utexas.edu/users/jonbrew/ir-course.html
+Indexing(3): http://www.cs.utexas.edu/users/jonbrew/ir-course.html
+Trying: http://www.cs.utexas.edu/~sjc1919/ir-course.html
+Indexing(4): http://www.cs.utexas.edu/~sjc1919/ir-course.html
+Trying: http://www.cs.utexas.edu/users/awchen/favorite_classes.html
+Indexing(5): http://www.cs.utexas.edu/users/awchen/favorite_classes.html
+Trying: http://www.cs.utexas.edu/users/meganc/ir-course.html
+Indexing(6): http://www.cs.utexas.edu/users/meganc/ir-course.html
+Trying: https://www.cs.utexas.edu/users/crosbypc/ir-course.html
+Indexing(7): https://www.cs.utexas.edu/users/crosbypc/ir-course.html
+Trying: https://www.cs.utexas.edu/~jdistler/ir-course.html
+Indexing(8): https://www.cs.utexas.edu/~jdistler/ir-course.html
+Trying: http://www.cs.utexas.edu/users/adontula/ir-course.html
+Indexing(9): http://www.cs.utexas.edu/users/adontula/ir-course.html
+Trying: http://www.cs.utexas.edu/users/khuyen/ir-course.html
+Indexing(10): http://www.cs.utexas.edu/users/khuyen/ir-course.html
+Trying: https://www.cs.utexas.edu/users/elzein/ir-course.html
+Indexing(11): https://www.cs.utexas.edu/users/elzein/ir-course.html
+Trying: http://www.cs.utexas.edu/users/sohaibjf/ir-course.html
+Indexing(12): http://www.cs.utexas.edu/users/sohaibjf/ir-course.html
+Trying: http://www.cs.utexas.edu/users/drak1125/ir-course.html
+Indexing(13): http://www.cs.utexas.edu/users/drak1125/ir-course.html
+Trying: http://www.cs.utexas.edu/users/guanlin/ir-course.html
+Indexing(14): http://www.cs.utexas.edu/users/guanlin/ir-course.html
+Trying: http://www.cs.utexas.edu/users/akshaykg/ir-course.html
+Indexing(15): http://www.cs.utexas.edu/users/akshaykg/ir-course.html
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Indexing(16): http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Trying: http://www.cs.utexas.edu/users/florian/ir-course.html
+Indexing(17): http://www.cs.utexas.edu/users/florian/ir-course.html
+Trying: http://www.cs.utexas.edu/users/jkjones/ir-course.html
+Indexing(18): http://www.cs.utexas.edu/users/jkjones/ir-course.html
+Trying: http://www.cs.utexas.edu/~ghwo8844/ir-course.html
+Indexing(19): http://www.cs.utexas.edu/~ghwo8844/ir-course.html
+Trying: http://www.cs.utexas.edu/users/ukugel/ir-course.html
+Indexing(20): http://www.cs.utexas.edu/users/ukugel/ir-course.html
+Trying: http://www.cs.utexas.edu/users/jlim995/ir-course.html
+Indexing(21): http://www.cs.utexas.edu/users/jlim995/ir-course.html
+Trying: http://www.cs.utexas.edu/users/magera/ir-course.html
+Indexing(22): http://www.cs.utexas.edu/users/magera/ir-course.html
+Trying: http://www.cs.utexas.edu/users/ladylink/ir-course.html
+Indexing(23): http://www.cs.utexas.edu/users/ladylink/ir-course.html
+Trying: http://www.cs.utexas.edu/users/nick1117/ir-course.html
+Indexing(24): http://www.cs.utexas.edu/users/nick1117/ir-course.html
+Trying: http://www.cs.utexas.edu/~akhilm/ir-course.html
+Indexing(25): http://www.cs.utexas.edu/~akhilm/ir-course.html
+Trying: http://www.cs.utexas.edu/users/tahern52/ir-course.html
+Indexing(26): http://www.cs.utexas.edu/users/tahern52/ir-course.html
+Trying: https://www.cs.utexas.edu/~narayan/ir-course.html
+Indexing(27): https://www.cs.utexas.edu/~narayan/ir-course.html
+Trying: http://www.cs.utexas.edu/users/kesiride/ir-course.html
+Indexing(28): http://www.cs.utexas.edu/users/kesiride/ir-course.html
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Indexing(29): http://www.cs.utexas.edu/users/olinid/ir-course.html
+Trying: http://www.cs.utexas.edu/users/atrieder/ir-course.html
+Indexing(30): http://www.cs.utexas.edu/users/atrieder/ir-course.html
+Trying: http://www.cs.utexas.edu/users/srod/ir-course.html
+Indexing(31): http://www.cs.utexas.edu/users/srod/ir-course.html
+Trying: http://www.cs.utexas.edu/users/bsalazar/ir-course.html
+Indexing(32): http://www.cs.utexas.edu/users/bsalazar/ir-course.html
+Trying: http://www.cs.utexas.edu/users/gsimmons/ir-course.html
+Indexing(33): http://www.cs.utexas.edu/users/gsimmons/ir-course.html
+Trying: http://www.cs.utexas.edu/~shreyass/ir-course.html
+Indexing(34): http://www.cs.utexas.edu/~shreyass/ir-course.html
+Trying: http://www.cs.utexas.edu/users/abel/ir-course.html
+Indexing(35): http://www.cs.utexas.edu/users/abel/ir-course.html
+Trying: http://www.cs.utexas.edu/users/kthomas/ir-course.html
+Indexing(36): http://www.cs.utexas.edu/users/kthomas/ir-course.html
+Trying: http://www.cs.utexas.edu/users/httran/ir-course.html
+Indexing(37): http://www.cs.utexas.edu/users/httran/ir-course.html
+Trying: http://www.cs.utexas.edu/users/traylor1/ir-course.html
+Indexing(38): http://www.cs.utexas.edu/users/traylor1/ir-course.html
+Trying: http://www.cs.utexas.edu/~keyallis/favorite.html
+Indexing(39): http://www.cs.utexas.edu/~keyallis/favorite.html
+Trying: https://www.cs.utexas.edu/users/willxu/ir-course.html
+Indexing(40): https://www.cs.utexas.edu/users/willxu/ir-course.html
+Trying: http://www.cs.utexas.edu/users/bhavish/ir-course.html
+Indexing(41): http://www.cs.utexas.edu/users/bhavish/ir-course.html
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/syllabus361c.html
+Indexing(42): http://www.cs.utexas.edu/~byoung//cs361c/syllabus361c.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Indexing(43): https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Indexing(44): http://www.cs.utexas.edu/~mooney/ir-course/
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Indexing(45): http://www.cs.utexas.edu/~scottm/cs314/
+Trying: https://www.cs.utexas.edu/users/ear/cs349/
+Indexing(46): https://www.cs.utexas.edu/users/ear/cs349/
+Trying: http://www.cs.utexas.edu/users/kthomas/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ladylink/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs371p/
+Indexing(47): https://www.cs.utexas.edu/users/downing/cs371p/
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~witchel/378/schedule.html
+Indexing(48): http://www.cs.utexas.edu/~witchel/378/schedule.html
+Trying: https://www.cs.utexas.edu/~theshark/courses/cs354r/
+Indexing(49): https://www.cs.utexas.edu/~theshark/courses/cs354r/
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Indexing(50): https://www.cs.utexas.edu/users/downing/cs373/
+Trying: http://www.cs.utexas.edu/users/jkjones/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/httran/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~keyallis/favorite.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs312/
+Indexing(51): http://www.cs.utexas.edu/~scottm/cs312/
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Indexing(52): http://www.cs.utexas.edu/~gouda/classes.htm
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/bsalazar/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/magera/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/khuyen/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/julian/index.php?page=CS105%20Programming%20In%20Python
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/downing/cs371p/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Indexing(53): http://www.cs.utexas.edu/users/novak/cs314.html
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/users/meganc/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~akhilm/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/willxu/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/plaxton/c/346/index.html
+Indexing(54): https://www.cs.utexas.edu/users/plaxton/c/346/index.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kthomas/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ladylink/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~wcook/Courses/345/
+Indexing(55): http://www.cs.utexas.edu/~wcook/Courses/345/
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/users/ear/cs301k/
+Indexing(56): http://www.cs.utexas.edu/users/ear/cs301k/
+Trying: http://www.cs.utexas.edu/~vlr/courses/s15.331h/
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/risto/cs343/index.html
+Indexing(57): http://www.cs.utexas.edu/users/risto/cs343/index.html
+Trying: http://www.cs.utexas.edu/~lin/cs314h/index.html
+Indexing(58): http://www.cs.utexas.edu/~lin/cs314h/index.html
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~witchel/378/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/dbms/
+Indexing(59): http://www.cs.utexas.edu/~cannata/dbms/
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/bhavish/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/khuyen/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/atrieder/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Indexing(60): http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Trying: https://www.cs.utexas.edu/users/elzein/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/abel/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shreyass/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs104c/
+Indexing(61): https://www.cs.utexas.edu/users/downing/cs104c/
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/~byoung/cs429/syllabus429.html
+Indexing(62): https://www.cs.utexas.edu/~byoung/cs429/syllabus429.html
+Trying: http://www.cs.utexas.edu/~fares/cs331f17/list.html
+Indexing(63): http://www.cs.utexas.edu/~fares/cs331f17/list.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Indexing(64): https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Trying: http://www.cs.utexas.edu/~shreyass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/florian/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/syllabus361c.html
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/dbms/
+Already visited
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-fall16/
+Indexing(65): http://www.cs.utexas.edu/~bwaters/classes/cs346-fall16/
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/
+Indexing(66): https://www.cs.utexas.edu/~ojensen/courses/cs361s/
+Trying: https://www.cs.utexas.edu/users/abel/ir-course.html
+Indexing(67): https://www.cs.utexas.edu/users/abel/ir-course.html
+Trying: https://www.cs.utexas.edu/users/adontula/ir-course.html
+Indexing(68): https://www.cs.utexas.edu/users/adontula/ir-course.html
+Trying: https://www.cs.utexas.edu/users/traylor1/ir-course.html
+Indexing(69): https://www.cs.utexas.edu/users/traylor1/ir-course.html
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~pradeepr/courses/SLDM/
+Indexing(70): http://www.cs.utexas.edu/~pradeepr/courses/SLDM/
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/tahern52/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/drak1125/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs371m/syllabus.htm
+Indexing(71): http://www.cs.utexas.edu/~scottm/cs371m/syllabus.htm
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~dana/outline2.html
+Indexing(72): http://www.cs.utexas.edu/~dana/outline2.html
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~dana/outline2.html
+Already visited
+Trying: http://www.cs.utexas.edu/~akhilm/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/bsalazar/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/bhavish/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ear/cs341/
+Indexing(73): http://www.cs.utexas.edu/users/ear/cs341/
+Trying: http://www.cs.utexas.edu/users/fussell/courses/cs354/
+Indexing(74): http://www.cs.utexas.edu/users/fussell/courses/cs354/
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs375.html
+Indexing(75): http://www.cs.utexas.edu/users/novak/cs375.html
+Trying: https://www.cs.utexas.edu/users/willxu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ghwo8844/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/florian/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~vlr/courses/s15.331h/
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17/
+Indexing(76): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17/
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/~narayan/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shreyass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/adontula/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~mooney/ir-course.html
+No Page Found
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/
+Indexing(77): http://www.cs.utexas.edu/users/dsb/CS373S/
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~wcook/Courses/345/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ladylink/ir-course.html
+Indexing(78): https://www.cs.utexas.edu/users/ladylink/ir-course.html
+Trying: https://www.cs.utexas.edu/users/kristena/ir-course.html
+Indexing(79): https://www.cs.utexas.edu/users/kristena/ir-course.html
+Trying: https://www.cs.utexas.edu/users/kthomas/ir-course.html
+Indexing(80): https://www.cs.utexas.edu/users/kthomas/ir-course.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/~klivans/311syll.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/adontula/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shreyass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs312/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs371p/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/ukugel/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/nick1117/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/guanlin/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs104c/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~vlr/courses/s15.331h/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs375.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kristena/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sjc1919/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/meganc/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.html
+Indexing(81): https://www.cs.utexas.edu/~bulko/2017spring/311.html
+Trying: http://www.cs.utexas.edu/~scottm/cs312/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/traylor1/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/jlim995/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~narayan/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs371p/
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/cs378-BDP.htm
+Indexing(82): https://www.cs.utexas.edu/~dfranke/courses/2017fall/cs378-BDP.htm
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~keyallis/favorite.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs375.html
+Already visited
+Trying: https://www.cs.utexas.edu/~diz/378/
+Indexing(83): https://www.cs.utexas.edu/~diz/378/
+Trying: https://www.cs.utexas.edu/users/plaxton/c/346/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/atrieder/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/akshaykg/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ghwo8844/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S/
+Indexing(84): https://www.cs.utexas.edu/users/dsb/CS373S/
+Trying: https://www.cs.utexas.edu/users/novak/cs375.html
+Indexing(85): https://www.cs.utexas.edu/users/novak/cs375.html
+Trying: https://www.cs.utexas.edu/~gouda/classes.htm
+Indexing(86): https://www.cs.utexas.edu/~gouda/classes.htm
+Trying: https://www.cs.utexas.edu/users/novak/cs314.html
+Indexing(87): https://www.cs.utexas.edu/users/novak/cs314.html
+Trying: https://www.cs.utexas.edu/users/ej2h/ir-course.html
+Indexing(88): https://www.cs.utexas.edu/users/ej2h/ir-course.html
+Trying: https://www.cs.utexas.edu/users/kristena/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/kthomas/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~parnell/teaching/2015/cs105/
+Indexing(89): http://www.cs.utexas.edu/~parnell/teaching/2015/cs105/
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: https://www.cs.utexas.edu/users/plaxton/c/346/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ear/cs349/
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/
+Already visited
+Trying: https://www.cs.utexas.edu/users/willxu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/gsimmons/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kesiride/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/dbms/
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/users/awchen/favorite_classes.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kristena/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/bhavish/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/plaxton/c/346/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ear/cs349/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/users/kthomas/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~keyallis/favorite.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/jkjones/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs375.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs312/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/atrieder/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/srod/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/dbms/
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/traylor1/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/gsimmons/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/httran/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: https://www.cs.utexas.edu/~diz/378/
+Already visited
+Trying: http://www.cs.utexas.edu/~keyallis/favorite.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/drak1125/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kesiride/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~hunt/class/2017-spring/cs350c/cs350c.html
+Indexing(90): https://www.cs.utexas.edu/~hunt/class/2017-spring/cs350c/cs350c.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p/
+Already visited
+Trying: http://www.cs.utexas.edu/%7Epingali/CS378/2015sp/
+Indexing(91): http://www.cs.utexas.edu/%7Epingali/CS378/2015sp/
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/abel/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/guanlin/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/srod/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~narayan/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/crosbypc/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~pradeepr/courses/SLDM/
+Already visited
+Trying: https://www.cs.utexas.edu/~diz/378/
+Already visited
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/cs378-BDP.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17/
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs375.html
+Already visited
+Trying: http://www.cs.utexas.edu/%7Epingali/CS378/2015sp/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs312/
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs371p/
+Already visited
+Trying: http://www.cs.utexas.edu/~witchel/378/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sjc1919/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kthomas/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/jlim995/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/dbms/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/users/khuyen/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/adontula/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs104c/
+Already visited
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/adontula/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/akshaykg/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~narayan/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/florian/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/users/elzein/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/adontula/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/gsimmons/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kristena/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/meganc/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs371m/syllabus.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kristena/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/guanlin/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/willxu/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/users/guanlin/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/florian/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/srod/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs104c/
+Already visited
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/jlim995/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~mooney/ir-course/
+Indexing(92): https://www.cs.utexas.edu/~mooney/ir-course/
+Trying: https://www.cs.utexas.edu/users/downing/cs371p/
+Already visited
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/cs378-BDP.htm
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: https://www.cs.utexas.edu/users/awchen/favorite_classes.html
+Indexing(93): https://www.cs.utexas.edu/users/awchen/favorite_classes.html
+Trying: https://www.cs.utexas.edu/users/nick1117/ir-course.html
+Indexing(94): https://www.cs.utexas.edu/users/nick1117/ir-course.html
+Trying: https://www.cs.utexas.edu/users/httran/ir-course.html
+Indexing(95): https://www.cs.utexas.edu/users/httran/ir-course.html
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/cs378-BDP.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-fall16/
+Already visited
+Trying: http://www.cs.utexas.edu/~dana/outline2.html
+Already visited
+Trying: https://www.cs.utexas.edu/~theshark/courses/cs354r/
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: http://www.cs.utexas.edu/users/meganc/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ladylink/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/olinid/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/sample-final.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/common-flaws-in-papers
+Indexing(96): http://www.cs.utexas.edu/~byoung//cs361c/common-flaws-in-papers
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/IBM-internship.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/undergraduate-program/curriculum/infosec-certificate
+Indexing(97): https://www.cs.utexas.edu/undergraduate-program/curriculum/infosec-certificate
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/slides0-cyberwar.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/slides1-intro.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/slides1b-ia-in-military.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/slides2-ia-in-business.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/slides3-cryptography.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/slides5-metrics.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/oag-talk-slides.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/assignment1.html
+Indexing(98): http://www.cs.utexas.edu/~byoung//cs361c/assignment1.html
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/assignment2.html
+Indexing(99): http://www.cs.utexas.edu/~byoung//cs361c/assignment2.html
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/assignment3.html
+Indexing(100): http://www.cs.utexas.edu/~byoung//cs361c/assignment3.html
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/assignment-declare-topic.html
+Indexing(101): http://www.cs.utexas.edu/~byoung//cs361c/assignment-declare-topic.html
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/assignment-project.html
+Indexing(102): http://www.cs.utexas.edu/~byoung//cs361c/assignment-project.html
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/sample-midterm2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/academics/conduct
+Indexing(103): http://www.cs.utexas.edu/academics/conduct
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/syllabus361c.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/index.html
+Indexing(104): https://www.cs.utexas.edu/users/ans/index.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/01_intro_and_themes_20170830.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps0.html
+Indexing(105): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps0.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/02_history_and_dual_mode_20170906.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps1.html
+Indexing(106): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps1.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/03_processes_20170911.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/projects/project439.html
+Indexing(107): https://www.cs.utexas.edu/users/ans/classes/cs439/projects/project439.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/04_scheduling_20170913.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps2.html
+Indexing(108): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps2.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/05_threads_and_too_much_milk_20170918.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/threads_and_address_space_20170918.jpg
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/06_locks_and_semaphores_20170920.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/projects/project439.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps3.html
+Indexing(109): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps3.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/07_deadlock_monitors_20170925.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/08_safety_and_adv_synch_20170927.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/therac-reading-tips.html
+Indexing(110): https://www.cs.utexas.edu/users/ans/classes/cs439/docs/therac-reading-tips.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps4.html
+Indexing(111): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps4.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/09_more_sync_20171002.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/rw_2017100209.jpg
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/rw_2017100211.jpg
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/pemberley_sol.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/projects/project439.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/11_memory_management_20171009.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/12_virtual_memory_I_20171011.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps5.html
+Indexing(112): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps5.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/13_virtual_memory_II_20171016.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/14_heap_memory_management_20171018.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/projects/project439.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps6.html
+Indexing(113): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps6.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/15_garbage_collection_and_IO_20171023.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/Mob Boss Polling.mp4
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/Mob Boss IO contd.mp4
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/16_disks_and_fs_fundamentals_20171025.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps7.html
+Indexing(114): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps7.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/17_fs_design_20171030.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/18_fs_design_and_consistency_20171101.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps8.html
+Indexing(115): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps8.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/19_exam_review_20171106.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/lectures/20_networks_20171113.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps9.html
+Indexing(116): https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps9.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/nfs.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/deadlock_reading.html
+Indexing(117): https://www.cs.utexas.edu/users/ans/classes/cs439/deadlock_reading.html
+Trying: http://www.cs.utexas.edu/users/mooney/
+Indexing(118): http://www.cs.utexas.edu/users/mooney/
+Trying: http://www.cs.utexas.edu/users/dgynick/
+Indexing(119): http://www.cs.utexas.edu/users/dgynick/
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//specs.html
+Indexing(120): http://www.cs.utexas.edu/~mooney/ir-course//specs.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//syllabus.html
+Indexing(121): http://www.cs.utexas.edu/~mooney/ir-course//syllabus.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//java-info.html
+Indexing(122): http://www.cs.utexas.edu/~mooney/ir-course//java-info.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//proj-submit-info.html
+Indexing(123): http://www.cs.utexas.edu/~mooney/ir-course//proj-submit-info.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//proj0.html
+Indexing(124): http://www.cs.utexas.edu/~mooney/ir-course//proj0.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//proj1/
+Indexing(125): http://www.cs.utexas.edu/~mooney/ir-course//proj1/
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//proj2/
+Indexing(126): http://www.cs.utexas.edu/~mooney/ir-course//proj2/
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//proj3/
+Indexing(127): http://www.cs.utexas.edu/~mooney/ir-course//proj3/
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//proj4
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~mooney/ir-course//proj4
+No Page Found
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//ir-equations.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//NDCG-Equations.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//regex.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//midterm-old.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//ir-equations2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//ir-equations3.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//LinkAnalysisAlgorithms.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//learning-algorithms.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//final-old.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/Intro.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/IR Models.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/Implementation.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/Evaluation.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/QueryOps.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/QueryLanguages.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/TextProperties.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/WebSearchIntro.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/Spidering.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/WebInterfaces.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/LinkAnalysis.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/TextCategorization.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/LangModelRetrieval.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/TextClustering.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/Recommenders.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/InformationExtraction.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//slides/semantic-parsing.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//search.html
+Indexing(128): http://www.cs.utexas.edu/~mooney/ir-course//search.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//ir.jar
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//doc/index.html
+Indexing(129): http://www.cs.utexas.edu/~mooney/ir-course//doc/index.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/vsr/package-summary.html
+Indexing(130): http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/vsr/package-summary.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/eval/package-summary.html
+Indexing(131): http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/eval/package-summary.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/webutils/package-summary.html
+Indexing(132): http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/webutils/package-summary.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/classifiers/package-summary.html
+Indexing(133): http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/classifiers/package-summary.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/utilities/package-summary.html
+Indexing(134): http://www.cs.utexas.edu/~mooney/ir-course//doc/ir/utilities/package-summary.html
+Trying: http://www.cs.utexas.edu/users/mooney/
+Already visited
+Trying: https://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314//handouts/startup.htm
+Indexing(135): http://www.cs.utexas.edu/~scottm/cs314//handouts/startup.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//syllabus.htm
+Indexing(136): http://www.cs.utexas.edu/~scottm/cs314//syllabus.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//schedule.htm
+Indexing(137): http://www.cs.utexas.edu/~scottm/cs314//schedule.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//Assignments/A1_CodeCamp.htm
+Indexing(138): http://www.cs.utexas.edu/~scottm/cs314//Assignments/A1_CodeCamp.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//handouts/TestStudyMaterial.htm
+Indexing(139): http://www.cs.utexas.edu/~scottm/cs314//handouts/TestStudyMaterial.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314/cs307/codingSamples.htm
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~scottm/cs314/cs307/codingSamples.htm
+No Page Found
+Trying: http://www.cs.utexas.edu/~scottm/cs314//syllabus.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314//handouts/software.htm
+Indexing(140): http://www.cs.utexas.edu/~scottm/cs314//handouts/software.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//schedule.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314//handouts/tipsForSuccess.htm
+Indexing(141): http://www.cs.utexas.edu/~scottm/cs314//handouts/tipsForSuccess.htm
+Trying: http://www.cs.utexas.edu/users/novak/cs315vocab.html
+Indexing(142): http://www.cs.utexas.edu/users/novak/cs315vocab.html
+Trying: http://www.cs.utexas.edu/~scottm/cs314//handouts/PracticeProblems.htm
+Indexing(143): http://www.cs.utexas.edu/~scottm/cs314//handouts/PracticeProblems.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//labHours.htm
+Indexing(144): http://www.cs.utexas.edu/~scottm/cs314//labHours.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//handouts/topicsList.htm
+Indexing(145): http://www.cs.utexas.edu/~scottm/cs314//handouts/topicsList.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314//Assignments/index.htm
+Indexing(146): http://www.cs.utexas.edu/~scottm/cs314//Assignments/index.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs314/index.htm
+Indexing(147): http://www.cs.utexas.edu/~scottm/cs314/index.htm
+Trying: http://www.cs.utexas.edu/users/ear/
+Indexing(148): http://www.cs.utexas.edu/users/ear/
+Trying: https://www.cs.utexas.edu/users/ear/cs349//Syllabus.html
+Indexing(149): https://www.cs.utexas.edu/users/ear/cs349//Syllabus.html
+Trying: https://www.cs.utexas.edu/users/ear/cs349//LectureSlides.html
+Indexing(150): https://www.cs.utexas.edu/users/ear/cs349//LectureSlides.html
+Trying: https://www.cs.utexas.edu/users/ear/cs349//ClassPolicies.html
+Indexing(151): https://www.cs.utexas.edu/users/ear/cs349//ClassPolicies.html
+Trying: https://www.cs.utexas.edu/users/ear/cs349//TermProject.html
+Indexing(152): https://www.cs.utexas.edu/users/ear/cs349//TermProject.html
+Trying: https://www.cs.utexas.edu/users/ear/cs349//InternetResources.html
+Indexing(153): https://www.cs.utexas.edu/users/ear/cs349//InternetResources.html
+Trying: https://www.cs.utexas.edu/users/ear/cs349//Honesty.html
+Indexing(154): https://www.cs.utexas.edu/users/ear/cs349//Honesty.html
+Trying: https://www.cs.utexas.edu/users/ear/cs349//Syllabus.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ear/cs349//TermProject.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//index.html
+Indexing(155): https://www.cs.utexas.edu/users/downing/cs371p//index.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//Communication.html
+Indexing(156): https://www.cs.utexas.edu/users/downing/cs371p//Communication.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//Evaluations.html
+Indexing(157): https://www.cs.utexas.edu/users/downing/cs371p//Evaluations.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//Git.html
+Indexing(158): https://www.cs.utexas.edu/users/downing/cs371p//Git.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//Grading.html
+Indexing(159): https://www.cs.utexas.edu/users/downing/cs371p//Grading.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//Schedule.html
+Indexing(160): https://www.cs.utexas.edu/users/downing/cs371p//Schedule.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//Tools.html
+Indexing(161): https://www.cs.utexas.edu/users/downing/cs371p//Tools.html
+Trying: https://www.cs.utexas.edu/users/downing/cs371p//Workflow.html
+Indexing(162): https://www.cs.utexas.edu/users/downing/cs371p//Workflow.html
+Trying: https://www.cs.utexas.edu/users/downing/
+Indexing(163): https://www.cs.utexas.edu/users/downing/
+Trying: https://www.cs.utexas.edu/users/eshafaq/
+WebPage.getWebPage(): java.io.FileNotFoundException: https://www.cs.utexas.edu/users/eshafaq/
+No Page Found
+Trying: https://www.cs.utexas.edu/users/cchsu/
+Indexing(164): https://www.cs.utexas.edu/users/cchsu/
+Trying: http://www.cs.utexas.edu/~witchel/378/index.html
+Indexing(165): http://www.cs.utexas.edu/~witchel/378/index.html
+Trying: http://www.cs.utexas.edu/~witchel/378/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~witchel/378/378-Spring2015.ics
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/01-ios-intro.pptx
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/hw1.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/02-xcode.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/03-objective-c-tutorial.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/hw2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/04_foundation_and_attributed_strings.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/05_lang_implementation.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/05_lang_implementation.pptx
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/05_view_controller_lifecycle.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/hw3.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/06_controller_polymorphism.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/07_view_gestures.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/hw4.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/provided_code.tar.gz
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/08_protocols_blocks_animation.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/09_autolayout.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/hw5.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/Flickr_Fetcher.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/10_multithreading_scrollview.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/11_tableview.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/12_core_data.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/proposal.html
+Indexing(166): http://www.cs.utexas.edu/~witchel/378/hw/proposal.html
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/13_core_data_table_view.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/14_core_location.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/16_modal_text_action.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/lectures/17_camera_core_motion.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/proposal.html
+Already visited
+Trying: http://www.cs.utexas.edu/~witchel/378/hw/writeup.html
+Indexing(167): http://www.cs.utexas.edu/~witchel/378/hw/writeup.html
+Trying: http://www.cs.utexas.edu/~theshark/
+Indexing(168): http://www.cs.utexas.edu/~theshark/
+Trying: https://www.cs.utexas.edu/~theshark/courses/cs354r//syllabus.html
+Indexing(169): https://www.cs.utexas.edu/~theshark/courses/cs354r//syllabus.html
+Trying: https://www.cs.utexas.edu/~theshark/courses/cs354r//lectures.html
+Indexing(170): https://www.cs.utexas.edu/~theshark/courses/cs354r//lectures.html
+Trying: https://www.cs.utexas.edu/~theshark/courses/cs354r//communication.html
+Indexing(171): https://www.cs.utexas.edu/~theshark/courses/cs354r//communication.html
+Trying: https://www.cs.utexas.edu/~theshark/courses/cs354r//assignments.html
+Indexing(172): https://www.cs.utexas.edu/~theshark/courses/cs354r//assignments.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//index.html
+Indexing(173): https://www.cs.utexas.edu/users/downing/cs373//index.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//Communication.html
+Indexing(174): https://www.cs.utexas.edu/users/downing/cs373//Communication.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//Evaluations.html
+Indexing(175): https://www.cs.utexas.edu/users/downing/cs373//Evaluations.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//Git.html
+Indexing(176): https://www.cs.utexas.edu/users/downing/cs373//Git.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//Grading.html
+Indexing(177): https://www.cs.utexas.edu/users/downing/cs373//Grading.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//Schedule.html
+Indexing(178): https://www.cs.utexas.edu/users/downing/cs373//Schedule.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//Tools.html
+Indexing(179): https://www.cs.utexas.edu/users/downing/cs373//Tools.html
+Trying: https://www.cs.utexas.edu/users/downing/cs373//Workflow.html
+Indexing(180): https://www.cs.utexas.edu/users/downing/cs373//Workflow.html
+Trying: https://www.cs.utexas.edu/users/downing/
+Already visited
+Trying: https://www.cs.utexas.edu/users/srama/
+Indexing(181): https://www.cs.utexas.edu/users/srama/
+Trying: https://www.cs.utexas.edu/users/zhitingz/
+Indexing(182): https://www.cs.utexas.edu/users/zhitingz/
+Trying: http://www.cs.utexas.edu/~scottm/cs312//syllabus.htm
+Indexing(183): http://www.cs.utexas.edu/~scottm/cs312//syllabus.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312//schedule.htm
+Indexing(184): http://www.cs.utexas.edu/~scottm/cs312//schedule.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312//assignments/A1Song.html
+Indexing(185): http://www.cs.utexas.edu/~scottm/cs312//assignments/A1Song.html
+Trying: http://www.cs.utexas.edu/~scottm/cs312//handouts/startup.htm
+Indexing(186): http://www.cs.utexas.edu/~scottm/cs312//handouts/startup.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312//syllabus.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs312//testStudyMaterials.htm
+Indexing(187): http://www.cs.utexas.edu/~scottm/cs312//testStudyMaterials.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312/cs314/handouts/PracticeProblems.htm
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~scottm/cs312/cs314/handouts/PracticeProblems.htm
+No Page Found
+Trying: http://www.cs.utexas.edu/~scottm/cs312//schedule.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs312//codingSamples.htm
+Indexing(188): http://www.cs.utexas.edu/~scottm/cs312//codingSamples.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312//labHours.htm
+Indexing(189): http://www.cs.utexas.edu/~scottm/cs312//labHours.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312//assignments/index.htm
+Indexing(190): http://www.cs.utexas.edu/~scottm/cs312//assignments/index.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312//handouts/helpSources.htm
+Indexing(191): http://www.cs.utexas.edu/~scottm/cs312//handouts/helpSources.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312//software.htm
+Indexing(192): http://www.cs.utexas.edu/~scottm/cs312//software.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs312/index.htm
+Indexing(193): http://www.cs.utexas.edu/~scottm/cs312/index.htm
+Trying: http://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (0-9)/slides-0-9.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (10-36)/slides-10-36.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (37-52)/slides-37-52.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (53-86)/slides-53-86.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (87-104)/slides-87-104.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_mt3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_mt2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_mt1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise10.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise9.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise8.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise7.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise6.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise5.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise4.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/Exercise1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356sp17/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall15_mt3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall15_mt2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall15_mt1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall15_hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall15_hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall15_hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Spring15_mt3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Spring15_mt2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Spring15_mt1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Spring15_hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Spring15_hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Spring15_hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall14_mt3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall14_mt2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall14_mt1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall14_hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall14_hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Fall14_hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/mt3Summer14.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/mt2Summer14.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/mt1Summer14.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/mt3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/mt2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/mt1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/homework3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/homework2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/homework1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/midterm3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_homework3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_homework2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_homework1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_midterm5.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_midterm4.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_midterm3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_hw5.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_hw4.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise_hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise13.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise12.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise11.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise10.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise9.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise8.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise7.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise6.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise5.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise4.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/exercise1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/Notes.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs311/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/mt3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/homework3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/homework2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/homework1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp14/syllabus.txt
+Already visited
+Trying: http://www.cs.utexas.edu/~gouda/cs326esp13/mt3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs326esp13/hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs326esp13/mt2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs326esp13/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs326esp13/mt1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs326esp13/hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs326esp13/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/midterm3
+Indexing(194): http://www.cs.utexas.edu/~gouda/cs337fa08/midterm3
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz9-10
+Indexing(195): http://www.cs.utexas.edu/~gouda/cs337fa08/quiz9-10
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/project4/index.htm
+Indexing(196): http://www.cs.utexas.edu/~gouda/cs337fa08/project4/index.htm
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/midterm2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz8.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/project3.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/midterm1
+Indexing(197): http://www.cs.utexas.edu/~gouda/cs337fa08/midterm1
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz7
+Indexing(198): http://www.cs.utexas.edu/~gouda/cs337fa08/quiz7
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz5
+Indexing(199): http://www.cs.utexas.edu/~gouda/cs337fa08/quiz5
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/project2/index.htm
+Indexing(200): http://www.cs.utexas.edu/~gouda/cs337fa08/project2/index.htm
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz4
+Indexing(201): http://www.cs.utexas.edu/~gouda/cs337fa08/quiz4
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz3
+Indexing(202): http://www.cs.utexas.edu/~gouda/cs337fa08/quiz3
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/project1/index.htm
+Indexing(203): http://www.cs.utexas.edu/~gouda/cs337fa08/project1/index.htm
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz2
+Indexing(204): http://www.cs.utexas.edu/~gouda/cs337fa08/quiz2
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/quiz1
+Indexing(205): http://www.cs.utexas.edu/~gouda/cs337fa08/quiz1
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa08/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/midterm3
+Indexing(206): http://www.cs.utexas.edu/~gouda/cs337fa07/midterm3
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz12
+Indexing(207): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz12
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz1011
+Indexing(208): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz1011
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/midterm2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz9
+Indexing(209): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz9
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz8.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/Quiz7.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz7
+Indexing(210): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz7
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz6
+Indexing(211): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz6
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz5
+Indexing(212): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz5
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/midterm1
+Indexing(213): http://www.cs.utexas.edu/~gouda/cs337fa07/midterm1
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz34
+Indexing(214): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz34
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz2
+Indexing(215): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz2
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/quiz1
+Indexing(216): http://www.cs.utexas.edu/~gouda/cs337fa07/quiz1
+Trying: http://www.cs.utexas.edu/~gouda/cs337fa07/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/midterm3
+Indexing(217): http://www.cs.utexas.edu/~gouda/cs356summer09/midterm3
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/midterm2
+Indexing(218): http://www.cs.utexas.edu/~gouda/cs356summer09/midterm2
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/HW3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/midterm1
+Indexing(219): http://www.cs.utexas.edu/~gouda/cs356summer09/midterm1
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/quiz3
+Indexing(220): http://www.cs.utexas.edu/~gouda/cs356summer09/quiz3
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/quiz2
+Indexing(221): http://www.cs.utexas.edu/~gouda/cs356summer09/quiz2
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/quiz1
+Indexing(222): http://www.cs.utexas.edu/~gouda/cs356summer09/quiz1
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer09/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/midterm3
+Indexing(223): http://www.cs.utexas.edu/~gouda/cs356sp09/midterm3
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/homework3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/quiz3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/midterm2
+Indexing(224): http://www.cs.utexas.edu/~gouda/cs356sp09/midterm2
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/homework2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/quiz2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/midterm1
+Indexing(225): http://www.cs.utexas.edu/~gouda/cs356sp09/midterm1
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/homework1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/quiz1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp09/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/midterm3sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/midterm3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/homework3sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/homework3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/midterm2sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/homework2sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/homework2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/midterm1sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/homework1sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/homework1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/quiz5.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/quiz1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer08/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/midterm3_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/midterm3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/hw3_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/quiz8
+Indexing(226): http://www.cs.utexas.edu/~gouda/cs356sp08/quiz8
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/quiz7
+Indexing(227): http://www.cs.utexas.edu/~gouda/cs356sp08/quiz7
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/hw3_cs356sp08.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/quiz6
+Indexing(228): http://www.cs.utexas.edu/~gouda/cs356sp08/quiz6
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/quiz5
+Indexing(229): http://www.cs.utexas.edu/~gouda/cs356sp08/quiz5
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/quiz4
+Indexing(230): http://www.cs.utexas.edu/~gouda/cs356sp08/quiz4
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/quiz1
+Indexing(231): http://www.cs.utexas.edu/~gouda/cs356sp08/quiz1
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/midterm2_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/hw2_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/hw2_cs356sp08.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/midterm1_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/hw1_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/hw1_cs356sp08.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp08/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/midterm3_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/midterm3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/hw3_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/hw3_cs356summer07.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/midterm2_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/hw2_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/hw2_cs356summer07.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/midterm1_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/hw1_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/hw1_cs356summer07.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer07/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/midterm3_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/midterm3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/hw3_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/midterm2_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/hw2_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/midterm1_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/hw1_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/hw1_cs356sp07.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356sp07/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/MidSol3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/Exam3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/hw3sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/MidSol2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/Exam2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/hw2sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/MidSol1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/Exam1.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/hw1solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/Hw1.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer06/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/solution3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/MT2_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/MT2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/solution2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/MT1_solution.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/MT1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/solution1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS356fa05/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/syl.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/hw2sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/MT2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/md2sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/hw3sol.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/md3.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356fall04/md3sol.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer05/syllabus.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs356summer05/hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs386m/05/CS386M05.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs386m/05/hw1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs386m/05/hw2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs386m/05/hw3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz9-10.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/schedule.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz8.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz7.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz6.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz5.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Project.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz4.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz3.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S09/CS386S_S09.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/midterm2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz9.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz8.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz7.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz6.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz5.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/midterm1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz4.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz2.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/quiz1.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS386S_S08/CS386S_S08.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS395T_F06
+Indexing(232): http://www.cs.utexas.edu/~gouda/CS395T_F06
+Trying: http://www.cs.utexas.edu/~gouda/hw1_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/sol1_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/midterm1_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/midtermsol1_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/hw2_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/sol2_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/project
+Indexing(233): http://www.cs.utexas.edu/~gouda/project
+Trying: http://www.cs.utexas.edu/~gouda/midterm2_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/midtermsol2_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/class/hw3_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/class/sol3_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/class/midterm3_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/class/midtermsol3_cs395Tfa06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/CS395T
+Indexing(234): http://www.cs.utexas.edu/~gouda/CS395T
+Trying: http://www.cs.utexas.edu/~gouda/hw1_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/hwsol1_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/hw2_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/mt1_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/mt1sol_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/mt2_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/mt2sol_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/hw3_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/hw3sol_cs395Tsp06.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~gouda/cs386m/fdd.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/index.html
+Indexing(235): http://www.cs.utexas.edu/users/novak/index.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314syllabus.html
+Indexing(236): http://www.cs.utexas.edu/users/novak/cs314syllabus.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314contents.html
+Indexing(237): http://www.cs.utexas.edu/users/novak/cs314contents.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314index.html
+Indexing(238): http://www.cs.utexas.edu/users/novak/cs314index.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs314reading.html
+Indexing(239): http://www.cs.utexas.edu/users/novak/cs314reading.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314clindex.html
+Indexing(240): http://www.cs.utexas.edu/users/novak/cs314clindex.html
+Trying: http://www.cs.utexas.edu/users/novak/howtomakea.html
+Indexing(241): http://www.cs.utexas.edu/users/novak/howtomakea.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314vocab.html
+Indexing(242): http://www.cs.utexas.edu/users/novak/cs314vocab.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314lisp.html
+Indexing(243): http://www.cs.utexas.edu/users/novak/cs314lisp.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314/
+Indexing(244): http://www.cs.utexas.edu/users/novak/cs314/
+Trying: http://www.cs.utexas.edu/users/novak/debugging.html
+Indexing(245): http://www.cs.utexas.edu/users/novak/debugging.html
+Trying: http://www.cs.utexas.edu/users/novak/Cons.html
+Indexing(246): http://www.cs.utexas.edu/users/novak/Cons.html
+Trying: http://www.cs.utexas.edu/users/novak/CS314GradingCriteria.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs314time.html
+Indexing(247): http://www.cs.utexas.edu/users/novak/cs314time.html
+Trying: http://www.cs.utexas.edu/users/novak/log-log.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/semi-log.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs314recur.html
+Indexing(248): http://www.cs.utexas.edu/users/novak/cs314recur.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314recurb.html
+Indexing(249): http://www.cs.utexas.edu/users/novak/cs314recurb.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314recurbn.html
+Indexing(250): http://www.cs.utexas.edu/users/novak/cs314recurbn.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314merge.html
+Indexing(251): http://www.cs.utexas.edu/users/novak/cs314merge.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314listlib.html
+Indexing(252): http://www.cs.utexas.edu/users/novak/cs314listlib.html
+Trying: http://www.cs.utexas.edu/users/novak/LinkedList.java
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs314treea.html
+Indexing(253): http://www.cs.utexas.edu/users/novak/cs314treea.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314treeb.html
+Indexing(254): http://www.cs.utexas.edu/users/novak/cs314treeb.html
+Trying: http://www.cs.utexas.edu/users/novak/algebra.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs314pats.html
+Indexing(255): http://www.cs.utexas.edu/users/novak/cs314pats.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314hash.html
+Indexing(256): http://www.cs.utexas.edu/users/novak/cs314hash.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314graph.html
+Indexing(257): http://www.cs.utexas.edu/users/novak/cs314graph.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314graphans.html
+Indexing(258): http://www.cs.utexas.edu/users/novak/cs314graphans.html
+Trying: http://www.cs.utexas.edu/users/novak/muleshoe.jpg
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs314mapr.html
+Indexing(259): http://www.cs.utexas.edu/users/novak/cs314mapr.html
+Trying: http://www.cs.utexas.edu/users/novak/lec5-pagerank.ppt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/gcldownload.html
+Indexing(260): http://www.cs.utexas.edu/users/novak/gcldownload.html
+Trying: http://www.cs.utexas.edu/users/novak/gclwin.html
+Indexing(261): http://www.cs.utexas.edu/users/novak/gclwin.html
+Trying: http://www.cs.utexas.edu/users/novak/emacs.html
+Indexing(262): http://www.cs.utexas.edu/users/novak/emacs.html
+Trying: http://www.cs.utexas.edu/users/novak/manucornet.html
+Indexing(263): http://www.cs.utexas.edu/users/novak/manucornet.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314midterm.html
+Indexing(264): http://www.cs.utexas.edu/users/novak/cs314midterm.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314midquest.html
+Indexing(265): http://www.cs.utexas.edu/users/novak/cs314midquest.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314final.html
+Indexing(266): http://www.cs.utexas.edu/users/novak/cs314final.html
+Trying: http://www.cs.utexas.edu/users/novak/cs314finquest.html
+Indexing(267): http://www.cs.utexas.edu/users/novak/cs314finquest.html
+Trying: http://www.cs.utexas.edu/users/novak/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/plaxton/c/346/menu.html
+Indexing(268): https://www.cs.utexas.edu/users/plaxton/c/346/menu.html
+Trying: https://www.cs.utexas.edu/users/plaxton/c/346/syllabus.html
+Indexing(269): https://www.cs.utexas.edu/users/plaxton/c/346/syllabus.html
+Trying: http://www.cs.utexas.edu/users/ear/
+Already visited
+Trying: http://www.cs.utexas.edu/users/ear/cs301k//Schedule.htm
+Indexing(270): http://www.cs.utexas.edu/users/ear/cs301k//Schedule.htm
+Trying: http://www.cs.utexas.edu/users/ear/cs301k//ClassPolicies.html
+Indexing(271): http://www.cs.utexas.edu/users/ear/cs301k//ClassPolicies.html
+Trying: http://www.cs.utexas.edu/users/ear/cs301k//circuitdesign.html
+Indexing(272): http://www.cs.utexas.edu/users/ear/cs301k//circuitdesign.html
+Trying: http://www.cs.utexas.edu/users/ear/cs301k//FSM.html
+Indexing(273): http://www.cs.utexas.edu/users/ear/cs301k//FSM.html
+Trying: http://www.cs.utexas.edu/~learnlogic/truthtables/
+Indexing(274): http://www.cs.utexas.edu/~learnlogic/truthtables/
+Trying: http://www.cs.utexas.edu/users/ear/cs301k//Honesty.html
+Indexing(275): http://www.cs.utexas.edu/users/ear/cs301k//Honesty.html
+Trying: http://www.cs.utexas.edu/users/ear/cs301k//ClassPolicies.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/risto/cs343/
+Indexing(276): http://www.cs.utexas.edu/users/risto/cs343/
+Trying: http://www.cs.utexas.edu/users/risto/
+Indexing(277): http://www.cs.utexas.edu/users/risto/
+Trying: http://www.cs.utexas.edu/users/risto/cs343/office
+Indexing(278): http://www.cs.utexas.edu/users/risto/cs343/office
+Trying: http://www.cs.utexas.edu/users/pgoyal/
+Indexing(279): http://www.cs.utexas.edu/users/pgoyal/
+Trying: http://www.cs.utexas.edu/users/ear/CodeOfConduct.html
+Indexing(280): http://www.cs.utexas.edu/users/ear/CodeOfConduct.html
+Trying: http://www.cs.utexas.edu/users/risto/cs343/topic.html
+Indexing(281): http://www.cs.utexas.edu/users/risto/cs343/topic.html
+Trying: http://www.cs.utexas.edu/users/risto/cs343/schedule.html
+Indexing(282): http://www.cs.utexas.edu/users/risto/cs343/schedule.html
+Trying: http://www.cs.utexas.edu/users/risto/cs343/homework.html
+Indexing(283): http://www.cs.utexas.edu/users/risto/cs343/homework.html
+Trying: http://www.cs.utexas.edu/users/risto/cs343/exams.html
+Indexing(284): http://www.cs.utexas.edu/users/risto/cs343/exams.html
+Trying: http://www.cs.utexas.edu/users/risto/cs343/resources.html
+Indexing(285): http://www.cs.utexas.edu/users/risto/cs343/resources.html
+Trying: http://www.cs.utexas.edu/users/risto/
+Already visited
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog6.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog5.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog4.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog3.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/pairs.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/Kindergarten.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog1.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/syllabus.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog3KarthikRitvik.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog3PorterMao.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog2Porter.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog2Zhang.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog1Tewari.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~lin/cs314h/prog1Kalra.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/lin/critterfest.html
+Indexing(286): http://www.cs.utexas.edu/users/lin/critterfest.html
+Trying: http://www.cs.utexas.edu/users/lin/
+Indexing(287): http://www.cs.utexas.edu/users/lin/
+LinkExtractor: java.net.MalformedURLException: unknown protocol: javascript
+LinkExtractor: java.net.MalformedURLException: unknown protocol: javascript
+LinkExtractor: java.net.MalformedURLException: unknown protocol: javascript
+Trying: http://www.cs.utexas.edu/~cannata/dbms//cs347 Syllabus.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 400 for URL: http://www.cs.utexas.edu/~cannata/dbms//cs347 Syllabus.html
+No Page Found
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Academic Honesty.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//CS Department Rules to Live By.htm
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 400 for URL: http://www.cs.utexas.edu/~cannata/dbms//CS Department Rules to Live By.htm
+No Page Found
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs1/01 cs327e-frontrow-final-e73b6af4f212.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs1/01 cs327e-frontrow-final-e73b6af4f212/Databases Final Presentation.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Wed4/02 cs327e-tracy_ahsan_neha-db_finalproject_tracy_cheng-55ffff975131.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Wed4/02 cs327e-tracy_ahsan_neha-db_finalproject_tracy_cheng-55ffff975131/Cheng_Hussain_Sule_Final Presentation CS 327E.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Wed5/03 cs327ejeremy_doris_ryan-db_finalproject_jeremy_berman-43a38c6cd504.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Wed5/03 cs327ejeremy_doris_ryan-db_finalproject_jeremy_berman-43a38c6cd504/Databases Final Project.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs1/02 cs327ewwegtk-db_finalproject_edward_gunawan-d30adb8d9273.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs1/02 cs327ewwegtk-db_finalproject_edward_gunawan-d30adb8d9273/real final project/final_project/Hitch-A-Ride (1).pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs1/03 cs327e-whitelanterncorps-db_final_project-582bcf64fda6.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs1/03 cs327e-whitelanterncorps-db_final_project-582bcf64fda6/Final Database Project Presentation power point.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs3/01 cs327e-themostproductive-db_finalproject_zhao_joe-e07cde4ea454.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Thurs3/01 cs327e-themostproductive-db_finalproject_zhao_joe-e07cde4ea454/Library-Managing-Database.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Wed2/02 cs327edatabased-db_final_project_sean_moorhead-986879497bf9.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cannata/dbms//Projects/Final Project/Wed2/02 cs327edatabased-db_final_project_sean_moorhead-986879497bf9/CS 327E Final Project.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/midterm_solutions.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/exam1_solutions.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/isa-help-sheet.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-announcement.html
+Indexing(288): http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-announcement.html
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-syllabus.html
+Indexing(289): http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-syllabus.html
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-lectures.html
+Indexing(290): http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-lectures.html
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-homework.html
+Indexing(291): http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429-homework.html
+Trying: https://www.cs.utexas.edu/users/downing/cs104c//index.html
+Indexing(292): https://www.cs.utexas.edu/users/downing/cs104c//index.html
+Trying: https://www.cs.utexas.edu/users/downing/cs104c//Grading.html
+Indexing(293): https://www.cs.utexas.edu/users/downing/cs104c//Grading.html
+Trying: https://www.cs.utexas.edu/users/downing/cs104c//Schedule.html
+Indexing(294): https://www.cs.utexas.edu/users/downing/cs104c//Schedule.html
+Trying: https://www.cs.utexas.edu/users/utpc/
+Indexing(295): https://www.cs.utexas.edu/users/utpc/
+Trying: https://www.cs.utexas.edu/users/evouga/
+Indexing(296): https://www.cs.utexas.edu/users/evouga/
+Trying: https://www.cs.utexas.edu/users/downing/
+Already visited
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw9.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/test-stats-fall2017
+Indexing(297): https://www.cs.utexas.edu/~byoung/cs429/test-stats-fall2017
+Trying: https://www.cs.utexas.edu/~byoung/cs429/quiz3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/quiz3-answers
+Indexing(298): https://www.cs.utexas.edu/~byoung/cs429/quiz3-answers
+Trying: https://www.cs.utexas.edu/~byoung/cs429/all-tests-study-guide.html
+Indexing(299): https://www.cs.utexas.edu/~byoung/cs429/all-tests-study-guide.html
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw8.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/how-to-succeed-in-cs429.html
+Indexing(300): https://www.cs.utexas.edu/~byoung/cs429/how-to-succeed-in-cs429.html
+Trying: https://www.cs.utexas.edu/~byoung/cs429/C_tutorial.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/429schedule.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/C_tutorial.pdf
+Already visited
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides1-intro-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides1-intro.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides-c-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides-c.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides2-bits-bytes-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides2-bits-bytes.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides3-integers-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides3-integers.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides4-fp-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides4-fp.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides5-logic-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides5-logic.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides6-isa1-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides6-isa1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides7-isa2-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides7-isa2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides8-isa3-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides8-isa3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides9-isa4-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides9-isa4.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides10-isa5-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides10-isa5.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides11-isa6-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides11-isa6.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides12-datapath1-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides12-datapath1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides13-datapath2-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides13-datapath2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides14-pipeline1-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides14-pipeline1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides15-pipeline2-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides15-pipeline2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides16-pipeline3-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides16-pipeline3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides18-storage-technologies-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides18-storage-technologies.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides19-cache1-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides19-cache1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides20-cache2-4up.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/slides20-cache2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw4.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw5.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw6.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw7.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw8.pdf
+Already visited
+Trying: https://www.cs.utexas.edu/~byoung/cs429/hw9.pdf
+Already visited
+Trying: http://www.cs.utexas.edu/academics/conduct
+Already visited
+Trying: https://www.cs.utexas.edu/~byoung/cs429/y86primer.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~byoung/cs429/program3.html
+Indexing(301): https://www.cs.utexas.edu/~byoung/cs429/program3.html
+Trying: https://www.cs.utexas.edu/~byoung/cs429/program2.html
+Indexing(302): https://www.cs.utexas.edu/~byoung/cs429/program2.html
+Trying: http://www.cs.utexas.edu/~fares/cs331f17/CS 331_files/upper.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 400 for URL: http://www.cs.utexas.edu/~fares/cs331f17/CS 331_files/upper.html
+No Page Found
+Trying: http://www.cs.utexas.edu/~fares/cs331f17/CS 331_files/menu.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 400 for URL: http://www.cs.utexas.edu/~fares/cs331f17/CS 331_files/menu.html
+No Page Found
+Trying: http://www.cs.utexas.edu/~fares/cs331f17/CS 331_files/syllabus.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 400 for URL: http://www.cs.utexas.edu/~fares/cs331f17/CS 331_files/syllabus.html
+No Page Found
+Trying: https://www.cs.utexas.edu/users/ans/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/syllabus.html
+Indexing(303): https://www.cs.utexas.edu/users/ans/classes/cs439/syllabus.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/discussionSections.html
+Indexing(304): https://www.cs.utexas.edu/users/ans/classes/cs439/discussionSections.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/officeHours.html
+Indexing(305): https://www.cs.utexas.edu/users/ans/classes/cs439/officeHours.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/projects/project439.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/exam_page.html
+Indexing(306): https://www.cs.utexas.edu/users/ans/classes/cs439/exam_page.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/code_of_conduct.html
+Indexing(307): https://www.cs.utexas.edu/users/ans/classes/cs439/code_of_conduct.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/pairprogramming.html
+Indexing(308): https://www.cs.utexas.edu/users/ans/classes/cs439/pairprogramming.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/feedback.html
+Indexing(309): https://www.cs.utexas.edu/users/ans/classes/cs439/feedback.html
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/Unix_is_your_friend.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/erics_gcc_overview.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/CVS-FAQ.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/gdb-ref.ps
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/loveC.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/EssentialC.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/dictaat.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/docs/ritchie84evolution.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-fall16//CS346-syllabus.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~bwaters/
+Indexing(310): http://www.cs.utexas.edu/~bwaters/
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-spring13/cs346_notes.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-spring13/numth1.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-spring13/numth2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/
+Already visited
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/schedule
+Indexing(311): https://www.cs.utexas.edu/~ojensen/courses/cs361s/schedule
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/reading
+Indexing(312): https://www.cs.utexas.edu/~ojensen/courses/cs361s/reading
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/news
+Indexing(313): https://www.cs.utexas.edu/~ojensen/courses/cs361s/news
+Trying: https://www.cs.utexas.edu/~ojensen/
+Indexing(314): https://www.cs.utexas.edu/~ojensen/
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s//
+Indexing(315): https://www.cs.utexas.edu/~ojensen/courses/cs361s//
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/
+Already visited
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/schedule
+Already visited
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/reading
+Already visited
+Trying: https://www.cs.utexas.edu/~ojensen/courses/cs361s/news
+Already visited
+Trying: https://www.cs.utexas.edu/academics/conduct
+Indexing(316): https://www.cs.utexas.edu/academics/conduct
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: https://www.cs.utexas.edu/users/elzein/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/adontula/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/gsimmons/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/elzein/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/abel/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shreyass/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/users/guanlin/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/florian/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/srod/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~pradeepr/courses/SLDM//index.htm
+Indexing(317): http://www.cs.utexas.edu/~pradeepr/courses/SLDM//index.htm
+Trying: http://www.cs.utexas.edu/~pradeepr/courses/SLDM//instructor.htm
+Indexing(318): http://www.cs.utexas.edu/~pradeepr/courses/SLDM//instructor.htm
+Trying: http://www.cs.utexas.edu/~pradeepr/courses/SLDM//Syllabus.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~pradeepr/courses/SLDM//homeworks.htm
+Indexing(319): http://www.cs.utexas.edu/~pradeepr/courses/SLDM//homeworks.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs371m/index.htm
+Indexing(320): http://www.cs.utexas.edu/~scottm/cs371m/index.htm
+Trying: https://www.cs.utexas.edu/facilities/public-labs
+Indexing(321): https://www.cs.utexas.edu/facilities/public-labs
+Trying: https://www.cs.utexas.edu/facilities/public-labs
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs371m/piazza.com/utexas/summer2017/cs371m/home
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~scottm/cs371m/schedule.htm
+Indexing(322): http://www.cs.utexas.edu/~scottm/cs371m/schedule.htm
+Trying: http://www.cs.utexas.edu/undergraduate-program/code-conduct
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/undergraduate-program/code-conduct
+No Page Found
+Trying: http://www.cs.utexas.edu/~scottm/cs371m/index.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~dana/index.html
+Indexing(323): http://www.cs.utexas.edu/~dana/index.html
+Trying: http://www.cs.utexas.edu/~dana/
+Indexing(324): http://www.cs.utexas.edu/~dana/
+Trying: http://www.cs.utexas.edu/~ccor/
+Indexing(325): http://www.cs.utexas.edu/~ccor/
+Trying: http://www.cs.utexas.edu/~dana/PenroseBBS.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/nn0199_9.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Book/Chap1C.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/CS378IntroC.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Notes_W.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/SW.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Book/Chap2C.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/342CLec1.1_Computation2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/2_Subsystems.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/KochEtAlSingleNeurons.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/asher2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Shaelyn2.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Gross.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/quiroga08.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/342Neurons_Lec3_2w.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Brain_Lec3c_neurons.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/342Neurons_Lec3_2w.pdf
+Already visited
+Trying: http://www.cs.utexas.edu/~dana/Brain_Lec3c_neurons.pdf
+Already visited
+Trying: http://www.cs.utexas.edu/~dana/Brain_Lec4.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Gallant_2012.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/RL08.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Visual_Cognition.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Psyg.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Salvucci-topiCS11.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/Salvucci-PR08.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~dana/MirrorNeurons.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/ear/
+Already visited
+Trying: http://www.cs.utexas.edu/users/ear/cs341//Syllabus.html
+Indexing(326): http://www.cs.utexas.edu/users/ear/cs341//Syllabus.html
+Trying: http://www.cs.utexas.edu/users/ear/cs341//ClassPolicies.html
+Indexing(327): http://www.cs.utexas.edu/users/ear/cs341//ClassPolicies.html
+Trying: http://www.cs.utexas.edu/~ear/cs341/automatabook/
+Indexing(328): http://www.cs.utexas.edu/~ear/cs341/automatabook/
+Trying: http://www.cs.utexas.edu/~ear/cs341/automatabook/errata.html
+Indexing(329): http://www.cs.utexas.edu/~ear/cs341/automatabook/errata.html
+Trying: http://www.cs.utexas.edu/users/ear/cs341//Exams.html
+Indexing(330): http://www.cs.utexas.edu/users/ear/cs341//Exams.html
+Trying: http://www.cs.utexas.edu/~ear/cs341/automatabook/
+Already visited
+Trying: http://www.cs.utexas.edu/users/fussell/
+Indexing(331): http://www.cs.utexas.edu/users/fussell/
+Trying: http://www.cs.utexas.edu/users/fussell/courses/cs354//syllabus.shtml
+Indexing(332): http://www.cs.utexas.edu/users/fussell/courses/cs354//syllabus.shtml
+Trying: http://www.cs.utexas.edu/users/fussell/courses/cs354//schedule.shtml
+Indexing(333): http://www.cs.utexas.edu/users/fussell/courses/cs354//schedule.shtml
+Trying: http://www.cs.utexas.edu/users/fussell/courses/cs354//electronic.shtml
+Indexing(334): http://www.cs.utexas.edu/users/fussell/courses/cs354//electronic.shtml
+Trying: http://www.cs.utexas.edu/users/fussell/courses/cs354//handouts/handouts.shtml
+Indexing(335): http://www.cs.utexas.edu/users/fussell/courses/cs354//handouts/handouts.shtml
+Trying: http://www.cs.utexas.edu/users/fussell/courses/cs354//assignments/assignments.shtml
+Indexing(336): http://www.cs.utexas.edu/users/fussell/courses/cs354//assignments/assignments.shtml
+Trying: http://www.cs.utexas.edu/users/fussell/courses/cs354//links.shtml
+Indexing(337): http://www.cs.utexas.edu/users/fussell/courses/cs354//links.shtml
+Trying: http://www.cs.utexas.edu/users/novak/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs375syllabus.html
+Indexing(338): http://www.cs.utexas.edu/users/novak/cs375syllabus.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375clcontents.html
+Indexing(339): http://www.cs.utexas.edu/users/novak/cs375clcontents.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375contents.html
+Indexing(340): http://www.cs.utexas.edu/users/novak/cs375contents.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375index.html
+Indexing(341): http://www.cs.utexas.edu/users/novak/cs375index.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/langtableb.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs375vocab.html
+Indexing(342): http://www.cs.utexas.edu/users/novak/cs375vocab.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375/
+Indexing(343): http://www.cs.utexas.edu/users/novak/cs375/
+Trying: http://www.cs.utexas.edu/users/novak/cs375files.html
+Indexing(344): http://www.cs.utexas.edu/users/novak/cs375files.html
+Trying: http://www.cs.utexas.edu/users/novak/debugging.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/asg-lexan.html
+Indexing(345): http://www.cs.utexas.edu/users/novak/asg-lexan.html
+Trying: http://www.cs.utexas.edu/users/novak/asg-lex.html
+Indexing(346): http://www.cs.utexas.edu/users/novak/asg-lex.html
+Trying: http://www.cs.utexas.edu/users/novak/lexpaper.htm
+Indexing(347): http://www.cs.utexas.edu/users/novak/lexpaper.htm
+Trying: http://www.cs.utexas.edu/users/novak/asg-parse.html
+Indexing(348): http://www.cs.utexas.edu/users/novak/asg-parse.html
+Trying: http://www.cs.utexas.edu/users/novak/yaccpaper.htm
+Indexing(349): http://www.cs.utexas.edu/users/novak/yaccpaper.htm
+Trying: http://www.cs.utexas.edu/users/novak/make-intro.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/grammar.html
+Indexing(350): http://www.cs.utexas.edu/users/novak/grammar.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375/pasgram.txt
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/opprec.html
+Indexing(351): http://www.cs.utexas.edu/users/novak/opprec.html
+Trying: http://www.cs.utexas.edu/users/novak/asg-codegen.html
+Indexing(352): http://www.cs.utexas.edu/users/novak/asg-codegen.html
+Trying: http://www.cs.utexas.edu/users/novak/iso7185.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/micro301.html
+Indexing(353): http://www.cs.utexas.edu/users/novak/micro301.html
+Trying: http://www.cs.utexas.edu/users/novak/micro.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/cs375grading.html
+Indexing(354): http://www.cs.utexas.edu/users/novak/cs375grading.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375midterm.html
+Indexing(355): http://www.cs.utexas.edu/users/novak/cs375midterm.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375midquest.html
+Indexing(356): http://www.cs.utexas.edu/users/novak/cs375midquest.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375midans.html
+Indexing(357): http://www.cs.utexas.edu/users/novak/cs375midans.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375final.html
+Indexing(358): http://www.cs.utexas.edu/users/novak/cs375final.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375finquest.html
+Indexing(359): http://www.cs.utexas.edu/users/novak/cs375finquest.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375finans.html
+Indexing(360): http://www.cs.utexas.edu/users/novak/cs375finans.html
+Trying: http://www.cs.utexas.edu/users/novak/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/
+Indexing(361): http://www.cs.utexas.edu/~pstone/
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/index.html
+Indexing(362): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/index.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//resources/index.html
+Indexing(363): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//resources/index.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/01-search/01-search.php
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/02-multiagent/02-multiagent.html
+Indexing(364): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/02-multiagent/02-multiagent.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/03-reinforcement/03-reinforcement.html
+Indexing(365): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/03-reinforcement/03-reinforcement.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/04-bayes/04-bayes.html
+Indexing(366): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/04-bayes/04-bayes.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/05-ghostbusters/05-ghostbusters.html
+Indexing(367): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/05-ghostbusters/05-ghostbusters.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/contest/contest.html
+Indexing(368): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/contest/contest.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//survey-midterm/classSurvey.html
+Indexing(369): http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//survey-midterm/classSurvey.html
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//assignments/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ear/CodeOfConduct.html
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hfall17//resources/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sniekum/classes/343-S17/desc.php
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343Hspring15/
+Indexing(370): http://www.cs.utexas.edu/~pstone/Courses/343Hspring15/
+Trying: http://www.cs.utexas.edu/~grauman/courses/spring2014/
+Indexing(371): http://www.cs.utexas.edu/~grauman/courses/spring2014/
+Trying: http://www.cs.utexas.edu/users/risto/cs343/
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343spring12/
+Indexing(372): http://www.cs.utexas.edu/~pstone/Courses/343spring12/
+Trying: http://www.cs.utexas.edu/~mooney/cs343/
+Indexing(373): http://www.cs.utexas.edu/~mooney/cs343/
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343spring10/
+Indexing(374): http://www.cs.utexas.edu/~pstone/Courses/343spring10/
+Trying: http://www.cs.utexas.edu/users/kuipers/cs343-S08.html
+Indexing(375): http://www.cs.utexas.edu/users/kuipers/cs343-S08.html
+Trying: http://www.cs.utexas.edu/users/novak/cs343asg.html
+Indexing(376): http://www.cs.utexas.edu/users/novak/cs343asg.html
+Trying: http://www.cs.utexas.edu/users/ear/cs343/
+Indexing(377): http://www.cs.utexas.edu/users/ear/cs343/
+Trying: http://www.cs.utexas.edu/~pstone/Courses/344Mfall10/
+Indexing(378): http://www.cs.utexas.edu/~pstone/Courses/344Mfall10/
+Trying: http://www.cs.utexas.edu
+Indexing(379): http://www.cs.utexas.edu
+Trying: http://www.cs.utexas.edu/~pstone/
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P7R3Visitor/index.html
+Indexing(380): http://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P7R3Visitor/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Indexing(381): http://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/Solutions.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/Solutions.pdf
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/
+Indexing(382): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/1stDaySyllabusF2017.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/
+Indexing(383): http://www.cs.utexas.edu/users/dsb/
+Trying: https://www.cs.utexas.edu/academics/conduct
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/Caveman.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/Stoney%20Billy.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/Videos/NetBeansInstructions.html
+Indexing(384): http://www.cs.utexas.edu/users/dsb/CS373S/Videos/NetBeansInstructions.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/How2SetClasspath.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 401 for URL: http://www.cs.utexas.edu/users/dsb/CS373S//Course/How2SetClasspath.html
+No Page Found
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/Readings/PierceCategory.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/facilities/public-labs
+Already visited
+Trying: http://www.cs.utexas.edu/users/schwartz/MDELite/index.html
+Indexing(385): http://www.cs.utexas.edu/users/schwartz/MDELite/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/HomeworkAssignmentH7.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/Course/javadoc.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 401 for URL: http://www.cs.utexas.edu/users/dsb/CS373S/Course/javadoc.html
+No Page Found
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/Course/regressionTest.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 401 for URL: http://www.cs.utexas.edu/users/dsb/CS373S/Course/regressionTest.html
+No Page Found
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/How2SetClasspath.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/1stDaySyllabus2016.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/1Intro/
+Indexing(386): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/1Intro/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//SurveyF2017/summary.html
+Indexing(387): http://www.cs.utexas.edu/users/dsb/CS373S//SurveyF2017/summary.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/SettingClassPath/index.html
+Indexing(388): http://www.cs.utexas.edu/users/dsb/CS373S//P/SettingClassPath/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/2UML/
+Indexing(389): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/2UML/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/ClassDiagramOfCategory/PostedSolution.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/LogicCircuits/Solution.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/MetaGrammars/Solution.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/MetaModeling/index.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/users/dsb/CS373S//H/MetaModeling/index.html
+No Page Found
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/JavaReflection/index.html
+Indexing(390): http://www.cs.utexas.edu/users/dsb/CS373S//P/JavaReflection/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/P2/index.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/users/dsb/CS373S//P/P2/index.html
+No Page Found
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/P2MetamodelConstraints/index.html
+Indexing(391): http://www.cs.utexas.edu/users/dsb/CS373S//P/P2MetamodelConstraints/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/3Refactorings/
+Indexing(392): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/3Refactorings/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/H4AreEqual/Solutions.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/P3E/index.html
+Indexing(393): http://www.cs.utexas.edu/users/dsb/CS373S//P/P3E/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/prog1toYuml/index.html
+Indexing(394): http://www.cs.utexas.edu/users/dsb/CS373S//P/prog1toYuml/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/ExtraProblems/index.html
+Indexing(395): http://www.cs.utexas.edu/users/dsb/CS373S//H/ExtraProblems/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/ExtraProblems/Solutions.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Exams/M1Solution.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/4DesignPatterns/
+Indexing(396): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/4DesignPatterns/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/ExtraProblems.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/ExtraProblems.pdf
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/Solutions.pdf
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/Gates2/index.html
+Indexing(397): http://www.cs.utexas.edu/users/dsb/CS373S//P/Gates2/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/Gates2/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P6EclipseVisitor/index.html
+Indexing(398): http://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P6EclipseVisitor/index.html
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P7R3Visitor/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/5ArchitecturalPatterns/
+Indexing(399): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/5ArchitecturalPatterns/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/6DxT/
+Indexing(400): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/6DxT/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//P/Gamma/index.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/users/dsb/CS373S//P/Gamma/index.html
+No Page Found
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/7SOA/
+Indexing(401): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/7SOA/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/8Recap/
+Indexing(402): http://www.cs.utexas.edu/users/dsb/CS373S//Lectures/8Recap/
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S//Course/ExamSolutions.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S/
+Already visited
+Trying: https://www.cs.utexas.edu/users/novak/cs375.html
+Already visited
+Trying: https://www.cs.utexas.edu/~gouda/classes.htm
+Already visited
+Trying: https://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/kristena/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/kthomas/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung//cs361c/syllabus361c.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs314/
+Already visited
+Trying: https://www.cs.utexas.edu/users/ear/cs349/
+Already visited
+Trying: http://www.cs.utexas.edu/users/kthomas/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ladylink/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/novak/cs314.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/downing/cs373/
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/ans/classes/cs439/schedule.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/kristena/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/ej2h/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/meganc/ir-course.html
+Already visited
+Trying: https://www.cs.utexas.edu/~bulko/index.html
+Indexing(403): https://www.cs.utexas.edu/~bulko/index.html
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/2017spring.officehours.html
+Indexing(404): https://www.cs.utexas.edu/~bulko/2017spring/2017spring.officehours.html
+Trying: https://www.cs.utexas.edu/
+Indexing(405): https://www.cs.utexas.edu/
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/313E.html
+Indexing(406): https://www.cs.utexas.edu/~bulko/2017spring/313E.html
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bulko/2017spring/RulesOfInference.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~bulko/2017spring/LogicalEquivalences.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~bulko/2017spring/311.Syllabus.Spring17.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/01c%20-%20Intro%20and%20Prop%20Logic.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/02c%20-%20Predicate%20Logic.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/03c%20-%20Formal%20and%20Informal%20Proofs.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/04c%20-%20Sets%20and%20Set%20Operations.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/05c%20-%20Functions.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw4.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/06c%20-%20Countability.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw5.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/08c%20-%20Induction.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw6.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/09c%20-%20Program%20Verification.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw7.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/10c%20-%20Graphs.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw8.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw9.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~bulko/2017spring/311.hw10.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/index.htm
+Indexing(407): https://www.cs.utexas.edu/~dfranke/index.htm
+Trying: http://www.cs.utexas.edu/academics/conduct
+Already visited
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture4.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture5.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture6.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture7.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture8.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture9.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture10.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture11.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture12.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture13.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture14.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture15.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture16.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture17.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture17A.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture18.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture19.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture20.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~dfranke/courses/2017fall/Lecture21.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~diz/378//index.html
+Indexing(408): https://www.cs.utexas.edu/~diz/378//index.html
+Trying: http://www.cs.utexas.edu/~diz/
+Indexing(409): http://www.cs.utexas.edu/~diz/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P7R3Visitor/index.html
+Indexing(410): https://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P7R3Visitor/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Indexing(411): https://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/Solutions.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/Solutions.pdf
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/
+Indexing(412): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/1stDaySyllabusF2017.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/
+Already visited
+Trying: https://www.cs.utexas.edu/academics/conduct
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/Caveman.zip
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/Stoney%20Billy.zip
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/Videos/NetBeansInstructions.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/How2SetClasspath.html
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 401 for URL: https://www.cs.utexas.edu/users/dsb/CS373S//Course/How2SetClasspath.html
+No Page Found
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/Readings/PierceCategory.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/facilities/public-labs
+Already visited
+Trying: http://www.cs.utexas.edu/users/schwartz/MDELite/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/HomeworkAssignmentH7.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/Course/javadoc.html
+Already visited
+Trying: http://www.cs.utexas.edu/users/dsb/CS373S/Course/regressionTest.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/How2SetClasspath.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/1stDaySyllabus2016.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/1Intro/
+Indexing(413): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/1Intro/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//SurveyF2017/summary.html
+Indexing(414): https://www.cs.utexas.edu/users/dsb/CS373S//SurveyF2017/summary.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/SettingClassPath/index.html
+Indexing(415): https://www.cs.utexas.edu/users/dsb/CS373S//P/SettingClassPath/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/2UML/
+Indexing(416): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/2UML/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/ClassDiagramOfCategory/PostedSolution.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/LogicCircuits/Solution.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/MetaGrammars/Solution.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/MetaModeling/index.html
+WebPage.getWebPage(): java.io.FileNotFoundException: https://www.cs.utexas.edu/users/dsb/CS373S//H/MetaModeling/index.html
+No Page Found
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/JavaReflection/index.html
+Indexing(417): https://www.cs.utexas.edu/users/dsb/CS373S//P/JavaReflection/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/P2/index.html
+WebPage.getWebPage(): java.io.FileNotFoundException: https://www.cs.utexas.edu/users/dsb/CS373S//P/P2/index.html
+No Page Found
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/P2MetamodelConstraints/index.html
+Indexing(418): https://www.cs.utexas.edu/users/dsb/CS373S//P/P2MetamodelConstraints/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/3Refactorings/
+Indexing(419): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/3Refactorings/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/H4AreEqual/Solutions.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/P3E/index.html
+Indexing(420): https://www.cs.utexas.edu/users/dsb/CS373S//P/P3E/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/prog1toYuml/index.html
+Indexing(421): https://www.cs.utexas.edu/users/dsb/CS373S//P/prog1toYuml/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/ExtraProblems/index.html
+Indexing(422): https://www.cs.utexas.edu/users/dsb/CS373S//H/ExtraProblems/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/ExtraProblems/Solutions.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Exams/M1Solution.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/4DesignPatterns/
+Indexing(423): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/4DesignPatterns/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/ExtraProblems.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/ExtraProblems.pdf
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//H/MoreProblems/Solutions.pdf
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/Gates2/index.html
+Indexing(424): https://www.cs.utexas.edu/users/dsb/CS373S//P/Gates2/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/Gates2/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P6EclipseVisitor/index.html
+Indexing(425): https://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P6EclipseVisitor/index.html
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P7R3Visitor/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/5ArchitecturalPatterns/
+Indexing(426): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/5ArchitecturalPatterns/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/P8CalcFramework/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/6DxT/
+Indexing(427): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/6DxT/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//P/Gamma/index.html
+WebPage.getWebPage(): java.io.FileNotFoundException: https://www.cs.utexas.edu/users/dsb/CS373S//P/Gamma/index.html
+No Page Found
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/7SOA/
+Indexing(428): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/7SOA/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/8Recap/
+Indexing(429): https://www.cs.utexas.edu/users/dsb/CS373S//Lectures/8Recap/
+Trying: https://www.cs.utexas.edu/users/dsb/CS373S//Course/ExamSolutions.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/novak/cs375syllabus.html
+Indexing(430): https://www.cs.utexas.edu/users/novak/cs375syllabus.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375clcontents.html
+Indexing(431): https://www.cs.utexas.edu/users/novak/cs375clcontents.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375contents.html
+Indexing(432): https://www.cs.utexas.edu/users/novak/cs375contents.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375index.html
+Indexing(433): https://www.cs.utexas.edu/users/novak/cs375index.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/novak/langtableb.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/novak/cs375vocab.html
+Indexing(434): https://www.cs.utexas.edu/users/novak/cs375vocab.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375/
+Already visited
+Trying: https://www.cs.utexas.edu/users/novak/cs375files.html
+Indexing(435): https://www.cs.utexas.edu/users/novak/cs375files.html
+Trying: https://www.cs.utexas.edu/users/novak/debugging.html
+Indexing(436): https://www.cs.utexas.edu/users/novak/debugging.html
+Trying: https://www.cs.utexas.edu/users/novak/asg-lexan.html
+Indexing(437): https://www.cs.utexas.edu/users/novak/asg-lexan.html
+Trying: https://www.cs.utexas.edu/users/novak/asg-lex.html
+Indexing(438): https://www.cs.utexas.edu/users/novak/asg-lex.html
+Trying: https://www.cs.utexas.edu/users/novak/lexpaper.htm
+Indexing(439): https://www.cs.utexas.edu/users/novak/lexpaper.htm
+Trying: https://www.cs.utexas.edu/users/novak/asg-parse.html
+Indexing(440): https://www.cs.utexas.edu/users/novak/asg-parse.html
+Trying: https://www.cs.utexas.edu/users/novak/yaccpaper.htm
+Indexing(441): https://www.cs.utexas.edu/users/novak/yaccpaper.htm
+Trying: https://www.cs.utexas.edu/users/novak/make-intro.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/novak/grammar.html
+Indexing(442): https://www.cs.utexas.edu/users/novak/grammar.html
+Trying: http://www.cs.utexas.edu/users/novak/cs375/pasgram.txt
+Already visited
+Trying: https://www.cs.utexas.edu/users/novak/opprec.html
+Indexing(443): https://www.cs.utexas.edu/users/novak/opprec.html
+Trying: https://www.cs.utexas.edu/users/novak/asg-codegen.html
+Indexing(444): https://www.cs.utexas.edu/users/novak/asg-codegen.html
+Trying: https://www.cs.utexas.edu/users/novak/iso7185.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/novak/micro301.html
+Indexing(445): https://www.cs.utexas.edu/users/novak/micro301.html
+Trying: https://www.cs.utexas.edu/users/novak/micro.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/novak/cs375grading.html
+Indexing(446): https://www.cs.utexas.edu/users/novak/cs375grading.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375midterm.html
+Indexing(447): https://www.cs.utexas.edu/users/novak/cs375midterm.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375midquest.html
+Indexing(448): https://www.cs.utexas.edu/users/novak/cs375midquest.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375midans.html
+Indexing(449): https://www.cs.utexas.edu/users/novak/cs375midans.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375final.html
+Indexing(450): https://www.cs.utexas.edu/users/novak/cs375final.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375finquest.html
+Indexing(451): https://www.cs.utexas.edu/users/novak/cs375finquest.html
+Trying: https://www.cs.utexas.edu/users/novak/cs375finans.html
+Indexing(452): https://www.cs.utexas.edu/users/novak/cs375finans.html
+Trying: http://www.cs.utexas.edu/users/novak/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (0-9)/slides-0-9.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (10-36)/slides-10-36.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (37-52)/slides-37-52.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (53-86)/slides-53-86.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS 356 slides/CS 356 slides (87-104)/slides-87-104.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_mt3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_mt2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_mt1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Spring17_hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise10.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise9.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise8.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise7.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise6.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise5.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise4.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/Exercise1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356sp17/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall15_mt3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall15_mt2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall15_mt1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall15_hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall15_hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall15_hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Spring15_mt3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Spring15_mt2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Spring15_mt1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Spring15_hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Spring15_hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Spring15_hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall14_mt3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall14_mt2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall14_mt1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall14_hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall14_hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Fall14_hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/mt3Summer14.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/mt2Summer14.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/mt1Summer14.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/mt3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/mt2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/mt1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/homework3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/homework2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/homework1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/midterm3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_homework3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_homework2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_homework1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_midterm5.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_midterm4.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_midterm3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_hw5.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_hw4.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise_hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise13.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise12.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise11.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise10.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise9.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise8.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise7.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise6.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise5.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise4.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/exercise1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/Notes.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs311/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp14/mt3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp14/midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp14/midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp14/homework3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp14/homework2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp14/homework1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp14/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs326esp13/mt3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs326esp13/hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs326esp13/mt2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs326esp13/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs326esp13/mt1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs326esp13/hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs326esp13/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/midterm3
+Indexing(453): https://www.cs.utexas.edu/~gouda/cs337fa08/midterm3
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz9-10
+Indexing(454): https://www.cs.utexas.edu/~gouda/cs337fa08/quiz9-10
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/project4/index.htm
+Indexing(455): https://www.cs.utexas.edu/~gouda/cs337fa08/project4/index.htm
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/midterm2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz8.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/project3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/midterm1
+Indexing(456): https://www.cs.utexas.edu/~gouda/cs337fa08/midterm1
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz7
+Indexing(457): https://www.cs.utexas.edu/~gouda/cs337fa08/quiz7
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz5
+Indexing(458): https://www.cs.utexas.edu/~gouda/cs337fa08/quiz5
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/project2/index.htm
+Indexing(459): https://www.cs.utexas.edu/~gouda/cs337fa08/project2/index.htm
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz4
+Indexing(460): https://www.cs.utexas.edu/~gouda/cs337fa08/quiz4
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz3
+Indexing(461): https://www.cs.utexas.edu/~gouda/cs337fa08/quiz3
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/project1/index.htm
+Indexing(462): https://www.cs.utexas.edu/~gouda/cs337fa08/project1/index.htm
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz2
+Indexing(463): https://www.cs.utexas.edu/~gouda/cs337fa08/quiz2
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/quiz1
+Indexing(464): https://www.cs.utexas.edu/~gouda/cs337fa08/quiz1
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa08/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/midterm3
+Indexing(465): https://www.cs.utexas.edu/~gouda/cs337fa07/midterm3
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz12
+Indexing(466): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz12
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz1011
+Indexing(467): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz1011
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/midterm2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz9
+Indexing(468): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz9
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz8.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/Quiz7.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz7
+Indexing(469): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz7
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz6
+Indexing(470): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz6
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz5
+Indexing(471): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz5
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/midterm1
+Indexing(472): https://www.cs.utexas.edu/~gouda/cs337fa07/midterm1
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz34
+Indexing(473): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz34
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz2
+Indexing(474): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz2
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/quiz1
+Indexing(475): https://www.cs.utexas.edu/~gouda/cs337fa07/quiz1
+Trying: https://www.cs.utexas.edu/~gouda/cs337fa07/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/midterm3
+Indexing(476): https://www.cs.utexas.edu/~gouda/cs356summer09/midterm3
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/midterm2
+Indexing(477): https://www.cs.utexas.edu/~gouda/cs356summer09/midterm2
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/HW3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/midterm1
+Indexing(478): https://www.cs.utexas.edu/~gouda/cs356summer09/midterm1
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/quiz3
+Indexing(479): https://www.cs.utexas.edu/~gouda/cs356summer09/quiz3
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/quiz2
+Indexing(480): https://www.cs.utexas.edu/~gouda/cs356summer09/quiz2
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/quiz1
+Indexing(481): https://www.cs.utexas.edu/~gouda/cs356summer09/quiz1
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer09/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/midterm3
+Indexing(482): https://www.cs.utexas.edu/~gouda/cs356sp09/midterm3
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/homework3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/quiz3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/midterm2
+Indexing(483): https://www.cs.utexas.edu/~gouda/cs356sp09/midterm2
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/homework2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/quiz2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/midterm1
+Indexing(484): https://www.cs.utexas.edu/~gouda/cs356sp09/midterm1
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/homework1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/quiz1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp09/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/midterm3sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/midterm3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/homework3sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/homework3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/midterm2sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/homework2sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/homework2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/midterm1sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/homework1sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/homework1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/quiz5.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/quiz1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer08/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/midterm3_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/midterm3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/hw3_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/quiz8
+Indexing(485): https://www.cs.utexas.edu/~gouda/cs356sp08/quiz8
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/quiz7
+Indexing(486): https://www.cs.utexas.edu/~gouda/cs356sp08/quiz7
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/hw3_cs356sp08.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/quiz6
+Indexing(487): https://www.cs.utexas.edu/~gouda/cs356sp08/quiz6
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/quiz5
+Indexing(488): https://www.cs.utexas.edu/~gouda/cs356sp08/quiz5
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/quiz4
+Indexing(489): https://www.cs.utexas.edu/~gouda/cs356sp08/quiz4
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/quiz1
+Indexing(490): https://www.cs.utexas.edu/~gouda/cs356sp08/quiz1
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/midterm2_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/hw2_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/hw2_cs356sp08.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/midterm1_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/hw1_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/hw1_cs356sp08.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp08/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/midterm3_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/midterm3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/hw3_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/hw3_cs356summer07.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/midterm2_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/hw2_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/hw2_cs356summer07.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/midterm1_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/hw1_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/hw1_cs356summer07.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer07/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/midterm3_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/midterm3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/hw3_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/midterm2_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/hw2_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/midterm1_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/hw1_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/hw1_cs356sp07.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356sp07/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/MidSol3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/Exam3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/hw3sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/MidSol2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/Exam2.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/hw2sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/MidSol1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/Exam1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/hw1solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/Hw1.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer06/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/solution3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/MT2_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/MT2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/solution2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/MT1_solution.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/MT1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/solution1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS356fa05/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/syl.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/hw2sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/MT2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/md2sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/hw3sol.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/md3.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356fall04/md3sol.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer05/syllabus.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs356summer05/hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs386m/05/CS386M05.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs386m/05/hw1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs386m/05/hw2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs386m/05/hw3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz9-10.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/schedule.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz8.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz7.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz6.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz5.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Project.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz4.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz3.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/Quiz1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S09/CS386S_S09.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/midterm2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz9.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz8.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz7.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz6.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz5.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/midterm1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz4.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz2.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/quiz1.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS386S_S08/CS386S_S08.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS395T_F06
+Indexing(491): https://www.cs.utexas.edu/~gouda/CS395T_F06
+Trying: https://www.cs.utexas.edu/~gouda/hw1_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/sol1_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/midterm1_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/midtermsol1_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/hw2_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/sol2_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/project
+Indexing(492): https://www.cs.utexas.edu/~gouda/project
+Trying: https://www.cs.utexas.edu/~gouda/midterm2_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/midtermsol2_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/class/hw3_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/class/sol3_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/class/midterm3_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/class/midtermsol3_cs395Tfa06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/CS395T
+Indexing(493): https://www.cs.utexas.edu/~gouda/CS395T
+Trying: https://www.cs.utexas.edu/~gouda/hw1_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/hwsol1_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/hw2_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/mt1_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/mt1sol_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/mt2_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/mt2sol_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/hw3_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/hw3sol_cs395Tsp06.txt
+Not HTML Page
+Trying: https://www.cs.utexas.edu/~gouda/cs386m/fdd.pdf
+Not HTML Page
+Trying: http://www.cs.utexas.edu/users/novak/index.html
+Already visited
+Trying: https://www.cs.utexas.edu/users/novak/cs314syllabus.html
+Indexing(494): https://www.cs.utexas.edu/users/novak/cs314syllabus.html
+Trying: https://www.cs.utexas.edu/users/novak/cs314contents.html
+Indexing(495): https://www.cs.utexas.edu/users/novak/cs314contents.html
+Trying: https://www.cs.utexas.edu/users/novak/cs314index.html
+Indexing(496): https://www.cs.utexas.edu/users/novak/cs314index.html
+Trying: https://www.cs.utexas.edu/users/novak/cs314.pdf
+Not HTML Page
+Trying: https://www.cs.utexas.edu/users/novak/cs314reading.html
+Indexing(497): https://www.cs.utexas.edu/users/novak/cs314reading.html
+Trying: https://www.cs.utexas.edu/users/novak/cs314clindex.html
+Indexing(498): https://www.cs.utexas.edu/users/novak/cs314clindex.html
+Trying: https://www.cs.utexas.edu/users/novak/howtomakea.html
+Indexing(499): https://www.cs.utexas.edu/users/novak/howtomakea.html
+Trying: https://www.cs.utexas.edu/users/novak/cs314vocab.html
+Indexing(500): https://www.cs.utexas.edu/users/novak/cs314vocab.html

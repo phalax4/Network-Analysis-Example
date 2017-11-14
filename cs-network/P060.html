@@ -1,0 +1,261 @@
+<base href="http://www.cs.utexas.edu/~byoung/2014-fall/cs429/cs429.html">
+<HTML>
+
+<HEAD>
+
+<TITLE>Computer Organization and Architecture -- CS 429 -- Homepage</TITLE>
+
+</HEAD><BODY bgcolor="ffffff">
+
+<BODY>
+
+<h2>Computer Organization and Architecture -- CS 429 -- Homepage</h2><P>
+
+<h4>
+<pre>
+Homepage: http://www.cs.utexas.edu/users/byoung/2014-fall/cs429/cs429.html
+Homepage: http://www.cs.utexas.edu/users/hunt/class/2014-fall/cs429/cs429.html
+</pre>
+</h4>
+
+<h3>
+<pre>
+
+       Unique Numbers:  52915, 52920, 52935, 52940, 52945, 52960, 52965
+           Class Room:  GDC 2.216 for Unique Numbers:  52915, 52920, 52935
+           Class Room:  BUR 106   for Unique Numbers:  52940, 52945, 52960, 52965
+
+           Class Days:  Monday, Wednesday
+
+           Class Time:  9:00 am -- 10:50 am for Unique Numbers:  52915, 52920, 52935
+           Class Time:  noon    --  1:50 pm for Unique Numbers:  52940, 52945, 52960, 52965
+
+     Laboratory Times:  52940:  Wednesday,  9:00 am -- 10:50 am, SZB 370
+                        52960:  Wednesday,  2:00 pm --  3:50 pm, JGB 2.218
+
+                        52915:  Friday,     9:00 am -- 10:50 am, CLA 1.104
+                        52945:  Friday,     9:00 am -- 10:50 am, CLA 1.104
+
+                        52920:  Friday,    11:00 am -- 12:50 pm, GSB 2.124
+
+                        52935:  Friday,     2:00 pm --  3:50 pm, BUR 112
+                        52965:  Friday,     2:00 pm --  3:50 pm, BUR 112
+
+
+       Class Textbook:  Computer Systems, A Programmer's Perspective, 2nd Edition
+     Textbook Authors:  Randal E. Bryant and David O'Hallaron
+        Textbook ISBN:  0-13-610804-0
+
+          Instructors:  "Warren A. Hunt, Jr." &lt;hunt@cs.utexas.edu&gt;
+                        "William D. Young" &lt;byoung@cs.utexas.edu&gt;
+     Office Locations:  Hunt:  GDC 7.818, Young:  GDC 7.810
+
+         Office Hours:  One of the TAs or Instructors will be
+                        available in GDC 3rd floor atrium:
+                        Monday:    3-6:45pm (3-5 Ben; 5-7 Warren)
+                        Tuesday:   3-5pm (Robert)
+                        Wednesday: 3-6:45pm (3-5 Cuong; 5-7 Warren)
+                        Thursday:  3-7pm (3-5 Robert; 5-7 Wei-Ju)
+                        Friday:    3-7pm (3-5 Keshav; 5-7 Ji)
+
+                        In addition, Dr. Young has office hours in GDC
+                        7.810 on Mondays from noon-1pm and Wed. from
+                        11am-noon.
+
+  Teaching Assistants:  "Cuong Chau" &lt;ckcuong@cs.utexas.edu&gt;
+                        "Ji Hong" &lt;jhong@cs.utexas.edu&gt;
+                        "Keshav Kini" &lt;kini@cs.utexas.edu&gt;
+                        "Wei-Ju Chen" &lt;albertwj@cs.utexas.edu&gt;
+                        "Ben Selfridge" &lt;benselfridge@gmail.com&gt;
+
+     TA Announcements:  Use piazza.com
+
+</pre>
+</h3>
+
+<hr>
+
+<h3>Class Announcements</h3>
+
+Below are links to the course announcement, syllabus, and homework
+assignments.  Additional information will incrementally appear during
+the semester.
+
+<p>
+Everytime you start to work, check this page!  This Webpage and the
+Webpages with the URL prefix
+"http://www.cs.utexas.edu/users/hunt/class/2014-fall/cs429/" that are
+transitively reachable from this Webpage are the definitive resource
+for assignments, laboratories, and other class-related issues.  There
+are some pointers outside of this URL prefix.  For instance, Piazza is
+referenced, and this discussion forum is not part of the definitive
+source of class-related information.<P>
+
+To the best of our current knowledge, the <b>final exams</b> are: 
+<ul>
+<li> Young's class:  Friday, December 12, 9am-noon, JES A121A
+<li> Hunt's class:   Monday, December 15, 2-5pm, FAC 21 
+</ul>
+You should probably confirm this for yourself at the UT Registrar's website.<P>
+
+<h4>Fair Warning: There will be a quiz this week (week of 11/17), given in the
+discussion sections.</h4>
+
+<p>
+<h4>
+<blockquote>
+<i>Important Comment for Laboratory 2B:</i> There is a discrepancy
+between the book's version of MRMOVL and that of the ACL2-based class
+programming tools.  For unknown reasons, we changed the assembler and
+simulator from what is shown in the book on page 338 to work as if
+RegA is the source register pointer and that RegB is the destination
+register.  In fact, if you make a syntactic mistake when coding the
+MRMOVL instruction, you will see that the usage of RegA and RegB is
+swapped.  That is, the implementation of the MRMOVL instruction
+updates target register RegB with the contents of the address
+specified by adding displacement D to the contents of RegA.
+
+<br><br>
+rm32( D + contents(RegA) ) -> RegB
+<br><br>
+
+Note, this instruction was not used on the exam, so you would not have
+made a mistake decoding this instruction on the exam.  But, this may
+have confused your programming if you choose to use this instruction
+for your laboratory. It was not necessary to use this instruction for
+Laboratory 2A. However, you will need this instruction to implement
+the "block copy" routine in Laboratory 2B.  Please consider this issue
+carefully, and use the semantics shown just above (different than in
+the textbook) to implement your Laboratory 2B solution.
+</blockquote>
+</h4>
+
+
+<p>
+<h4>
+See this <a href="midterm_solutions.pdf">link</a> for the midterm exam
+solutions.
+</h4>
+
+<p>
+<h4>
+See this <a href="exam1_solutions.pdf">link</a> for the first exam
+solutions.  Note that there are 10 pages because of the different
+values for the two classes.
+</h4>
+
+<P>
+This is the Y86 ISA help sheet shown in Young's class: 
+<A HREF="isa-help-sheet.pdf">Y86 Help Sheet.</A><P>
+
+<!--
+
+<p>
+<h3>
+The current schedule has separate discussion sections for Hunt and
+Young on Fridays at 9am and at 2pm.  We have decided to consolidate
+these.  This requires bigger rooms. So beginning tomorrow (9/5) and
+for the rest of the semester, the two Friday discussion sections from
+9-11am will both meet from 9-11am in CLA 1.104 and the two discussion
+sections from 2-4pm will both meet from 2-4pm in BUR 112.  Note that
+this change will not appear in the course schedule, so note these room
+changes.
+</h3>
+
+For an extra-credit assignment; see
+submission <a href="./labs/ascii-checker/ascii-checker.pdf">instructions</a>.
+
+
+<p>
+<h3>
+You may download the
+practice <a href="./homework/quiz-y86-code.lsp">problem</a> I gave
+out in class as a study problem for our exam.
+</h3>
+
+<p>
+Problem 3.55 is like problem 3.12, which has a solution in the back of
+Chapter 3.  Problem 3.12 concerns unsigned numbers while problem 3.55
+concerns signed numbers.
+
+<p>
+Problem 3.56 requires precision -- very carefully track updates.
+
+<p>
+Problem 3.61 concerns changing the code in Figure 3.29 so that one
+fewer register is required by the compiled code.  If achieved, then
+the compiled code may become more efficient.  Think about redundancy
+among the variables.
+-->
+
+<!--
+
+<p>
+Exam preparation comment: Remember what I have said -- I test "right
+at" the material presented in class and what you have been doing for
+your homework and laboratories.  Thus, a good exam preparation
+approach is to make sure that you can work problems like those you
+have been assigned.
+
+
+Optional extra credit -- will replace third-lowest homework grade.
+
+Describe, in two pages, what the utility of the information presented
+in the course will be for you.  You must submit your writeup in ASCII,
+and ONLY ASCII.  Non-ASCII submissions will be ignored -- use only the
+characters with character code 10 (Newline) and codes from 32 through
+126, inclusive.  6000 characters maximum.  Submission by 11:59 pm on
+December 2, 2012.  Note, last year five submissions did not meet these
+requirements, and, thus, were not graded.
+
+</p>
+turnin --submit tms ec  {filename}
+</h3>
+
+
+<h3>
+</p>
+Our review session for the final exam will be held in the Jackson
+Geo-sciences Building (JGB) 2.216 on Saturday, December 3, 2011, from
+1:00 to 3:00 pm.
+
+</h3>
+-->
+
+
+<!--
+
+<h3>
+The final exam is open book, open notes -- just like all of the
+exams in this course.  The final exam refers to a problem in the
+book, so I encourage you to bring your copy of the class textbook.
+You may not use any electronic device during the exam.
+</h3>
+-->
+
+<hr>
+
+<h3>Links to Class Materials</h3>
+
+Below are links to information about this CS429 class.
+
+<p>
+<li><a href="./cs429-announcement.html">Course Announcement</a>
+
+<p>
+<li><a href="./cs429-syllabus.html">Syllabus</a> included
+in this Webpage.
+
+<p>
+<li> <a href="./cs429-lectures.html"> Lectures and detailed syllabus</a>
+
+<p>
+<li><a href="./cs429-homework.html">Course Homework and Laboratory Assignments</a>
+<p>
+
+<!--
+<li><a href="http://www.cs.utexas.edu/users/ragerdl/cs429/">Teaching
+Assistant Help Page</a>
+-->
+
+</HTML>

@@ -1,0 +1,148 @@
+<base href="https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps3.html">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" type="text/css" href="../ans.css" />
+
+  <title>CS439: Principles of Computer Systems Discussion Section Problem Set 3</title>
+<meta NAME="keywords" CONTENT="Alison N. Smith Norman">
+</head>
+
+<body>
+
+<div class="interior-content">
+<!-- * MAIN TEXT * -->
+    <td VALIGN="CENTER" WIDTH="100%">
+ <font face=arial > 
+
+      <!-- *NAV BAR* -->
+      <table WIDTH=100% BORDER=0 BGCOLOR=white CELLSPACING=0 CELLPADDING=0 HEIGHT=25 LINK=white>
+	<tr>
+	  <td width=120 align=center><small><a HREF="../../index.html" target=_top><b>Home</b></a></small></td>
+
+	  <td width=120 align=center><small><a HREF="../index.html" target=_top><b>CS439</b></a></small></td>
+	</tr>
+      </table>
+
+
+<center>
+<p><h1><b>CS439: Principles of Computer Systems </b></h1></p>
+<p>
+<h2><b>Discussion Section Problem Set 3<br></b></h2>
+<h3><b> Due in Section on Friday, September 22, 2017 </h3></b>
+</center>
+The problem set must be completed before section and brought to section.  To
+ensure that your problem set is turned in correctly and that you receive credit
+for discussion section, you must follow these guidelines exactly.
+
+<ul>
+<li>Include the following header at the top of your file:
+<pre>
+Discussion Section Problem Set #: 
+Student Name:
+EID:
+CS login:
+Email address:
+Unique Number: 
+</pre>
+</li>
+<p>
+<li>You may either type your answers or write them by hand, but you must bring a
+  hard copy to discussion section.
+  </li>
+<p>
+<li>
+   In discussion section, your TA will check that you make a good effort on the
+problem set and that you are participating in the discussions in section and
+ready and able to answer when called upon.  If all of those are true, you will
+receive credit for discussion section that day.  Note that a "good effort" on
+the problem set includes that all answers are in your own words and <i>not</i>
+copied from anywhere else, including the slide deck.
+</li>
+</ul>
+<!-- Please refer to the
+<a href="problem_set_turnin.html">problem set turnin instructions</a>.-->
+<hr>
+
+<ol>
+  <p> </p>
+  <p> </p>
+<!--Number One--->
+<li>
+When executing system or library calls from multi-threaded code,
+  it is important to know which calls are <i>re-entrant</i> and which
+  are not. <ul><li> What is the meaning of <i>re-entrant</i>?</li><li>
+  How does a re-entrant call behave differently from a call that is
+  not re-entrant?  </li><li>Why is this an important consideration for
+  multi-threaded code?</li></ul>
+
+<p>
+</li>
+<p>
+<!---Number Two--->
+<li>
+What does the function <tt>pthread_detach()</tt> do?  What default
+behavior of threads does it alter?  When might it be useful?
+<p>
+</li>
+<p>
+<!---Number Three--->
+<li>
+Consider a uniprocessor kernel that user programs can trap into using
+system calls.  The kernel receives and handles interrupts from I/O
+devices.  Would there be any need for critical sections within that
+kernel?
+<p>
+</li>
+<p>
+<!--Number Four--->
+<li>
+Describe the priority inversion problem and give an example
+situation where it may occur.
+<p>
+</li>
+<p>
+<!---Number Five--->
+<li>
+In the code below, indicate where each variable is stored (e.g.,
+stack, heap, static data segment), and whether that variable would be
+shared by the threads in a multi-threaded program.  If applicable,
+indicate where the space that variable points to is allocated.
+<p>
+<pre>
+int i;    
+char * j; 
+
+void foo(int a){
+
+   int b;          
+   static float c; 
+
+   /*do stuff*/
+}
+
+int main(int argc, char**argv){
+
+   int * m; 
+   int g;   
+   double z; 
+
+   j = malloc(MAXBUF*sizeof(char));  
+
+   createThread(0, foo(), 2);
+   createThread(1, foo(), 4);
+
+   /*do stuff*/
+}
+</pre>
+</li>
+<p>
+</ol>
+<hr>
+</body>
+</html>
+

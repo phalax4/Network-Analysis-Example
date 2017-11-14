@@ -1,0 +1,50 @@
+<base href="https://www.cs.utexas.edu/~gouda/cs356summer09/quiz3/">
+----------------------------------------------------------------------------
+Mohamed G. Gouda						CS 356
+Summer 2009							Quiz 3
+----------------------------------------------------------------------------
+
+Process s in the Manchester Encoding protocol in Chapter 2 is as follows.
+
+process s
+	
+inp data:	array [integer] of 0..1
+
+var x:		integer		{Init. 0}
+
+begin 
+	true -> if data[x] = 0 -> send one to r;
+				  send zero to r
+		[] data[x] = 1 -> send zero to r;
+				  send one to r
+		fi; x := x + 1
+end
+
+Modify process s under the assumption that the input data array in s is 
+declared as shown below and that s sends the bits in array data repeatedly in 
+a circular fashion.
+
+const n
+
+var data:	array [0..(n-1)] of 0..1
+
+----------------------------------------------------------------------------
+Student Name:
+Student EID:
+----------------------------------------------------------------------------
+
+Solution:
+
+process s
+	
+inp data:	array [integer] of 0..1
+
+var x:		integer		{Init. 0}
+
+begin 
+	true -> if data[x] = 0 -> send one to r;
+				  send zero to r
+		[] data[x] = 1 -> send zero to r;
+				  send one to r
+		fi; x := x +n 1
+end

@@ -1,0 +1,90 @@
+<base href="http://www.cs.utexas.edu/~byoung//cs361c/common-flaws-in-papers/">
+Be sure to re-read the writing hints documents that I posted.  I
+updated them as I found new items recurring in your papers. Below are
+some things that I saw over and over. 
+
+
+GENERAL COMMENTS:
+
+Read your paper, preferably aloud.  I can't believe some of you
+actually read what you turned in, given the bizarre non-sentences that
+appear. 
+
+Have an Introduction and Conclusions section.  The Introduction should
+describe why you're writing the paper, what you plan to accomplish,
+and define any terms from the title that may not be completely clear.
+For example, if your paper contrasts whistleblowing and leaking,
+explain in the Intro what you mean by those terms.  End the Intro with
+a paragraph that says: In Section 2, we'll do ...  Then in Section 3
+we cover ...  And so on.
+
+The Conclusion sums up what you showed in the paper and gives your
+findings / conclusions.
+
+Write the paper for an educated reader, but one who knows almost
+nothing about this specific topic.  For example, if understanding your
+paper depends on the reader understanding Bitcoin blockchains, explain
+what they are. 
+
+A reader should be able to understand the overall structure of your
+paper from reading just the headings.  Do a sanity check and make sure
+that subsections really are subordinate to the section, that all
+headings at a similar level are of equal importance, etc.  If you have
+15 top level sections, your structure is too flat. 
+
+Don't have a single subsection within a section.  E.g., if you have
+a section 3 with subsection 3.1, but no 3.2, then combine 3.1 into the
+body of 3. 
+
+Bibliography entries are designed to show the reader where to find the
+information.  If on-line, the URL should be included.  If you use
+BibTeX, it will guarantee that you have all required fields. 
+
+If you have something in a biblio entry that needs uppercase, you can
+enclose it in braces, e.g., {DARPA}, {FBI}, or {LaTeX}. 
+
+If you include a hard fact that isn't common knowledge, give a
+citation to the source.  Quotes always need a citation. 
+
+If some section in your paper borrows very heavily from one source, be
+careful.  Look for other sources and paraphrase everything.  If you
+quote exactly, use quotation marks.  Avoid plagarizing at all costs.
+
+Be consistent in your citations.  
+
+Avoid sentences that are long, complex and hard to parse.  I'd suggest
+re-writing any sentence that runs for 6 or more lines.  Also, if you
+have a paragraph that runs for an entire column, it probably needs to
+be broken into paragraphs.
+
+Almost every paper had missing quotation marks, single and double.  I
+suspect it's because you composed the paper in Word and then copied it
+over to LaTeX.  The problem is easily fixed with a global
+substitution.  Make sure you do that. 
+
+Any quote longer than 4 lines should be set off from the surrounding
+text.  In LaTeX, use the following form:
+
+ \begin{quotation} 
+    text of quote here
+ \end{quotation}
+ 
+
+Using tinyurl in the bibliography makes them more compact, but
+isn't a good idea.  Tinyurls are not guaranteed to persist.  It's
+better to use the real urls.  
+
+Use typewriter font for computer commands.  You can use {\tt
+command} or \verb|command|.  See the hints doc for more on this. 
+
+The dash should be used sparingly as a punctuation mark.  It's not
+an alternative to a comma or semicolon. 
+
+Don't ramble.  It better to have 7 well written pages than 10 rambling
+pages. 
+
+Consider using the url package for long urls. 
+
+Often a one-column figure is too small to read.  Make it a floating
+figure across two columns ( use \begin{figure*} ... \end{figure*} ).
+

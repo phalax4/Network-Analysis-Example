@@ -1,0 +1,124 @@
+<base href="http://www.cs.utexas.edu/users/dsb/CS373S//P/R3Assignment/P6EclipseVisitor/index.html">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type"><title>Create and Undo Visitors Using Eclipse</title></head>
+<body>
+<h1 style="text-align: center; font-family: Helvetica,Arial,sans-serif;">Create and Undo Visitors Using Eclipse<small style="color: rgb(0, 153, 0);"><small><br></small></small></h1>
+<br>
+<span style="font-family: Helvetica,Arial,sans-serif;">In
+this assignment you will create (or rather retrofit) a Visitor design
+pattern into a legacy Java program. &nbsp; First you will create a
+Visitor. &nbsp;Then you will remove a (different) Visitor. &nbsp;You will use Eclipse&nbsp;and ONLY
+Eclipse refactorings in
+this assignment. &nbsp;Using any other IDE gets you 0 (zero, nada,
+null) for this assignment. &nbsp;<span style="font-weight: bold;">If
+you vary from what is described below, you must get permission
+otherwise you get no credit.</span></span>
+<hr style="width: 100%; height: 2px;">
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Preliminaries</span></h2><span style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 153, 0);"><span style="color: black;">Download</span></span><b style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 153, 0);"> <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-eclipse-committers/neon2">Eclipse IDE for Eclipse Committers</a>.  <span style="color: red;">You must use it for this assignment</span></b><span style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 153, 0);"><span style="color: black;"> &nbsp;Then r</span></span><span style="font-family: Helvetica,Arial,sans-serif;">ead
+</span><span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">very
+carefully</span><span style="font-family: Helvetica,Arial,sans-serif;"> tutorials
+below.&nbsp;</span>
+<ul style="font-family: Helvetica,Arial,sans-serif;">
+<ol>
+</ol><li><a href="../Tutorial/makevisitor.html">Make
+a Visitor pattern</a> (e.g., <a href="../Tutorial/graphics.html">Graphics</a>)&nbsp;</li><li><a href="../Tutorial/undovisitor.html">Undo a Visitor pattern</a></li><li><a href="../Tutorial/eclipserefactorings.html">Eclipse
+refactorings</a></li><ol>
+
+</ol>
+</ul>
+<b style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 153, 0);"></b>
+<hr style="width: 100%; height: 2px;">
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Part
+1: Create Visitor Using Eclipse</span></h2>
+<ol start="1" style="font-family: Helvetica,Arial,sans-serif;">
+<li>Download <span style="font-weight: bold;">RefactoringCrawler</span> program and then import into
+Eclipse as a project.
+<span style="font-weight: bold;">RefactoringCrawler</span> is the target program to be refactored. You don&#8217;t
+need to understand the semantics of RefactoringCrawler to do this project.<br><br><a href="https://www.youtube.com/watch?v=SiPYX8JPM2A&amp;feature=youtu.be">Watch this video</a> on how to import an Eclipse project.<br><br>Then download <a href="../EProjects/RefactoringCrawler.zip">RefactoringCrawler.zip</a>.<br><span style="color: rgb(0, 153, 0);"></span><br>
+</li>
+<li>Use <span style="font-weight: bold;">only</span>
+the Eclipse refactorings described in the document (<a href="../Tutorial/eclipserefactorings.html">Eclipse
+refactorings</a>). Make a Visitor pattern for method <span style="font-weight: bold;">computeLikeliness(Node, Node)</span>
+in class <span style="font-weight: bold;">edu.uiuc.detectRefactorings.detection.FieldDetection</span>.&nbsp;</li>
+</ol>
+<ul style="font-family: Helvetica,Arial,sans-serif;">
+<ul>
+<li>You may make mistakes and want to undo a refactoring&nbsp;or
+an edit at a time. If so, use Eclipse menu (Edit &#8594; Undo).<br>&nbsp;</li>
+<li>Eclipse menu (Edit &#8594; Undo) sometimes fails.
+If you want to reimport the original RefactoringCrawler:</li>
+<ul>
+<li>Delete the RefactoringCrawler project in the Eclipse "Package Explorer&#8221; and watch this <a href="https://youtu.be/zn28Zc5lq_g">Video.</a></li>
+<li>Import RefactoringCrawler.
+</li>
+</ul>
+</ul>
+</ul>
+<ol start="3" style="font-family: Helvetica,Arial,sans-serif;">
+<li>Run regression tests on package <span style="font-weight: bold;">edu.uiuc.tests</span> to
+see if the refactored RefactoringCrawler works correctly. If it works,
+proceed to Step 4. <br><br>Run as "JUnit Test" (not as "JUnit Plug-in Test") which executes 10 (not 15) regression tests. &nbsp;<a href="https://youtu.be/leoZtiSvtgE">Watch this video.</a><br><b style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 153, 0);"></b>
+</li>
+<br>
+<li>Export your RefactoringCrawler named "MakeVisitorUsingEclipse.zip". &nbsp; <a href="https://youtu.be/eJ8A2vi-GVU">Watch this video</a>.<a href="https://youtu.be/eJ8A2vi-GVU"><br></a></li><br>
+<li>Create "MakeVisitorUsingEclipse.zip".</li><br>
+</ol>
+<hr style="width: 100%; height: 2px;">
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Part
+2: Undo Visitor Using Eclipse</h2>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span>
+<ol>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Download
+<span style="font-weight: bold;">RefactoringCrawlerWithVisitor</span> program and then import into Eclipse as a
+project. <span style="font-weight: bold;">RefactoringCrawlerWithVisitor</span> is the target program to be
+refactored. &nbsp;You don&#8217;t need to understand the semantics of
+RefactoringCrawlerWithVisitor to do this project<br><br></span><a style="font-family: Helvetica,Arial,sans-serif;" href="https://www.youtube.com/watch?v=SiPYX8JPM2A&amp;feature=youtu.be">Watch this video</a><span style="font-family: Helvetica,Arial,sans-serif;"> on how to import an Eclipse project.</span><br style="font-family: Helvetica,Arial,sans-serif;"><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Then download&nbsp;</span><a href="../EProjects/RefactoringCrawlerWithVisitor.zip" style="font-family: Helvetica,Arial,sans-serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">RefactoringCrawlerWithVisitor.zip</a><span style="font-family: Helvetica,Arial,sans-serif;"></span><br><span style="font-family: Helvetica,Arial,sans-serif;"></span><b style="color: rgb(0, 153, 0); font-family: Helvetica,Arial,sans-serif;"></b><span style="font-family: Helvetica,Arial,sans-serif;"><a href="../EProjects/RefactoringCrawlerWithVisitor.zip"></a><br>
+</span></li>
+
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Use only the Eclipse refactorings described in the document (Eclipse refactorings) for this step. Undo
+the Visitor pattern of class <span style="font-weight: bold;">Visitor</span> in package <span style="font-weight: bold;">edu.uiuc.detectRefactorings.detection</span>
+and set the original method name to be "<span style="font-weight: bold;">isRename</span>".</span></li>
+</ol>
+<ul>
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">You
+may make mistakes and want to undo a refactoring (or an edit) at a
+time.&nbsp; If so, use Eclipse menu (Edit&nbsp;</span>&#8594;<span style="font-family: Helvetica,Arial,sans-serif;"> Undo).<br></span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Eclipse
+menu (Edit&nbsp;</span>&#8594;<span style="font-family: Helvetica,Arial,sans-serif;"> Undo)
+sometimes fails. If you want to reimport the original
+RefactoringCrawlerWithVisitor,</span></li>
+<ul>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Delete the
+RefactoringCrawlerWithVisitor project in the Eclipse "Package
+Explorer" and watch this&nbsp; <a href="https://youtu.be/zn28Zc5lq_g">Video.</a></span><br>
+</li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Import
+RefactoringCrawlerWithVisitor.</span></li>
+</ul>
+</ul>
+</ul>
+<ol start="3">
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Run
+regression tests on package <span style="font-weight: bold;">edu.uiuc.tests
+</span>to see if the refactored
+RefactoringCrawlerWithVisitor works correctly. &nbsp;If it works,
+proceed to Step 4.<br><br>Run as "JUnit Test" (not as "JUnit Plug-in Test") which executes 10 (not 15) regression tests. &nbsp;</span><a style="font-family: Helvetica,Arial,sans-serif;" href="https://youtu.be/leoZtiSvtgE">Watch this video.</a><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;"> &nbsp;</span></span><b style="font-family: Helvetica,Arial,sans-serif; color: rgb(0, 153, 0);"></b><span style="font-family: Helvetica,Arial,sans-serif;"><br>
+</span></li>
+<br>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Export
+your RefactoringCrawlerWithVisitor named "UndoVisitorUsingEclipse.zip". &nbsp;<a href="https://youtu.be/eJ8A2vi-GVU">Watch this video.</a><br>
+</span></li><br>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Create "UndoVisitorUsingEclipse.zip".</span></li>
+</ol><hr style="width: 100%; height: 2px;"><h2 style="color: rgb(0, 0, 0); font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Arial;">What to Submit</h2><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Helvetica,Arial,sans-serif;">All of the below in a zip file<span class="Apple-converted-space">&nbsp;</span></span><strong style="color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span style="font-weight: normal;"><span style="font-weight: bold;"><span style="font-family: Helvetica,Arial,sans-serif;">(including your Eclipse Projects)</span></span></span></strong><span style="color: black; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Helvetica,Arial,sans-serif;"></span><span style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-family: Helvetica,Arial,sans-serif;">. The zip file must unzip into<span class="Apple-converted-space">&nbsp;</span><span style="font-weight: bold;">&lt;yourName&gt;/&lt;YourFilesAndDirectories&gt;</span>.</span><br style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><ol style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><li style="font-family: Arial;"><span style="color: black; font-family: Helvetica,Arial,sans-serif;">Your
+program needs to run correctly on Linux machines, even though you may
+have developed them on Macs and Windoze. &nbsp;The TA will grade your
+program running on Linux.</span><br><br></li><li style="font-family: Arial;">A&nbsp;short description that the Grader needs to know to run your program, other than the above.<span class="Apple-converted-space">&nbsp;</span><br><br></li><li style="font-family: Arial;">A&nbsp;short writeup explaining any difficulties in using Eclipse refactorings for this assignment.<br><br></li><li style="font-family: Arial;"><span style="font-family: Helvetica,Arial,sans-serif;">A PDF file (in the&nbsp;</span><a href="http://www.cs.utexas.edu/users/dsb/CS373S/#HWFormat" style="font-family: Helvetica,Arial,sans-serif;">required format</a><span style="font-family: Helvetica,Arial,sans-serif;">) that the Grader should read to provide any information that is not obvious. &nbsp;The contents of the PDF file can be minimal.</span></li></ol><p class="style19" style="text-align: left; font-family: Arial; color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><strong>A
+critical part of any design is clarity and
+understandability.&nbsp;&nbsp; Hence, you will be graded on the clarity
+of your project and its ability to work correctly.&nbsp; Sloppy code,
+documentation, or anything that makes grading or understanding your
+program difficult will cost you points.&nbsp; Beware, some of these
+"beauty" points are subjective.&nbsp;</strong></p><p class="style19" style="text-align: left; font-family: Arial; color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span class="style18" style="color: rgb(255, 0, 0);"><strong>Remember: No late assignments/submissions will be accepted.</strong></span></p>
+</body></html>

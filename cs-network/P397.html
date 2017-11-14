@@ -1,0 +1,131 @@
+<base href="http://www.cs.utexas.edu/users/dsb/CS373S//P/Gates2/index.html">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type"><title>Incremental Development of a Java Program</title></head>
+<body><h1 style="font-family: Helvetica,Arial,sans-serif; text-align: center;">Incremental Development of a Java Program</h1><p style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold; color: red;">You
+are to read this document in its entirety once or twice (and look at
+the provided code) before you do anything. &nbsp;You can't just code
+and expect to be successful. You have to understand the program
+ideas and constraints before you have any hope of completing this
+project. &nbsp;The code that you write should be
+<span style="text-decoration: underline;">elegant</span>. &nbsp;If you
+sense that your code is ugly, stop, think, and ask questions before you
+proceed. &nbsp;This assignment is for
+you to learn the structure of a codebase before programming and before
+hacking. &nbsp;It is to give you first-hand experience at incremental
+development -- that is building and designing programs one unit of
+functionality (a.k.a. 'feature') at a time.</span></p><p style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold; color: red;"></span></p><hr style="width: 100%; height: 2px;"><p style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">A
+<span style="font-weight: bold;">logic circuit</span> is shown below. It consists of 2 input ports (<span style="font-weight: bold;">A</span>,<span style="font-weight: bold;">B</span>) and 1 </span><span style="font-family: Helvetica,Arial,sans-serif;">output port</span><span style="font-family: Helvetica,Arial,sans-serif;"> (<span style="font-weight: bold;">R</span>). &nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;"> This
+circuit determines whether the&nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;">TRUE/FALSE</span><span style="font-family: Helvetica,Arial,sans-serif;"> value at port <span style="font-weight: bold;">A</span> equals the&nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;">TRUE/FALSE</span><span style="font-family: Helvetica,Arial,sans-serif;"> value at port <span style="font-weight: bold;">B</span>. &nbsp;The true/false answer is at port <span style="font-weight: bold;">R</span>.</span></p><p style="font-family: Helvetica,Arial,sans-serif; text-align: center;"><img style="width: 878px; height: 304px;" alt="" src="images/Creately.png"><br></p><p style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Ports are public inputs/outputs that are externally visible to a circuit and
+to which a TRUE/FALSE value can be assigned&nbsp;to each input port and
+a TRUE/FALSE value can be read from each output port. There are AND,
+OR, and NOT gates, which have input and output <span style="font-weight: bold;">pins.</span>
+&nbsp;AND and OR have precisely 2 input <span style="font-weight: bold;">pins</span>, named "i1" and "i2", and
+one output port named "o1". &nbsp;NOT gates have one input pin ("i1")
+and one output pin ("o1"). These names are NOT visible in a circuit
+diagram -- they represent standard naming conventions. &nbsp;Each
+<span style="font-weight: bold;">wire</span>, shown in gray, connects an input port or output pin of a gate to
+an input port of a gate or output port. &nbsp;Wires don't have explicit
+names.</span></p><p style="font-family: Helvetica,Arial,sans-serif; margin-left: 40px;"><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold; color: red;">Note</span><span style="color: red;">:
+unlike a previous homework assignment, this design allows a circuit or
+gate to have multiple input AND multiple output pins/ports.</span></span></p><p style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Java code that implements this circuit is shown below:</span></p><div style="margin-left: 40px; font-weight: bold;"><span style="font-family: Courier New,Courier,monospace;">InputPort a = new InputPort("a");<br></span><span style="font-family: Courier New,Courier,monospace;">InputPort b = new InputPort("b");</span><br><span style="font-family: Courier New,Courier,monospace;">OutputPort r = new OutputPort("r");</span><br><span style="font-family: Courier New,Courier,monospace;"></span><br><span style="font-family: Courier New,Courier,monospace;">Not n1 = new Not("n1");</span><br><span style="font-family: Courier New,Courier,monospace;">Not n2 = new Not("n2");</span><br><span style="font-family: Courier New,Courier,monospace;"></span><br><span style="font-family: Courier New,Courier,monospace;">And a1 = new And("a1");</span><br><span style="font-family: Courier New,Courier,monospace;">And a2 = new And("a2");</span><br><span style="font-family: Courier New,Courier,monospace;"></span><br><span style="font-family: Courier New,Courier,monospace;">Or o1 = new Or("o1");</span><br><span style="font-family: Courier New,Courier,monospace;"></span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(a,n1,"i1");</span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(n1,a1,"i1");</span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(b,a1,"i2");</span><br><span style="font-family: Courier New,Courier,monospace;"></span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(a,a2,"i1");</span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(b,n2,"i1");</span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(n2,a2,"i2");</span><br><span style="font-family: Courier New,Courier,monospace;"></span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(a1,o1,"i1");</span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(a2,o1,"i2");</span><br><span style="font-family: Courier New,Courier,monospace;">new Wire(o1,r);</span></div><br><div style="text-align: left;"><span style="font-family: Helvetica,Arial,sans-serif;">As
+you know, every logic circuit is an object diagram, which means it has
+a metamodel with constraints that verifies that circuits, such as the
+above, are sane.Your assignment is to incrementally develop a Java program that allows you to: </span><br style="font-family: Helvetica,Arial,sans-serif;"><ul style="font-family: Helvetica,Arial,sans-serif;"><li>define logic circuits in terms of input ports, output ports, AND, OR, NOT gates, their pins, and wires,</li><li>print the tuples of a database that defines a circuit that you create using Java constructor calls (such as the above),</li><li>evaluate metamodel constraints to verify that a circuit definition is "sane", and</li><li>evaluate
+the functionality of a circuit given truth values of its inputs (ex:
+assigning port A above to be TRUE, port B to be FALSE, and reading FALSE
+from port R).</li></ul><hr style="width: 100%; height: 2px;"><h2 style="font-family: Helvetica,Arial,sans-serif;">Gates Netbeans Project</h2><span style="font-family: Helvetica,Arial,sans-serif;">Here is the <a href="GatesShell.zip">"shell" NetBeans project</a>
+(which you can translate into Eclipse if you like). &nbsp;I have
+removed the bodies of almost all methods and have removed some fields
+(created for convenience in my implementation). &nbsp;You likely don't need to add more
+methods, but you might want to add some fields. &nbsp;You'll recognize
+the empty methods as there are TODO comments. Anyways, what you add to this program is
+up to you. &nbsp;The minimal program is given. &nbsp;It compiles, but
+obviously does not run. &nbsp;You will have to replace empty or useless
+method bodies with something meaningful.<br><br>The project consists of &nbsp;5 packages, one of which is RegTest -- <a href="http://www.cs.utexas.edu/users/dsb/CS373S/Course/regressionTest.html">a version of which was posted</a>. &nbsp;Use the version of RegTest that I give you for this project.<br><br>Watch
+the animated GIF below. &nbsp;Recall an earlier lecture where I showed
+you how to explain a class diagram in simple, incremental way.
+&nbsp;Well, I'm doing the same thing here but in a different way. There are 4
+functionalities in this program:<br></span><ul><li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Base</span> -- which allows you to encode circuits (as above)</li><li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Table</span> -- which allows you to print tables</li><li style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Constraints</span> -- that make circuits sensible (these are metamodel constraints that you are to evaluate)</li><li><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Eval</span> -- the ability to place a boolean value on each input pinand extract a boolean value at each output pin.</span></li></ul><span style="font-family: Helvetica,Arial,sans-serif;">Watch
+the animated GIF to see the class contents of the Base application, the
+additions made by Table functionality, then the Constraint
+functionality, and finally the Eval functionality.
+&nbsp;<span style="font-weight: bold;">You are to build, debug, and test one functionality at a time, not doing it in a big-bang mess.<br><br></span>In the Gates Project, there are 3 packages:<br></span><ul><li><span style="color: rgb(0, 0, 0); font-family: Helvetica,Arial,sans-serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">The<span class="Apple-converted-space">&nbsp;</span></span><span style="color: rgb(0, 0, 0); font-family: Helvetica,Arial,sans-serif; font-size: medium; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-weight: bold;">logicGates</span><span style="color: rgb(0, 0, 0); font-family: Helvetica,Arial,sans-serif; font-size: medium; font-style: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span class="Apple-converted-space">&nbsp;</span>package
+defines an abstract class Gate and concrete subclasses for each kind of
+gate: And, Or, Not, InputPort and OutputPort. There is also a Wire
+class whose instances are wires.</span></li><li><span style="font-family: Helvetica,Arial,sans-serif;">The <span style="font-weight: bold;">Pins</span> package contains a pair of classes: one for input pins and another for output pins. </span><span style="font-family: Helvetica,Arial,sans-serif;">You will discover errors in designs -- such as references to
+undefined pins, undefined tables, and values (truth values that are
+input and output from circuits). &nbsp;The <span style="font-weight: bold;">Errors</span> package contains 4
+such classes, all subclasses of <span style="font-weight: bold;">java.lang.RuntimeException</span>, but not all are needed at the start of your programming.</span></li><span style="font-family: Helvetica,Arial,sans-serif;"></span><li><span style="font-family: Helvetica,Arial,sans-serif;">The <span style="font-weight: bold;">GatesApp</span> package, with a Main, Value, and Feature class.</span></li></ul><span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"></span></span><span style="font-family: Helvetica,Arial,sans-serif;">You will also find MainTest.java, which has 3 fully-defined regression tests complete with correct outputs.<br><br></span><div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 1160px; height: 632px;" alt="" src="images/inc2.gif"></span><br><span style="font-family: Helvetica,Arial,sans-serif;"></span></div><hr style="width: 100%; height: 2px;"><h2 style="font-family: Helvetica,Arial,sans-serif;">A Tour of Gates</h2><span style="font-family: Helvetica,Arial,sans-serif;">Look at the Main class, a sketch of which is given </span><a style="font-family: Helvetica,Arial,sans-serif;" href="Main.txt">here</a><span style="font-family: Helvetica,Arial,sans-serif;">.
+&nbsp;There's not much to it, except for the <span style="font-weight: bold;">aCircuit( )</span> method which
+builds the logic circuit of the figure at the top of this assignment, invokes the code to print out its
+model database (i.e., the Gate tuples/objects and wires that define
+it), invokes a Java method to evaluate all metamodel constraints, and
+evaluates the circuit by defining 'boolean' values at its A and B inputs
+and reading its 'boolean' output R. &nbsp;Study this code, because you
+will need to run it and make sure that your implementations of other classes support its required functionality.</span><br style="font-family: Helvetica,Arial,sans-serif;"><br style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: Helvetica,Arial,sans-serif;">Now,
+I quoted 'boolean' because circuits really use 3-value logic. &nbsp;For
+example, an InputPort could be set to the TRUE value, or it could be
+set to the FALSE value, or it might not be set (in which case it has an
+UNKNOWN value). &nbsp;I use a Java enum to define Value below:</span><br><br><div style="margin-left: 40px;"><span style="font-family: Courier New,Courier,monospace;">public enum Value { TRUE, UNKNOWN, FALSE }</span><br></div><br><span style="font-family: Helvetica,Arial,sans-serif;">The
+Feature file is a set of constants: base, tables, constraints, and
+eval. &nbsp;<span style="font-weight: bold;">You should set all but base to be false</span>. You will alter the values in
+this file as you proceed to implement its functionality. <br><br>Look at the logicGates.Gate file. &nbsp;You will see comments like:<br></span><span style="font-family: Helvetica,Arial,sans-serif;"></span><pre style="margin-left: 40px;">// TABLE METHODS<br>// CONSTRAINTS METHODS<br>// EVAL METHODS</pre><span style="font-family: Helvetica,Arial,sans-serif;">You will find these comment markers to partition each file, as barriers of how to develop your program incrementally:<br></span><ul style="font-family: Helvetica,Arial,sans-serif;"><li>Your first task is to implement every Java file up to the <span style="font-family: Courier New,Courier,monospace;">@Feature(tables)</span> barrier. &nbsp;This implements base functionality.</li><li>Your
+next task is to update the&nbsp;java file and set tables = true.
+&nbsp;And then implement the methods up to the&nbsp;<span style="font-family: Courier New,Courier,monospace;">@Feature(constraints)</span>&nbsp;barrier. &nbsp; Doing so implements the table and table printing functionality.</li><li>Your next task is to update the&nbsp;java file and
+set constraints = true and then implement the methods up to the<span style="font-family: Courier New,Courier,monospace;"> @Feature(eval)</span>&nbsp;barrier. &nbsp;The constraints that you are to check are:</li><ol><li>every gate of type G (e.g. And, Or, Not...) has a unique name.</li><li>every gate of type G has all of its inputs used (see 5 below)</li><li>every gate of type G has all of its outputs used (see 6 below)</li><li>any
+constraint that you might additionally want to add. &nbsp;I don't
+expect you to add any, but if you do, go ahead and document it.</li><li>every
+InputPin of every Gate must be connected via a wire to an OutputPin.
+&nbsp;Remember: every InputPort is a Gate with precisely 1 OutputPin.</li><li>every OutputPin is connected to an InputPin of a Gate. &nbsp;Remember: every OutputPort is a Gate with precisely one InputPin.</li></ol><li>Your last task is to update the&nbsp;java
+file and set eval = true and implement all methods after the&nbsp;<span style="font-family: Courier New,Courier,monospace;">@Feature(eval)</span>&nbsp;barrier. &nbsp;At this point, when you run the regression tests, you
+will be able to test your program's output and compare it to the output
+of correct solutions in the CORRECT directory.<br><br><span style="font-weight: bold;">A hint for the
+eval methods.</span>
+&nbsp;The only state that is maintained for any circuit
+is that of InputPorts, each of which has a Value field that can be set.
+&nbsp;So in the above circuit, there are 2 InputPorts (named A and B)
+that you will have to set to a TRUE or FALSE value
+before you evaluate the circuit. &nbsp;To get the output of a circuit,
+you get the value of an OutputPort (in the circuit above, it is named
+R). &nbsp;And by following wires and primitive gates backwards, you
+can obtain the inputs to primitive gates, compute their output, and
+pass along their output to the next gate and so on. &nbsp; As a hint,
+look at the getValue() method of logicGate.And. &nbsp;I commented out
+my implementation, rather than removing its code. &nbsp;</li></ul><span style="font-family: Helvetica,Arial,sans-serif;">As
+you implement each task, you should consult the files in the CORRECT
+directory (which is the correct output for MainTest.java). &nbsp;You'll
+see that you'll have to match the printed output.<br><br style="font-weight: bold;"></span><div style="margin-left: 40px;"><span style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-weight: bold;">&nbsp;Hint:</span> As you turn on features: </span><br style="color: black;"><br style="color: black;"><div style="margin-left: 40px; color: black;"><span style="font-family: Helvetica,Arial,sans-serif;">base first, then (base,table), then (base,table,constraints), and finally all (base,table,constraints,eval)</span><br style="font-family: Helvetica,Arial,sans-serif;"></div><span style="font-family: Helvetica,Arial,sans-serif; color: black;">&nbsp;</span><br style="font-family: Helvetica,Arial,sans-serif; color: black;"><span style="font-family: Helvetica,Arial,sans-serif; color: black;">A
+test is performed for each configuration. &nbsp;The test really is
+nothing for base (as base outputs nothing), but things kick in as you
+add more features. &nbsp;You should add your own tests to make sure of
+the sanity of&nbsp;your implementations.</span><br><span style="font-family: Helvetica,Arial,sans-serif;"></span></div><hr style="width: 100%; height: 2px;"><h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">What to Submit&nbsp;</span></h2><span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;">All
+of the below in a zip file </span><strong style="color: black;"><span style="font-weight: normal;"><span style="font-weight: bold;"><span style="font-family: Helvetica,Arial,sans-serif;">(including your Netbeans or Eclipse Project)</span></span></span></strong><span style="font-family: Helvetica,Arial,sans-serif;">.</span><span style="font-family: Helvetica,Arial,sans-serif;"> The
+zip file must unzip into
+<span style="font-weight: bold;">&lt;yourName&gt;/&lt;YourFilesAndDirectories&gt;</span>.</span><span style="color: black;"><span style="font-family: Helvetica,Arial,sans-serif;"><br></span></span><ol><li style="font-family: Arial;"><span style="color: black;">Your
+program needs to run correctly on Linux machines, even though you may
+have developed them on Macs and Windoze. &nbsp;The TA will grade your
+program running on Linux</span>.<br><br></li><li style="font-family: Arial;">A&nbsp;short description that
+the Grader needs to know to run your program, other than the above. <br>
+<br>
+</li><li style="font-family: Arial;">Run your tool on all
+"test/GatesApp/MainTest" given in the GatesShell.zip file.<br>
+<br>
+</li><li style="font-family: Arial;">A&nbsp;short writeup explaining any additional tests that you have added to your program to verify that it works.<br>
+<br>
+</li><li style="font-family: Arial;"><span style="font-family: Helvetica,Arial,sans-serif;">A PDF file
+(in the&nbsp;</span><a style="font-family: Helvetica,Arial,sans-serif;" href="http://www.cs.utexas.edu/users/dsb/CS373S/#HWFormat">required
+format</a><span style="font-family: Helvetica,Arial,sans-serif;">) that the
+Grader should read to provide any information that is not obvious.
+&nbsp;The contents of the PDF file can be minimal.</span></li></ol>
+
+<p style="font-family: Helvetica,Arial,sans-serif;" class="style19"><strong>A critical part of any
+design is clarity and understandability.&nbsp;&nbsp; Hence, you
+will be graded on the clarity of your project and its ability to work
+correctly.&nbsp; Sloppy code, documentation, or anything that makes
+grading or understanding your program difficult will cost you
+points.&nbsp; Beware, some of these "beauty" points are
+subjective.&nbsp; </strong></p>
+<p class="style19"><span style="font-family: Helvetica,Arial,sans-serif;" class="style18"><strong>Remember:
+No late assignments/submissions will be accepted.</strong></span><strong><br>
+</strong></p><span style="font-family: Helvetica,Arial,sans-serif;"></span><br><hr style="width: 100%; height: 2px;"></div></body></html>

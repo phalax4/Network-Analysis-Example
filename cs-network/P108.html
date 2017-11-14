@@ -1,0 +1,142 @@
+<base href="https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps2.html">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" type="text/css" href="../ans.css" />
+
+  <title>CS439: Principles of Computer Systems Discussion Section Problem Set 2</title>
+<meta NAME="keywords" CONTENT="Alison N. Smith Norman">
+</head>
+
+<body>
+
+<div class="interior-content">
+<!-- * MAIN TEXT * -->
+    <td VALIGN="CENTER" WIDTH="100%">
+ <font face=arial > 
+
+      <!-- *NAV BAR* -->
+      <table WIDTH=100% BORDER=0 BGCOLOR=white CELLSPACING=0 CELLPADDING=0 HEIGHT=25 LINK=white>
+	<tr>
+	  <td width=120 align=center><small><a HREF="../../index.html" target=_top><b>Home</b></a></small></td>
+
+	  <td width=120 align=center><small><a HREF="../index.html" target=_top><b>CS439</b></a></small></td>
+	</tr>
+      </table>
+
+
+<center>
+<p><h1><b>CS439: Principles of Computer Systems </b></h1></p>
+<p>
+<h2><b>Discussion Section Problem Set 2<br></b></h2>
+<h3><b> Due in Section on Friday, September 15, 2017 </h3></b>
+</center>
+The problem set must be completed before section and brought to section.  To
+ensure that your problem set is turned in correctly and that you receive credit
+for discussion section, you must follow these guidelines exactly.
+
+<ul>
+<li>Include the following header at the top of your file:
+<pre>
+Discussion Section Problem Set #: 
+Student Name:
+EID:
+CS login:
+Email address:
+Unique Number: 
+</pre>
+</li>
+<p>
+<li>You may either type your answers or write them by hand, but you must bring a
+  hard copy to discussion section.
+  </li>
+<p>
+<li>
+   In discussion section, your TA will check that you make a good effort on the
+problem set and that you are participating in the discussions in section and
+ready and able to answer when called upon.  If all of those are true, you will
+receive credit for discussion section that day.  Note that a "good effort" on
+the problem set includes that all answers are in your own words and <i>not</i>
+copied from anywhere else, including the slide deck.
+</li>
+</ul>
+<!-- Please refer to the
+<a href="problem_set_turnin.html">problem set turnin instructions</a>.-->
+<hr>
+
+<ol>
+  <p> </p>
+  <p> </p>
+<!--Number One--->
+<li>
+Name and briefly describe three OS interfaces.
+<p> 
+</li>
+<p>
+<!---Number Two--->
+<li>
+ Given the following piece of code:
+<pre>
+   main(int argc, char** argv)
+   {
+      forkThem(5);
+   }
+
+   void forkThem(int n)
+   {
+      if(n>0)
+      {
+         fork();
+         forkThem(n-1);
+      }
+   }
+</pre>
+<p>
+How many processes are created if the above piece of code is run?<br>
+<p>
+</li>
+<p>
+<!---Number Three--->
+<li>
+How can fairness and throughput be competing goals for a scheduler?
+Give an example where a fair scheduler makes bad use of the CPU and an
+example where a high-throughput scheduler is unfair.
+<p>
+</li>
+<p>
+<!--Number Four--->
+<li>
+Most round-robin schedulers use a fixed size quantum.  Give an
+argument in favor of and against a small quantum.
+<p>
+</li>
+<p>
+<!---Number Five--->
+<li>
+Open a terminal on a departmental Linux machine.  After ensuring that you are in
+a bash shell, use the <tt>time</tt> command to measure the time taken by a Linux
+command that sends output to the screen (and maybe other things as well).  You
+may use any Linux command you like.  For instance, a sample run might be (from
+your Project 0 directory):
+
+<p>
+<tt>
+time make
+</tt>
+<p>
+Inspect the output.  Explain the meaning of each line.  Is the output as you
+would expect?  Why or why not?  Include your command in your answer.
+<p>
+</li>
+<p>
+<!---In Class--->
+<p>
+</ol>
+<hr>
+</body>
+</html>
+

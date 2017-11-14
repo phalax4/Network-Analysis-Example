@@ -1,0 +1,891 @@
+<base href="https://www.cs.utexas.edu/users/ans/classes/cs439/syllabus.html">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" type="text/css" href="ans.css" />
+
+<title>Syllabus for CS439</title>
+<meta NAME="keywords" CONTENT="Alison N. Smith Norman">
+</head>
+
+<body>
+
+<div class="interior-content">
+
+<!-- * MAIN TEXT * -->
+    <td VALIGN="CENTER" WIDTH="100%">
+ 
+      <!-- *NAV BAR* -->
+      <table WIDTH=100% BORDER=0 BGCOLOR=white CELLSPACING=0 CELLPADDING=0 HEIGHT=25 LINK=white>
+	<tr>
+	  <td width=120 align=center><small><a HREF="../../index.html" target=_top><b>Home</b></a></small></td>
+	  <td width=120 align=center><small><a HREF="index.html" target=_top><b>CS439</b></a></small></td>
+	</tr>
+      </table>
+
+<hr>
+<br>
+<h1 align = center>CS439: Principles of Computer Systems</h1>
+<h4 align=center>Fall 2017</h4>
+</align>
+<h2>Basic Information</h2>
+<p>
+Welcome!  This course is an introduction to computer systems
+software---low-level software abstractions with an emphasis on the
+connection of these abstractions to underlying computer hardware. Key
+abstractions include threads, dynamic memory allocation, protection,
+and I/O.
+<p>
+There are three interrelated goals for this course. The first goal is
+to understand how operating systems and, more generally, computers
+work. Students graduating with CS degrees should believe "there is no
+magic": they should be able to describe the chain of events that
+occurs when they hit a key and cause a letter to appear on the screen
+from the register level (or logical gate level or transistor level) to
+the system architecture level to the operating system level to the
+application level. This is philosophically important, but it is also
+of practical interest to developers who need to figure out how to make
+a system do what they want it to do.
+<p>
+The second goal is for you to learn the core ideas in operating
+systems: virtual addressing, memory protection, concurrent
+programming, file systems, scheduling, transactions, etc. Often, but
+not always, such ideas are best explained as abstractions that some
+software layer (usually the operating system) provides above imperfect
+hardware to make that hardware usable by programmers and users. The
+intent is for you to understand such abstractions well enough to be
+able to synthesize new abstractions when faced with new problems.
+<p>
+Many of the ideas and abstractions that we will cover are relevant not
+only to OS kernels but also to many large-scale systems. Thus, a third
+goal of this course is to enhance your ability to understand, design,
+use, and implement such systems.
+<p>
+<p>
+During this course, you will have an opportunity to learn a lot of
+practical information about how programming languages, operating
+systems, and architectures interact and how to use each effectively.
+The written and programming assignments are designed to build on and
+enhance the lectures.  You will hear the concepts in lecture, read
+them in the book, analyze them in the written homework, and put them
+in practice in the programming assignments.
+<p>
+<b>Class Information:</b>
+<br>
+<br>
+<i>Office hours will begin on Wednesday, 9/6</i>.<br>
+<br>
+<u>Instructor</u>: Alison N. Norman<br>
+<u>Email</u>: ans@cs.utexas.edu<br>
+<u>Office Hours and Location</u>: Monday 1:00p-2:30p and Wednesday 2:30p-3:00p
+all in GDC 6.310<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+  <i>Guns are not permitted in GDC 6.310</i>
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Ashay Lokhande<br>
+<u>Email</u>: ashaylok@utexas.edu<br>
+<u>Office Hours and Location</u>: Monday 4p-6p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Jasper Wu <br>
+<u>Email</u>: jasperwu@utexas.edu <br>
+<u>Office Hours and Location</u>: Monday 2:30p-4:30p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Jialin Li<br>
+<u>Email</u>: jialin_li@utexas.edu <br>
+<u>Office Hours and Location</u>: Thursday 4:30p-6:30p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Joel Swiatek<br>
+<u>Email</u>: joel.swiatek@utexas.edu<br>
+<u>Office Hours and Location</u>: Thursday 1p-3p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Kiana Alcala<br>
+<u>Email</u>: kiana.alcala@utexas.edu <br>
+<u>Office Hours and Location</u>: Tuesday 11:30a-1:30p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Sam Walker <br>
+<u>Email</u>: sam.walker@utexas.edu <br>
+<u>Office Hours and Location</u>: Wednesday 1p-3p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Sunaina Krishnamoorthy<br>
+<u>Email</u>: sunaina@utexas.edu <br>
+<u>Office Hours and Location</u>: Tuesday 1p-3p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: Veronica Gunn<br>
+<u>Email</u>: vfgunn@utexas.edu <br>
+<u>Office Hours and Location</u>: Thursday 3:30p-5:30p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<u>Undergraduate Teaching Assistant</u>: William Lin<br>
+<u>Email</u>: wlsaidhi@utexas.edu <br>
+<u>Office Hours and Location</u>: Tuesday 3:30p-5:30p in GDC 3rd Floor Atrium<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<p>
+<u>Lecture Meeting Time and Location</u>:
+<br>
+Sections 51600, 51605, 51610: Undergraduate Teaching Center (UTC) 3.124 MW 9a-11a<br>
+Sections 51615, 51620, 51625: Undergraduate Teaching Center (UTC) 3.124 MW 11a-1p<br>
+<p>
+Students must attend the lecture for which they are
+officially registered.
+<p>
+
+<i>Turn off cell phones, laptops, and other digital devices during lecture and
+place them out of sight.  Failure to do so results in loss of iClicker
+participation points.</i><br><br>
+
+<p>
+<u>Discussion Section Information</u>:
+<p>
+  Discussion section attendance is required.  Please see the Evaluation section
+  for more information.
+<table>
+<tr><td width=150><b>Section Number</b></td><td width=110><b>Meeting Time</b></td><td width=130 ><b>Meeting Location</b></td><td width=120><b>TA</b></td></tr>
+
+<tr><td>51600 (9a lecture) </td><td>F 9a-11a</td><td>JES A217A</td>
+  <td> Jialin, Sam </td>
+</tr>
+
+<tr><td>51605 (9a lecture) </td><td>F 11a-1p</td><td>CBA 4.330</td>
+  <td> Ashay, Joel </td>
+</tr>
+
+<tr><td>51610 (9a lecture) </td><td>F 1p-3p</td> <td>JES A305A</td>
+  <td> Jasper, Kiana </td>
+</tr>
+
+<tr><td>51615 (11a lecture)</td><td>F 9a-11a</td><td>GAR 2.112</td>
+  <td> Jasper, Veronica</td>
+</tr>
+
+<tr><td>51620 (11a lecture)</td><td>F 1p-3p</td><td>GAR 2.112</td>
+  <td> Veronica, Will </td>
+</tr>
+
+<tr><td>51625 (11a lecture)</td><td>F 3p-5p</td><td>JGB 2.202</td>
+  <td> Jialin, Sunaina </td>
+</tr>
+
+</table>
+<p>
+Students must attend the discussion section for which they are
+officially registered to receive credit for discussion section.
+<p>
+
+<u>Web page</u>:
+<a href="http://www.cs.utexas.edu/~ans/classes/cs439/index.html">
+http://www.cs.utexas.edu/~ans/classes/cs439/index.html
+</a>
+<br>
+The website is a very important piece of this course and you should familiarize
+yourself with its content.  This handout and all other information for the
+course will be available on the site.
+<p>
+<u>Prerequisites</u>: CS 429 or 429H with a grade of
+at least C-.
+<br><br>
+<u>Required Textbooks</u>: 
+<ul>
+<li><i>Computer Systems: A Programmer's
+Perspective</i>, Third Edition, Bryant and O'Hallaron ISBN:
+013409266X<br>
+	(Second edition is also acceptable.)<br>
+</li>
+<li>
+<i>Operating Systems: Three Easy Pieces</i>, version 0.9, Remzi
+H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau.  Available online at
+URL <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">http://pages.cs.wisc.edu/~remzi/OSTEP</a>
+(Hard copies are also available---order at that site).
+</li>
+<li>
+<i>Operating Systems and Middleware: Supporting Controlled
+Interaction</i>, Revised Edition 1.2, Max Hailperin.  Available
+online at URL <a href="https://gustavus.edu/+max/os-book/">https://gustavus.edu/+max/os-book/</a>.
+</li>
+</ul>
+<u>Recommended Textbooks</u>:
+<ul>
+<li> <i>Operating System Concepts</i>, Ninth Edition, Abraham Silberschatz,
+  Peter B. Galvin, and Greg Gagne.
+</li>
+<li> <i> Modern Operating Systems</i>, 4th Edition, Andrew S. Tanenbaum and
+  Herbert Bos.
+</li>
+</ul>
+<p>
+<u>Clickers</u>: An iClicker is required for this course and must be
+brought to every lecture as participation on iClicker questions is
+part of your course grade.  For this class, an iClicker is sufficient.
+However, an iClicker+ or an iClicker2 will also work.<br>
+<p>
+  Register your iClicker at
+  <a href="https://www.iclicker.com/remote-registration-form-for-classic">
+  https://www.iclicker.com/remote-registration-form-for-classic</a> by providing:
+  <ul>
+    <li>your first name </li>
+    <li>your last name </li>
+    <li>your UT EID (which they call your ``student ID'') </li>
+    <li>your clicker's ID (the serial number under the bar code on the back of 
+    the device) </li>
+  </ul>
+  <p>Even if you already have an iClicker and registered it to your
+  EID in the past, <b>you must re-register for this semester</b>.
+	<p>
+	  If you do not know the serial number for your iClicker but have registered
+	  it previously, you can use
+	  <a href="https://www1.iclicker.com/register-your-remote/remote-id-lookup-tool/"</a>the
+		 Remote ID Lookup Tool</a> from iClicker.  If you have not registered it
+		 previously, take your iClicker to the ITS office in FAC to retrieve the
+		 ID.  (Be sure to write it down!)
+<p>
+<b>Communication:</b>
+<p>
+<u>Discussion</u>: The class discussion board is on Piazza.  You may
+sign up at this
+link: <a href="http://piazza.com/utexas/fall2017/cs439n">http://piazza.com/utexas/spring2017/cs439n</a>.  (Note that the course is listed as "CS439N".)
+<p>
+I will post course-related announcements and information on the board.  You must
+read the discussion board at least once per day, and you should post
+course-related questions and responses there.  I expect you to make good use of
+the discussion group and of TA support when you have technical or
+administrative questions or problems.  If you have read at least 85% of the
+Piazza posts (as recorded by Piazza, so you must read them through the website)
+<em>every time</em> I check during the semester, you will earn ten extra credit
+points on your final exam grade.  I will check your progress reading Piazza
+randomly, so make it a habit to read Piazza each day.
+<p>
+You are responsible for any and all information posted to Piazza by
+any of the course staff.
+<p>
+<u>Email to you</u>: In this course, email will be used as a means of
+communication with students.  You are responsible for regularly checking both
+your CS email and your email officially registered with UT for class work and
+announcements.  Your CS address may be forwarded to another account
+(see <a href="http://apps.cs.utexas.edu/udb/update/">http://apps.cs.utexas.edu/udb/update/</a>).
+<p>
+<u>Email to the Instructor or TAs</u>: Emails to course staff should begin with
+"CS439:" in the subject line, followed by a brief description of the purpose of
+your email.  If you follow this rule, we will be better able to address your
+questions in a timely manner.  If you do not, a response to your email may be
+delayed indefinitely.
+<p>
+<u>Facebook, text message, twitter, calling a mobile phone, or other forms of
+  informal communication</u>: None of these
+should ever be used to communicate with course staff regarding 439 material.
+
+
+<h2> Expectations </h2>
+<p>
+<u>Course Structure</u>: Lectures will introduce systems concepts
+through description and examples.  A key component of this course is
+the active participation of students.  While I will lead you through
+the main concepts and provide you with details relevant for
+understanding and applying those concepts, you have to provide the
+"active learning" component.  By active learning, I mean you must do
+things, think about things, ask questions---basically whatever it
+takes for you to be engaged.  The format is informal; questions are
+welcome all the time.
+<p>
+<u>Assignment/Lecture Schedule</u>: A schedule of lecture topics,
+reading assignments, and assignment distribution and due dates
+is <a href="schedule.html">available online, via the class web
+page</a>.  The schedule page contains links to lecture slides and
+assignments. Readings are to be completed <b> before</b> class.
+<p>
+The schedule is subject to change, so please check it throughout the semester.
+<p>
+<u>Required Effort</u>: The workload for this course is heavy.  There
+are readings, five projects, twelve problem sets, two exams, and a final.
+<p>
+To maximize your learning, it is essential that you read the text
+prior to each class meeting.  The ideas in this course require
+thinking about and getting used to, which is possible only with
+multiple exposures to the material.  Also, the readings can be
+difficult---so be patient.  Finally, the concepts build on each other,
+so you must stay current.  Please make up any missed classes on your
+own or with help from your colleagues.
+<p>
+<u>Professionalism</u>:
+Professional conduct is built upon the idea of mutual respect.  Such conduct 
+entails (but is not necessarily limited to): 
+<ul>
+<li> <b>Attending class</b>: The class benefits from the attendance
+and participation of all students.  Your grade will be affected by
+your attendance and participation. </li>
+<li> <b>Arriving on time</b>: Please do not hesitate to come to class,
+even if you are arriving late.  I would rather you attend some of
+class, than miss out altogether.  However, if you must arrive late or
+leave early, please be considerate of others---sit near the door and
+move about quietly. </li>
+<li> <b>Minimizing disruptions</b>: Modern technology permits constant
+communication, but I ask that you leave all digital devices off and
+out of reach during class unless you are waiting news of an emergency
+nature (wife delivering a baby, critically ill relative, etc.).</li>
+<li> <b>Focusing on the class</b>: Laptop computers or hand-held
+devices are not allowed in class. </li>
+<li> <b>Respect</b>: You should act respectfully toward all class
+participants. </li>
+</ul>
+Professional conduct is expected in this course.
+<p>
+<h2>Evaluation</h2>
+<p>
+<u>Exams and Final</u>: Exams will cover material from lecture,
+assignments, and assigned readings.  The exams will be held in the
+evening on Wednesday, 10/4, and Wednesday, 11/8.  
+<p>
+The final will be cumulative, but it may be more heavily weighted towards
+material that has not yet been tested.  The final exam will be at a UNIFORM time
+with the other sections of CS439 and
+<a href="http://registrar.utexas.edu/schedules/179/finals">not the time
+listed on the registrar's tentative schedule.</a> The date could be as late as
+Wednesday, December 20. The
+Registrar usually publishes uniform final exam dates in early November.
+<p>
+<!-- Makeup exams will only be arranged under exceptional conditions.  In
+these cases, missing the exam must be arranged at least one week prior
+to the exam date.
+<p>-->
+<u>iClicker Participation</u>: iClicker participation is measured in
+your answers to iClicker questions, so bring your iClicker with you to
+lecture.
+<b>In order to receive iClicker credit for a given day you
+MUST:</b><ul>
+  <li>register your clicker prior to class AND</li>
+  <li>have your clicker with you in working order AND</li>
+  <li>attend the class for which you are registered AND</li>
+  <li>answer at least one question during class using the iclicker AND</li>
+  <li>sign the roster passed at the beginning of class AND</li>
+  <li>have all electronic devices put away for the duration of class.</li>
+</ul>
+<p>
+You are required to attend class, and you are responsible for knowing
+or learning any material presented in class. If you must miss class,
+you are not required to inform the instructor, but you are responsible
+for learning any material you missed. The instructor posts detailed
+notes for each class on the course web site, but classes are
+interactive, so the actual discussion may depart from the notes. The
+best way to know what actually happened in a class is to be there and
+participate; if you must miss a class, you should study the notes
+carefully and perhaps talk to your colleagues about the technical
+topics discussed and what points were particularly emphasized.
+<p>
+<b>Use of laptops, phones, or other digital devices during lecture
+results in the forfeiture of iClicker participation points.</b>
+<p>
+<u>Discussion Section Attendance</u>: Attendance at discussion section
+is mandatory, and you must attend the one for which you are
+registered.
+<p>
+
+<u>Discussion Section Participation</u>: Discussion sections are designed to
+enhance understanding of the concepts and help prepare for the exams.
+Additionally, discussion sections are the only place where projects are
+introduced and explained.  The first half of the discussion sections will
+focus on reviewing lecture, discussing the problem set assigned that
+week, and working an additional problem.  The second half of the discussion
+section will focus on the projects.
+<p>
+There will be a written problem set assigned for each discussion section, which
+you must work before discussion section and will be discussed and reviewed
+during section.  It is essential that you complete the problem set beforehand to
+maximize the benefit you get from the discussion, so you can contribute to the
+discussion, and so you earn your discussion section credit.  The problem sets
+will be posted to the schedule on the course website.
+<p>
+We will typically rate your discussion section participation on a "OK/Not-OK"
+basis, where "OK" means that you made a credible effort to solve the problem set
+(even if you make a mistake), participated in the discussion, and remained for
+the entire section.  We do reserve the right to grade for correctness as well.
+
+<!--Failure to attend discussion section, participate in the discussion, or complete
+the problem set before section results in a loss of credit for that discussion
+section. Leaving early also results in a loss of credit for that discussion
+section.-->
+
+To receive credit for discussion section, you must:
+<ul>
+  <li> arrive on time </li>
+  <li> arrive with the assigned problem set completed with an
+	honest attempt at the answers</li>
+  <li> bring a hard copy of your problem set answers </li>
+  <li> display your name tent </li>
+  <li> participate in the group discussion of problem set answers and summary
+	of the lectures</li>
+  <li> be ready to present an answer whenever selected by the TA</li>
+  <li> participate in other parts of discussion</li>
+  <li> stay until discussion section is complete</li>
+</ul>
+<p>
+As in lecture, the use of any electronics during discussion section results in a
+loss of credit for that discussion.
+<p>
+The lowest two discussion section scores will be dropped.
+<p>
+<u>Projects</u>: There will be five programming projects during the semester.
+The due date for each project will be clearly stated in class, on
+the <a href="projects/project439.html">project web page</a>, and on the
+<a href="schedule.html">schedule</a>. Plan to start early since debugging
+systems code can take arbitrarily large amounts of time.  Additionally, respect
+Murphy's rule and plan for your bus to run late, your personal computer to crash
+the afternoon of the due date, etc.
+<p>
+For each group project, your group members will evaluate your
+contribution.  <b>For your first project where your average ranking is Marginal
+or below you will receive a warning.  For every project after that where your
+	average ranking is Marginal or below, your final
+course grade will be reduced by a letter grade.</b>
+<p>
+All projects must be submitted using Canvas. We will not
+accept assignments e-mailed to us.  All projects are due just before
+midnight (11:59pm) on their due date.  Projects are dated by Canvas.
+<p>
+Project code must compile and be submitted in the correct format.  <b>Projects
+that do not compile or are in the wrong format will receive a 0.</b>  Design
+documents must be completed individually and submitted as plain text.
+Additionally, design documents must contain minimal spelling and grammar errors
+or points will be deducted.  All other given turnin instructions must also be
+followed exactly.
+<p>
+Finally, all groups (and individual group members) must have a working Project 2
+before moving on to Project 3.  Groups may either meet this requirement by
+submitting a working project before the deadline or groups may meet with course
+staff to demonstrate a working project within ten days of the deadline.  A
+reasonable amount of assistance will be provided.  This policy does mean that a
+student may not leave a group that does not have a working Project 2 to work
+with a group that does.  Once a working Project 2 has been submitted, students
+may join whichever group they wish for the remaining projects.
+<p>
+<u>Late Policy</u>: You will have 4 slip days in 1 day units (that is,
+1 minute to 24 hours late = 1 slip day, etc.) to use throughout the
+semester to extend project deadlines. However, you may only use two
+slip days on any particular project, and you may use no slip days on
+the final project.  Other than that, you may divide your slip days
+across the projects in any way you wish, subject to the 4 day total
+and the 2 day per project maximum.  Slip days are to account for life
+circumstances and emergencies.  Do not use your slip days frivolously.
+If you use all your slip days and then cannot turn in your project on
+time <b>for any reason</b> then you will receive a 0 for that project.
+<p>
+Note that each project has two pieces (the code and the design document), but
+that it is considered one assignment, so that if you submit both pieces two days
+late, you lose two slips days, not four.
+<p>
+In the case of group and pair programming, each member of the team must have
+enough slip days to cover the submission of the project code.  So if the team
+submits the code 2 days late, each team member must have two slip days
+remaining to use and each team member will lose two slip days.  Design documents
+are completed individually, and so the student submitting the design document
+must have enough slip days to cover any deadline extensions and only that
+student will be docked slip days.
+<p>
+To use slip days, you only need to submit the assignment late and
+indicate that you used a slip day in the project README or the design
+document header, whichever is appropriate.  You do not need to email
+the instructor or the TA unless specifically requested to do so.
+<p>
+<u>Grading</u>: Grades are essential to insuring that your degree has
+the value that it deserves.  As a result, we have a grading system
+that has two essential properties:
+<ul>
+<li>It is fair to everyone in the class.</li>
+<li>It is a true measure of how much each student knows the class
+material.</li>
+</ul>
+<p>
+These class components are used to determine your final average in the
+following manner:
+     <table border="2" cellpadding="3" width="100%" cellspacing="1">
+       <tr>
+         <td width="10%" align="center">Component Type</td>
+         <td width="8%" align="center">Percentage</td>
+         <td width="60%" align="center">Description</td>
+       </tr>
+
+       <tr>
+         <td width="10%">iClicker Participation</td>
+         <td width="8%" align="center">6%</td>
+         <td width="60%" align="left">Determined by responses to
+         questions with the iClicker.  If you respond to a question
+         during at least 80% of the classes, you will earn the full
+         6%.</td>
+       </tr>
+       <tr>
+
+         <td width="10%">Discussion Section Participation</td>
+         <td width="8%" align="center">8%</td>
+         <td width="60%" align="left"> To receive discussion section
+participation credit, you must attend your discussion section with your name
+tent displayed, arrive with the assigned problem set completed, participate in
+the discussion, and stay until dismissed by the TA.  The lowest two discussion
+section credits will be dropped.
+       </tr>
+       <tr>
+         <td width="10%">Projects</td>
+         <td width="8%" align="center">32%</td>
+         <td width="60%" align="left">Approximately five large-scale
+         programming projects.</a></td>
+       </tr>
+       <tr>
+         <td width="10%">Exams (2 total)</td>
+         <td width="8%" align="center">16% each</td>
+         <td width="60%" align="left">Exam 1 will cover the first
+         third of the course, Exam 2 will cover the second third. Both
+         are closed-book.</td>
+       </tr>
+       <tr>
+         <td width="10%">Final</td>
+         <td width="8%" align="center">22%</td>
+         <td width="60%" align="left">The final will be cumulative but
+         may be more heavily weight towards the last third of the
+         course.  Closed-book.</td>
+       </tr>
+     </table>
+<p>
+The course uses the plus/minus grading scale and will likely be graded on a
+small curve, with the score-to-letter-grade mapping determined by the instructor
+based on factors such as the difficulty of an assignment, the types of errors
+people are making, etc.
+<!-- During the semester, I will give rough estimates of where grade cut-offs
+lie, but these will be deliberately somewhat vague; if knowing where a cut-off
+is within a few points will affect how you study, you're worrying too much about
+grades and not enough about the material (Plus, it's a really bad idea to gauge
+your effort by what you think you need to make to get a particular letter
+grade). I want everyone in the class to do well, and if everyone masters the
+material and gets good marks, I will happily abandon the curve and give "extra"
+As and Bs.--> I guarantee that anyone who gets a grade of 90% or
+more of the total points will get at least an A-, anyone with 80% or more will
+get at least a B-, and anyone with 70% or more of the points will get at least a
+C-. 
+<p>
+I grade on a curve rather than an absolute scale because it protects students
+from stressing out if I happen to give an overly hard exam or final. The
+downside of grading on a curve is that it tends to lead students to think they
+are competing against each other. In practice, this worry is misplaced. First, I
+will set grade cut-offs for the course to correspond to the quality of the work
+and depth of understanding reflected by each range of scores and not by the
+number of students that make each range of scores. Second, note that the impact
+of any individual score on the overall class distribution is trivial---for
+example someone making a 10% better grade on a exam raises the class semester
+average by .1%.
+<p>
+Also, for these types of projects students often stress about whether
+they will be penalized because their project may not be as elaborate
+as that of some of the other groups in the class. Again, this is not
+something to worry about. The projects are hard enough without looking
+over your shoulder at other students. By and large, most students do
+quite well on the projects---the consequence is that the projects have
+less effect than you might think on the curve. A warning, however: if
+you punt the projects, you will fail the course.
+<p>
+Your grades are recorded in the gradebook on Canvas.
+<p>
+If you have questions or concerns about your grade, contact your TA
+during office hours or by email.
+<p>
+ 
+<u>Grade Changes</u>: If you believe your work was graded incorrectly, you may
+submit a complaint to the grader.
+<p>
+For project grades and discussion section participation credits, you must submit
+an email complaint to the grader <i>within one week</i> of the date on which we
+first attempted to return the graded work to you. For assignments where your
+feedback is given electronically, the deadline is one week from the time the
+grade became available on Canvas.  Your complaint must contain supporting
+evidence and arguments which explain why your work was graded incorrectly. (For
+example, it is not sufficient to submit a note that says "regrade question 3".)
+Grade change requests that do not meet these requirements will not be
+considered.  Note that we only unmute assignments on Canvas when all grades are
+entered.  If an assignment is unmuted and you do not have a grade at all, you
+should be worried and submit a grade change request following the above
+guidelines.
+<p>
+For exam grades, complaints must be written and returned with your copy of the
+exam <em>before you leave the discussion section in which we return the exam to
+you</em>.  Your complaint must explain why your answer was not graded according
+to the given rubric.  Complaints not following this format will not be
+considered, not will complaints that argue the rubric (see below about which
+grade discussions are inappropriate).
+<p>
+Regrade requests are not given priority over any current grading, as so a
+response to your request may be delayed.
+<p>  
+Note that assigned grades are not the starting point of a negotiation. This
+isn't a weekend bazaar---unless we have made a mistake in grading your work
+(i.e., you have a correct answer that was marked wrong, or your score was added
+incorrectly), your grade is final.
+
+<p>Note that none of the following grade discussions is appropriate:
+
+<ul>
+<li> <i>"I know my answer was wrong, but I deserve more partial credit
+points."</i><br> When we grade, we make decisions about how many points to
+give for various kinds of wrong answers. This is never a clear cut
+decision.  The important thing is that we make some decision and then
+implement it fairly for everyone. It is completely unfair to come back
+later and give one person more points just because they ask. We won't
+do it.
+</li>
+<br>
+<li> <i>"I don't like my final grade. It will ruin my life for the
+following reason: ... Therefore you should give me a better one."</i>
+<br>Class grades reflect only one thing: how well you did in the
+class. Life circumstances just don't play a role here. Don't come to
+me with this kind of argument.
+</li>
+<br>
+<li> <i>"I don't like my final grade. I am desperate. Isn't there some
+sort of extra credit thing I could do?"</i> <br>Any answer other than "No" to
+this question would be completely unfair to other students in the
+class unless they were all offered this option. That would be
+equivalent to saying that the semester isn't over and everyone can
+keep trying. We're not going to do this. Final grades are final.
+</li>
+<br>
+<li> <i>"I don't like my final grade. Can I have an incomplete and try
+again?"</i> <br>There are University rules for giving incompletes. If you meet
+those rules (e.g., you had a medical problem during the semester),
+then, of course, come and tell me and ask for an incomplete. But make
+sure you do it as soon as you can. Do not wait until the semester is
+over. If you do not meet the rules, the answer is "No".
+</li>
+<br>
+<li> <i>"I don't like my final grade. It doesn't reflect what I really
+know. I guess I didn't show what I know on the exams, but won't you
+give me a chance to convince you that I really know this stuff."</i>
+<br>Again, any answer other than "No" would be unfair to everyone else.
+</li>
+</ul>
+<p>
+<p>
+<u>Pair and Group Programming</u>: On most or all of the projects (as specified
+in the project description) you must work with at least one other person.  You
+must follow the pair programming guidelines below and on the course web page.
+All students will receive the same grade for the project. Unless group or pair
+programming is specifically allowed, all assignments must be done
+alone---including all problem sets.
+<p>
+We use <A HREF="http://en.wikipedia.org/wiki/Pair_programming">pair
+programming</A> because it is a more effective and time efficient way
+to learn the material. Researchers have shown that students perform
+better in the class in which they use pair programming than without,
+and also they perform better in subsequent classes with or without it.
+These results indicate that you learn more and better with pair
+programming.  Please read:
+
+<ul>
+<li>
+ <A HREF="docs/kindergarten.pdf">All I need to know about pair programming
+I learned in kindergarten</A>, L. A. Williams and
+R. R. Kessler, <i>Communications of the ACM</i>, 43(5): 108--114, May
+2000.
+<p><li>
+ <A HREF="docs/pair-hcs-2006.pdf">Pair programming productivity:
+Novice-novice vs.  expert-expert</A>, K. M. Lui and
+K. C.C. Chan, <i>International Journal on Human-Computer Studies</i>,
+64: 915--925, June 2006.
+</ul>
+<p> You must follow the pair programming guidelines: the pair must: (1) sit,
+design, and program together at least 80% of the time, and (2) split keyboard
+time evenly.  Each student can work independently for at most 10% of the
+effort/time. The person at the keyboard is the driver, and the person sitting
+next to him/her is the navigator. We recommend you alternate driving and
+navigating every 30 minutes.
+<p> For some parts of the course, you will be allowed to change partners between
+assignments.  However, once you begin an assignment with a partner (or a group),
+you cannot change partners or groups for that assignment.  If you must stop
+working with your partner or group, please request permission from the
+instructor and await further instruction.
+<p> If your partner falls out of communication with you, it is your
+  responsibility to notify the course staff.
+  
+<h2>Collaboration and Cheating</h2>
+<p>
+You are encouraged to study for exams,
+<b>discuss</b> the homeworks and projects, and discuss debugging
+techniques with your colleagues.  You are welcome to use existing
+public libraries in your programming assignments (such as public
+classes for queues, trees, etc.)  You may also look at operating
+systems code for public domain software such as Linux.  Such
+activities qualify under approved collaboration practices and you are
+welcome to take advantage of them.  If you are
+unsure about whether a particular source of external information is permitted,
+contact the instructor before looking at it.
+<p>
+Note that cooperation is not the same thing as cheating.  The project,
+homeworks, and exams must be the work of the student turning them in.
+Materials from the web should only be used for educational
+purposes. For example, you can read about threads and look at examples
+of thread code, but you must not copy any code from the web or be
+looking at any of this code from the web when writing anything you
+turn in. If you discuss an assignment with another student or look at
+examples from the web, you should employ the following technique:
+after a discussion with another student or looking at example code you
+should do something that has nothing to do with computer science or
+programming for at least half an hour before resuming programming.
+<p>
+Students who violate University rules on scholastic dishonesty are
+subject to disciplinary penalties, including the possibility of
+failure in the course and/or dismissal from the University. Because
+such dishonesty harms the individual, all students, and the integrity
+of the University, policies on scholastic dishonesty will be strictly
+enforced.  <b>The penalty for cheating on an exam, quiz, or assignment
+in this course is an F in the course and a referral to the Dean of
+Students office.</b>
+
+<p> It is generally okay to verbally discuss the concepts needed to do
+projects or homeworks. Three guidelines will help you keep on the
+right side of the line.
+<p>
+<ol>
+<li>
+   First, other than the TA and instructor, it is never okay to
+   look at the written work of another person or show another person
+   your written work until after all grading on an assignment is
+   completed. This includes looking at paper print-outs, sketching
+   solutions on a white board or napkin, or looking at a screen to
+   help debugging. <b>The moment you start looking at another
+   student's (or pair's) source code you have crossed the line into
+   cheating</b>. It should go without saying that copying other
+   people's code or solution sets is strictly prohibited.
+   <b>You also may not look at any course project material relating to any
+project similar to or the same as this course's class projects.</b> For example,
+you may not look at the work done by a student in past years' courses, and you
+   may not look at similar course projects at other universities.
+</li>
+<li> Second, while you are discussing an assignment with another
+  student, you must not have a writing implement, keyboard, or
+  recording device in hand. Similarly, you should not read from your
+  own work. After discussing a problem with another student (or the
+  TA!), go watch The Bachelor for a half hour before going back to
+  work on the assignment. If you can't remember what the person said
+  after a half hour, you didn't really understand it.
+</li>
+<li>
+   Third, everyone in the class is expected to take appropriate
+   measures for protecting one's work. For example, you should protect
+   your files and printouts from unauthorized access.
+</li>
+</ol>
+<p>
+Note that these guidelines are necessarily generalizations and cannot
+account for all circumstances. Intellectual dishonesty can end your
+career, and it is your responsibility to stay on the right side of the
+line.
+
+<p>Examples of cheating include: looking at someone else's program, writing your
+program while talking to someone else about it, talking another student through
+the solution code, allowing others to look at your solution code, and looking on
+the Internet for code to solve your programming assignments, including
+stackoverflow and other such sites.  If you have any doubts about what is
+allowed, ask the instructor.
+<p>
+<b>Additionally, if you are repeating the course you may NOT reuse any code or
+  assignments.</b>  All submitted work must be new and original.
+  <p>
+<a href="http://theory.stanford.edu/%7Eaiken/moss/">Plagiarism
+detection software</a> will be used on various assignments and
+homeworks to find students who have copied code from one another. Any
+program that you submit must be yours, and yours alone.
+<p>
+If you are participating in a pair or group programming assignment and
+your partner cheats, you are also culpable. Either you were following
+the rules of pair programming and you knew your partner(s) was
+cheating, or you were not following the rules of pair programming and
+you turned in work as yours that was not.  Note that, "I actually didn't
+participate in that project because I was doing x, y, or z instead." is not
+considered a valid excuse---instead it is a type of cheating, since you were
+then prepared to take credit for work that was not yours.
+<p>
+Finally, the materials used in this class, including, but not limited to, exams,
+quizzes, and homework assignments are copyright protected works.  Any
+unauthorized copying of the class materials is a violation of federal law and
+may result in disciplinary actions being taken against the student or other
+legal action against an outside entity.  Additionally, the sharing of class
+materials without the specific, express approval of the instructor may be a
+violation of the University's Student Honor Code and an act of academic
+dishonesty, which could result in further disciplinary action.  This includes,
+among other things, uploading class materials to websites for the purpose of
+sharing those materials with other current or future students.
+
+<!-- uploading course materials to Course Hero or any other such site is
+considered collusion and is a violation of the UT Honor Code.  Such actions are
+punishable offenses through Student Judicial Services.-->
+
+<p>
+<h2>Other Stuff</h2>
+<p>
+<u>Religious Holy Days</u>: A student who is absent from an
+examination or cannot meet an assignment deadline due to the
+observance of a religious holy day may take the exam on an alternate
+day or submit the assignment up to 24 hours late without penalty, if
+proper notice of the planned absence has been given. Notice must be
+given at least 14 days prior to the classes which will be missed. For
+religious holy days that fall within the first 2 weeks of the
+semester, notice should be given on the first day of the
+semester. Notice must be personally delivered to the instructor and
+signed and dated by the instructor, or sent certified mail. Email
+notification will be accepted if received, but a student submitting
+email notification must receive email confirmation from the
+instructor.
+<p>
+<u>Students with Disabilities</u>: The University of Texas at Austin
+provides upon request appropriate academic accommodations for
+qualified students with disabilities. For more information, contact
+the Division of Diversity and Community Engagement, Services for
+Students with Disabilities at 471-6259, 471-4641 TTY.  Students
+requesting accommodations for disabilities must notify the instructor
+by the 12th class day.
+<p>
+<h2>Final Note</h2>
+<p>
+This syllabus is a plan of action for the semester.  It is NOT a
+contract and is subject to change.  As the instructor, I reserve the
+right to make additions, deletions, and modifications to the syllabus
+and the course requirements with reasonable notification to the
+students enrolled in the course.  You are responsible for any changes
+announced in class or on the course website.
+
+
+<h4> Acknowledgments and Copyright</h4>
+<p>
+In the preparation of this course, I used materials from Mary Eberlein, Mike
+Scott, Kathryn McKinley, Shyamal Mitra, Calvin Lin, Charlie Garrod, Jennifer
+Brown, Al Mok, Mike Dahlin, Emmett Witchel, Lorenzo Alvisi, Maria Jump, Michael
+Walfish, Jerry Breecher, Andy Wang, John Bell, and Zero Assurance
+Recovery.
+<p>
+Special thanks to the Stanford Computer Science Department for the use
+of Pintos, an instructional operating system.
+<p>
+Copyright Notice: These course materials, including, but not limited to, lecture
+notes, homeworks, and projects are part of a second course on computer
+systems. You must ask me permission to use these materials.
+<p>
+I do not grant to you the right to publish these materials for profit
+in any form.
+
+</body>
+</html>

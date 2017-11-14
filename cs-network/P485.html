@@ -1,0 +1,30 @@
+<base href="https://www.cs.utexas.edu/~gouda/cs356sp08/quiz8/">
+------------------------------------------------------------------------------
+Mohamed G. Gouda						CS 356
+Spring 2008							Quiz #8
+------------------------------------------------------------------------------
+
+Consider the protocol for maintaining local topology information in Section
+11.2. Assume that in this protocol an element up[g] in process p[i] has a 
+wrong value true when at least one of the two channels between p[i] and p[g]
+is down. What is the maximum number of messages that p[i] can receive from
+p[g] before it assigns its element up[g] the correct value false? What is the 
+minimum number of messages that p[i] can receive from p[g] before it assigns  
+its element up[g] the correct vale false?
+
+-------------------------------------------------------------------------------
+Student Name:
+Student ID:
+-------------------------------------------------------------------------------
+
+Solution:
+
+The maximum number of messages is 2:
+
+* start from a state where channel from p[i] to p[g] is down and
+channel from p[g] to p[i] is up and has a chk(1) message.
+
+The minimum number of messages is 0:
+
+* start from a state where both channels between p[i] and p[g] are
+  down.

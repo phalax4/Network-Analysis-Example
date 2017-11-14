@@ -1,0 +1,21 @@
+<base href="https://www.cs.utexas.edu/~gouda/cs337fa08/quiz9-10/">
+------------------------------------------------------------------------------
+Mohamed G. Gouda                                                CS 337
+Fall 2008                                                     	Quiz 9&10
+------------------------------------------------------------------------------
+
+Specify a Haskell function "evenl" that takes a list xs as a parameter and 
+returns a boolean value. The returned value is True iff list xs has an even
+number of elements. Ensure that your specification of "evenl" does not call
+function "len" that computes the number of elements in a list.
+
+------------------------------------------------------------------------------
+Student Name:
+Student EID:
+Student Section Time (circle one):  T:10-11,  T:12-1,  T:1-2,  W:11-12
+------------------------------------------------------------------------------
+
+Solution:
+
+evenl [] = True
+evenl x:xs = not (evenl xs)

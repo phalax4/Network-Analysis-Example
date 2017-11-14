@@ -1,0 +1,172 @@
+<base href="https://www.cs.utexas.edu/users/ans/classes/cs439/problem_sets/ps7.html">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" type="text/css" href="../ans.css" />
+
+  <title>CS439: Principles of Computer Systems Discussion Section Problem Set 7</title>
+<meta NAME="keywords" CONTENT="Alison N. Smith Norman">
+</head>
+
+<body>
+
+<div class="interior-content">
+<!-- * MAIN TEXT * -->
+    <td VALIGN="CENTER" WIDTH="100%">
+ <font face=arial > 
+
+      <!-- *NAV BAR* -->
+      <table WIDTH=100% BORDER=0 BGCOLOR=white CELLSPACING=0 CELLPADDING=0 HEIGHT=25 LINK=white>
+	<tr>
+	  <td width=120 align=center><small><a HREF="../../index.html" target=_top><b>Home</b></a></small></td>
+
+	  <td width=120 align=center><small><a HREF="../index.html" target=_top><b>CS439</b></a></small></td>
+	</tr>
+      </table>
+
+
+<center>
+<p><h1><b>CS439: Principles of Computer Systems </b></h1></p>
+<p>
+<h2><b>Discussion Section Problem Set 7<br></b></h2>
+<h3><b> Due in Section on Friday, October 27, 2017 </h3></b>
+</center>
+The problem set must be completed before section and brought to section.  To
+ensure that your problem set is turned in correctly and that you receive credit
+for discussion section, you must follow these guidelines exactly.
+
+<ul>
+<li>Include the following header at the top of your file:
+<pre>
+Discussion Section Problem Set #: 
+Student Name:
+EID:
+CS login:
+Email address:
+Unique Number: 
+</pre>
+</li>
+<p>
+<li>You may either type your answers or write them by hand, but you must bring a
+  hard copy to discussion section.
+  </li>
+<p>
+<li>
+   In discussion section, your TA will check that you make a good effort on the
+problem set and that you are participating in the discussions in section and
+ready and able to answer when called upon.  If all of those are true, you will
+receive credit for discussion section that day.  Note that a "good effort" on
+the problem set includes that all answers are in your own words and <i>not</i>
+copied from anywhere else, including the slide deck.
+</li>
+</ul>
+<!-- Please refer to the
+<a href="problem_set_turnin.html">problem set turnin instructions</a>.-->
+<hr>
+
+<ol>
+  <p> </p>
+  <p> </p>
+<!--Number One--->
+<li>
+In some operating systems, I/O from/to disk is done directly to/from a
+buffer in the user program's memory.  The user program does a system
+call specifying the address and length of the buffer (the length must
+be a multiple of the disk record size).
+<p>
+The disk controller needs a physical memory address not a virtual
+address.  Your co-worker proposes that when the user does a write
+system call, the operating system should check that the user's virtual
+address is valid, translate it into a physical address, and pass that
+address and the length (also checked for validity) to the disk
+hardware.
+<p>
+This won't quite work. <b>In no more than two sentences,</b>
+what did your co-worker forget?
+<p>
+</li>
+<p>
+<!---Number Two--->
+<li>
+Pooh Software Ltd. is selling a file system that
+uses a UNIX-like file system with multi-level indexing. For more reliability,
+the inode array is actually replicated on the disk in two different places.
+The intent is that if one or a group of sectors that are storing either
+replica of the array become bad, the system can always recover from the
+replica. Discuss the effect of having this replicated data structure on
+performance.
+<p>
+</li>
+<p>
+<!---Number Three--->
+<li>
+In Unix, the pipe(2) function call creates an I/O mechanism
+called a pipe and returns two file descriptors, fd[0] and fd[1]. The
+files associated with fd[0] and fd[1] are streams of data and are both
+opened for reading and writing. Suppose pipe always returns the two
+lowest-numbered file descriptors in the process's file descriptor
+table that are unused. Assume that initially fdt[], the file
+descriptor table, has three open entries: fdt[0] is the default input
+device, fdt[1] is the default output device and fdt[2] is the default
+error output device; all other entries of the fdt are NULL. What does
+the fdt look like after each of the five following commands is
+executed in sequence by the process?<br>
+<br>
+1: pipe (&amp;fd[0]);<br>
+2: close(fd[0]);<br>
+3: close(1);<br>
+4: dup(fd[1]);<br>
+5: close(fd[1]);
+<p>
+When might such a sequence of commands be useful?  <p>You'll need to use
+the man pages for pipe, close, and dup to answer this question.
+<p>
+</li>
+<p>
+<!--Number Four--->
+<li>
+Belady's anomaly: Intuitively, it seems that the more frames the
+    memory has, the fewer page faults a program will get.
+    Surprisingly enough, this is not always true. Belady (1969)
+    discovered an example in which FIFO page replacement causes more
+    faults with four page frames than with three. This strange
+    situation has become known as Belady's anomaly.  To illustrate, a
+    program with five virtual pages numbered from 0 to 4 references
+    its pages in the order:
+
+    <br>0 1 2 3 0 1 4 0 1 2 3 4
+
+    <ol>
+
+        <li> Using FIFO replacement and assuming demand paging, compute
+        the number of page faults with 3 frames. Repeat for 4 frames.
+
+        <li>
+        Compute the number of page faults under LRU, the clock
+        algorithm, and the optimal algorithm.  What do you notice?
+
+    </ol>
+<p>
+</li>
+<p>
+<!---Number Five--->
+<li>
+Disk requests come into the disk driver for tracks 10, 22, 20, 2, 40,
+6, and 38, in that order.  A seek takes 6 msec per track moved.  How
+much seek time is needed for the following scheduling algorithms?<br>
+
+a) FIFO <br>b) SSTF <br>c) LOOK (SCAN, but doesn't move to the end)
+<br>In all cases, the arm is initially at track 20, and you may assume
+that the head is traveling towards higher numbers.<br><br> <i>Adapted
+from Tannenbaum Chapter 5 Number 24.</i> <p>
+</li>
+<p>
+</ol>
+<hr>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<base href="https://www.cs.utexas.edu/~gouda/cs337fa07/quiz12/">
+-------------------------------------------------------------------------------
+Mohamed G. Gouda						CS 337
+Fall 2007							quiz 12
+------------------------------------------------------------------------------
+
+Consider a Haskell function "largerl" that takes as parameters two nonempty 
+lists xs and ys and computes a boolean value. The computed value is True iff 
+(1) the length of list xs is larger than or equal the length of list ys, and 
+(2) each element in xs is larger than or equal the corresponding element in ys
+provided that there is a corresponding element in ys.
+
+What will the Haskell interpreter return to the command
+
+	Main>:t largerl 
+
+
+------------------------------------------------------------------------------
+Student Name:
+Student Section:
+------------------------------------------------------------------------------
+Main> :t largerl
+largerl :: Ord a => [a] -> [a] -> Bool
