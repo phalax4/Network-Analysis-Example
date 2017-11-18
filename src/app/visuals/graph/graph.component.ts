@@ -1,5 +1,6 @@
 import { Component, Input, ChangeDetectorRef, HostListener, ChangeDetectionStrategy, OnInit, AfterViewInit } from '@angular/core';
 import { D3Service, ForceDirectedGraph, Node } from '../../d3';
+import {isUndefined} from "util";
 
 @Component({
   selector: 'graph',
@@ -28,11 +29,20 @@ export class GraphComponent implements OnInit, AfterViewInit {
 
 
   constructor(private d3Service: D3Service, private ref: ChangeDetectorRef) {
-    console.log(this.nodes);
   }
 
   ngOnInit() {
     /** Receiving an initialized simulated graph from our custom d3 service */
+
+    const cleanNodes = [];
+    for (let i = 0; i < this.nodes.length; ++i) {
+      if (this.nodes[i].id !== undefined) {
+        cleanNodes.push(this.nodes[i]);
+      }
+    }
+
+    this.nodes = cleanNodes;
+
     this.graph = this.d3Service.getForceDirectedGraph(this.nodes, this.links, this.options);
 
     /** Binding change detection check on each tick

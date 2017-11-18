@@ -4,9 +4,9 @@ import { Node } from './node';
 import * as d3 from 'd3';
 
 const FORCES = {
-  LINKS: 1 / 50,
+  LINKS:  1  / 50,
   COLLISION: 1,
-  CHARGE: -4
+  CHARGE: -1
 }
 
 export class ForceDirectedGraph {
@@ -54,7 +54,7 @@ export class ForceDirectedGraph {
     this.simulation.force('links',
       d3.forceLink(this.links)
         .id(d => d['id'])
-        .strength(FORCES.LINKS)
+       // .strength(FORCES.LINKS)
     );
   }
 
@@ -70,13 +70,13 @@ export class ForceDirectedGraph {
       this.simulation = d3.forceSimulation()
         .force('charge',
           d3.forceManyBody()
-            .strength(d => FORCES.CHARGE * d['r'])
+           // .strength(d => FORCES.CHARGE )
         )
-        .force('collide',
+       /* .force('collide',
           d3.forceCollide()
-            .strength(FORCES.COLLISION)
-            .radius(d => d['r'] + 5).iterations(2)
-        );
+            .strength(FORCES.COLLISION * 1)
+            .radius(d => Math.log2(d['rank'] * 10000) + 4).iterations(1)
+        );*/
 
       // Connecting the d3 ticker to an angular event emitter
       this.simulation.on('tick', function () {
