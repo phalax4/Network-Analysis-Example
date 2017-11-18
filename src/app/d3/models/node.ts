@@ -9,9 +9,12 @@ export class Node implements d3.SimulationNodeDatum {
   vy?: number;
   fx?: number | null;
   fy?: number | null;
-
+  rank?: number;
+  label?: string;
+  url?: string;
   id: string;
-  linkCount: number = 0;
+  group?: string;
+  linkCount = 0;
 
   constructor(id) {
     this.id = id;

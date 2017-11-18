@@ -27,7 +27,9 @@ export class GraphComponent implements OnInit, AfterViewInit {
   }
 
 
-  constructor(private d3Service: D3Service, private ref: ChangeDetectorRef) {}
+  constructor(private d3Service: D3Service, private ref: ChangeDetectorRef) {
+    console.log(this.nodes);
+  }
 
   ngOnInit() {
     /** Receiving an initialized simulated graph from our custom d3 service */
