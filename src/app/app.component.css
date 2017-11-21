@@ -1,3 +1,7 @@
-div {
-  background-color: lightslategray;
+.content {
+  background-color: #a9bed1;
+}
+.bounds {
+  background-color:#ddd;
+  height :800px;
 }
