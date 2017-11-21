@@ -9,6 +9,10 @@ export class D3Service {
     */
   constructor() { }
 
+  onClick() {
+    console.log('click');
+  }
+
   /** A method to bind a pan and zoom behaviour to an svg element */
   applyZoomableBehaviour(svgElement, containerElement) {
     let svg, container, zoomed, zoom;

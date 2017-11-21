@@ -1,6 +1,6 @@
 import { Component, Input, ChangeDetectorRef, HostListener, ChangeDetectionStrategy, OnInit, AfterViewInit } from '@angular/core';
 import { D3Service, ForceDirectedGraph, Node } from '../../d3';
-import {isUndefined} from "util";
+import * as d3 from 'd3';
 
 @Component({
   selector: 'graph',
@@ -37,6 +37,7 @@ export class GraphComponent implements OnInit, AfterViewInit {
     const cleanNodes = [];
     for (let i = 0; i < this.nodes.length; ++i) {
       if (this.nodes[i].id !== undefined) {
+        this.nodes[i].color = d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
         cleanNodes.push(this.nodes[i]);
       }
     }
@@ -58,6 +59,8 @@ export class GraphComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.graph.initSimulation(this.options);
   }
+
+
 
   get options() {
     return this._options = {

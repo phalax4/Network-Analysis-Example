@@ -15,9 +15,11 @@ export class Node implements d3.SimulationNodeDatum {
   id: string;
   group?: number;
   linkCount = 0;
+  color?: string;
 
   constructor(id) {
     this.id = id;
+    this.color = d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
   }
 
   normal = () => {
@@ -32,7 +34,4 @@ export class Node implements d3.SimulationNodeDatum {
     return (30 * Math.log2(this.rank * 10000) + 10) + 'px';
   }
 
-  get color (): string {
-    return 'purple';
-  }
 }

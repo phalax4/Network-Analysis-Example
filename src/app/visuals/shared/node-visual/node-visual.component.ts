@@ -12,7 +12,8 @@ import * as d3Scale from 'd3-scale';
           [attr.fill]="this.color"
           cx="0"
           cy="0"
-          [attr.r]="this.r">
+          [attr.r]="this.r"
+          (click)="this.onClick()">
       </svg:circle>
     </svg:g>
   `,
@@ -30,11 +31,12 @@ export class NodeVisualComponent implements AfterContentInit {
   }
 
   get color() {
-    //const cc = d3Scale.scaleOrdinal(d3.schemeCategory20);
+    // return d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
+    return this.node.color;
+  }
 
-    // console.log(cc('0.004'));
-     console.log();
-    return d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
+  onClick() {
+    console.log(this.node);
   }
 
   /*
