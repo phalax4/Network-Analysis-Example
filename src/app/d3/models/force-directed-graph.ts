@@ -86,11 +86,11 @@ export class ForceDirectedGraph {
       this.initNodes();
       this.initLinks();
     }
-
     /** Updating the central force of the simulation */
     this.simulation.force('centers', d3.forceCenter(options.width / 2, options.height / 2));
 
     /** Restarting the simulation internal timer */
     this.simulation.restart();
+
   }
 }

@@ -1,4 +1,7 @@
-import { Component, Input, ChangeDetectorRef, HostListener, ChangeDetectionStrategy, OnInit, AfterViewInit } from '@angular/core';
+import {
+  Component, Input, ChangeDetectorRef, HostListener, ChangeDetectionStrategy, OnInit, AfterViewInit,
+  ElementRef
+} from '@angular/core';
 import { D3Service, ForceDirectedGraph, Node } from '../../d3';
 import * as d3 from 'd3';
 
@@ -29,6 +32,7 @@ export class GraphComponent implements OnInit, AfterViewInit {
 
 
   constructor(private d3Service: D3Service, private ref: ChangeDetectorRef) {
+
   }
 
   ngOnInit() {

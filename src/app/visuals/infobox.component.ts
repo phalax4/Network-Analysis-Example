@@ -1,36 +1,37 @@
-import { Component, Input, AfterContentInit } from '@angular/core';
+import {Component, Input, AfterContentInit, OnInit, OnDestroy} from '@angular/core';
+import {AppService} from '../app.service';
+import {Subscription} from 'rxjs/Subscription';
 
 @Component({
-  selector: '[nodeVisual]',
-  template: `    
+  selector: 'app-infobox',
+  template: `
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Node Information</mat-card-title>
+      </mat-card-header>
+      <mat-card-content *ngIf="message">
+        <p>
+          <a href = "{{message.text}}" >{{ message.text }}</a>
+        </p>
+      </mat-card-content>
+    </mat-card>
   `,
-  styleUrls: ['./node-visual.component.css']
+  styleUrls: ['./infobox.component.css']
+
 })
-export class InfoboxComponent implements AfterContentInit {
-  @Input('nodeVisual') node: Node;
-  ngAfterContentInit () {
-    // console.log(this.node);
-    // console.log(this.node.r);
+export class InfoboxComponent implements OnDestroy {
+  message: any;
+  subscription: Subscription;
+
+  constructor (private appService: AppService) {
+    this.subscription = this.appService.getMessage().subscribe(message => {
+      console.log(message);
+      this.message = message; });
   }
 
-  get r() {
-    return Math.log2(this.node.rank * 10000);
-  }
 
-  get color() {
-    // return d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
-    return this.node.color;
+  ngOnDestroy() {
+    // unsubscribe to ensure no memory leaks
+    this.subscription.unsubscribe();
   }
-
-  onClick() {
-    console.log(this.node);
-  }
-
-  /*
-   <svg:text
-          class="node-name"
-          [attr.font-size]="node.fontSize">
-        {{node.id}}
-      </svg:text>
-   */
 }

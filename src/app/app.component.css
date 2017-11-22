@@ -1,7 +1,46 @@
 .content {
-  background-color: #a9bed1;
+  background-color: rgba(107, 113, 128, 0.88);
 }
 .bounds {
   background-color:#ddd;
   height :800px;
+}
+
+.sec3 {
+  background: #bfbfbf;
+  color:darkblue;
+  text-transform: uppercase;
+}
+
+.bounds2 {
+  background-color:#ddd;
+  height :800px;
+}
+
+.sec12 {
+  background: whitesmoke;
+  color:darkblue;
+  text-transform: uppercase
+}
+
+.sec22 {
+  background: whitesmoke;
+  color:darkblue;
+
+}
+
+.sec32 {
+  background: whitesmoke;
+  color:darkblue;
+  text-transform: uppercase
+}
+
+.sec12, .sec22, .sec32 {
+  padding-top:20px;
+  text-align:center
+}
+
+.content2 {
+  min-width: 300px;
+  /*height: 400px;*/
 }

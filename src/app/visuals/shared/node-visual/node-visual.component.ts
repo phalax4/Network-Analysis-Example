@@ -1,7 +1,6 @@
 import { Component, Input, AfterContentInit } from '@angular/core';
 import { Node } from '../../../d3';
-import * as d3 from 'd3';
-import * as d3Scale from 'd3-scale';
+import {AppService} from '../../../app.service';
 
 @Component({
   selector: '[nodeVisual]',
@@ -26,6 +25,10 @@ export class NodeVisualComponent implements AfterContentInit {
     // console.log(this.node.r);
   }
 
+  constructor (private appService: AppService) {
+
+  }
+
   get r() {
     return Math.log2(this.node.rank * 10000);
   }
@@ -36,7 +39,12 @@ export class NodeVisualComponent implements AfterContentInit {
   }
 
   onClick() {
-    console.log(this.node);
+    console.log(this.node.url);
+    this.appService.sendMessage(this.node.url);
+  }
+  clearMessage(): void {
+    // clear message
+    this.appService.clearMessage();
   }
 
   /*

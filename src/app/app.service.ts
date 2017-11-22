@@ -2,14 +2,23 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable, Component, Input} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Node, Link } from './d3';
+import {Subject} from 'rxjs/Subject';
 
 @Injectable()
 export class AppService {
+  private subject = new Subject<any>();
 
-  constructor() {
-
+  constructor() { }
+  sendMessage(message: string) {
+    this.subject.next({ text: message });
   }
 
-  getNodeInformation () { }
+  clearMessage() {
+    this.subject.next();
+  }
+
+  getMessage(): Observable<any> {
+    return this.subject.asObservable();
+  }
 
 }

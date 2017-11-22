@@ -4,13 +4,27 @@
        fxLayout.xs="column"
        fxFlexFill >
 
-    <div fxFlex="90" class="sec1" fxFlex.xs="55">
+    <div fxFlex="80" class="sec1" fxFlex.xs="55">
       <div *ngIf="nodes$ && links$" >
         <graph [nodes]="nodes$" [links]="links$"></graph>
       </div>
     </div>
-    <div fxFlex="10" class="sec3" fxFlex.xs="15">
-      third-section
+    <div fxFlex="20" class="sec3" fxFlex.xs="15">
+      <app-infobox></app-infobox>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="bounds2">
+  <div class="content2"
+       fxLayout="row"
+       fxLayout.xs="column"
+       fxFlexFill >
+
+    <div fxFlex="100" class="sec12" fxFlex.xs="55">
+      first-section
     </div>
 
   </div>

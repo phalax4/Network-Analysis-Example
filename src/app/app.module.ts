@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
 
 import { D3Service, D3_DIRECTIVES } from './d3';
 
@@ -12,7 +13,8 @@ import { GraphComponent } from './visuals/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
 import {HttpClientModule} from '@angular/common/http';
 
-import { AppService } from './app.service';
+import { AppService } from './app.service'
+import {InfoboxComponent} from './visuals/infobox.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { AppService } from './app.service';
     GraphComponent,
     ...SHARED_VISUALS,
     ...D3_DIRECTIVES,
+    InfoboxComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule
   ],
   providers: [D3Service, AppService],
   bootstrap: [AppComponent]
