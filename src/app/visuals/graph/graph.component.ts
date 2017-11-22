@@ -41,7 +41,7 @@ export class GraphComponent implements OnInit, AfterViewInit {
     const cleanNodes = [];
     for (let i = 0; i < this.nodes.length; ++i) {
       if (this.nodes[i].id !== undefined) {
-        this.nodes[i].color = d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
+        this.nodes[i].color = d3.schemeCategory20c[Math.round(Math.random() * (20 - 0) + 0)];
         cleanNodes.push(this.nodes[i]);
       }
     }
@@ -69,7 +69,7 @@ export class GraphComponent implements OnInit, AfterViewInit {
   get options() {
     return this._options = {
       width: window.innerWidth * 0.8,
-      height: window.innerHeight
+      height: window.innerHeight * 0.7
     };
   }
 }

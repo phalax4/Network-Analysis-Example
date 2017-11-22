@@ -4,3 +4,9 @@ p {
   overflow-wrap: break-word;
   font-family: Arial;
 }
+
+.wrapper {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

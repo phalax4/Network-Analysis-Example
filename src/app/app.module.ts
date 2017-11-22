@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 
 import { D3Service, D3_DIRECTIVES } from './d3';
 
@@ -29,7 +30,8 @@ import {InfoboxComponent} from './visuals/infobox.component';
     FormsModule,
     HttpClientModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
   ],
   providers: [D3Service, AppService],
   bootstrap: [AppComponent]
