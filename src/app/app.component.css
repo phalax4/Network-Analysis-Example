@@ -5,7 +5,19 @@
   background-color:#ddd;
   height :100%;
 }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
 
+ng-sidebar-container {
+  height: 100vh;
+}
+mat-toolbar{
+  margin: 0;
+  background-color: #37393a;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
 .graphsec {
   background-color: #77b6ea;
 }
@@ -22,7 +34,7 @@
 }
 
 .sec12 {
-  background: whitesmoke;
+  background: #FFFFFF;
   color:darkblue;
   text-transform: uppercase
 }

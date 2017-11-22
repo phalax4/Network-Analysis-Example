@@ -34,14 +34,14 @@ export class NodeVisualComponent implements AfterContentInit {
   }
 
   get color() {
-    // return d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
     return this.node.color;
   }
 
   onClick() {
-    console.log(this.node.url);
-    this.appService.sendMessage(this.node.url);
+    console.log(this.node);
+    this.appService.sendMessage(this.node);
   }
+
   clearMessage(): void {
     // clear message
     this.appService.clearMessage();

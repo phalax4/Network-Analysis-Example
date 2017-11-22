@@ -9,8 +9,8 @@ export class AppService {
   private subject = new Subject<any>();
 
   constructor() { }
-  sendMessage(message: string) {
-    this.subject.next({ text: message });
+  sendMessage(message: any) {
+    this.subject.next({ entity: message });
   }
 
   clearMessage() {

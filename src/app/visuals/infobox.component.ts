@@ -7,12 +7,24 @@ import {Subscription} from 'rxjs/Subscription';
   template: `
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Node Information</mat-card-title>
+        <mat-card-title><h4>Node Information</h4></mat-card-title>
       </mat-card-header>
-      <mat-card-content *ngIf="message">
+
+      <mat-card-content>
+        <hr class="style-eight">
+        <div *ngIf="message">
         <p>
-          <a href = "{{message.text}}" >{{ message.text }}</a>
+          <a href = "{{message.entity.url}}" >{{ message.entity.url }}</a>
         </p>
+        <mat-list>
+          <mat-list-item>
+            <p>
+              PageRank:
+            </p></mat-list-item>
+          <mat-list-item><p>Alias: </p></mat-list-item>
+          <mat-list-item><p>Color: </p></mat-list-item>
+        </mat-list>
+        </div>
       </mat-card-content>
     </mat-card>
   `,

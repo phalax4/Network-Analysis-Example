@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { D3Service, D3_DIRECTIVES } from './d3';
 
@@ -16,6 +18,10 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppService } from './app.service'
 import {InfoboxComponent} from './visuals/infobox.component';
+import { SidebarModule } from 'ng-sidebar';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,13 @@ import {InfoboxComponent} from './visuals/infobox.component';
     HttpClientModule,
     FlexLayoutModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    SidebarModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [D3Service, AppService],
   bootstrap: [AppComponent]
