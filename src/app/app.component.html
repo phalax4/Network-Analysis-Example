@@ -1,15 +1,12 @@
-<mat-toolbar>
-  <button mat-button (click)="sidenav.toggle()">
-  <mat-icon class="md-24; md-light">menu</mat-icon>
 
-  </button>￼
-</mat-toolbar>
 
-<div class="example-sidenav-content">
-
-</div>
 <mat-sidenav-container class="example-container">
+  <mat-toolbar>
+    <button mat-button (click)="sidenav.toggle()">
+      <mat-icon class="md-24; md-light">menu</mat-icon>
 
+    </button>￼
+  </mat-toolbar>
 
   <mat-sidenav #sidenav class="example-sidenav" opened="false">
     Jolly good!
@@ -53,6 +50,10 @@
        fxFlexFill >
 
     <div fxFlex="100" class="sec12" fxFlex.xs="100">
+      <button mat-fab class="more-content">
+        <mat-icon class="md-24; md-light">expand_more</mat-icon>
+      </button>
+
       <h2 style="color:#37393a;">Page Rank</h2>
 
     </div>

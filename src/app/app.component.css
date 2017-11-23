@@ -15,6 +15,10 @@ mat-toolbar{
   background-color: #37393a;
 }
 
+.more-content {
+  background-color: #37393a;
+}
+
 .example-sidenav {
   padding: 20px;
 }

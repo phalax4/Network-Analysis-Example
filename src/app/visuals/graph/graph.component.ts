@@ -32,7 +32,6 @@ export class GraphComponent implements OnInit, AfterViewInit {
 
 
   constructor(private d3Service: D3Service, private ref: ChangeDetectorRef) {
-
   }
 
   ngOnInit() {
@@ -41,8 +40,24 @@ export class GraphComponent implements OnInit, AfterViewInit {
     const cleanNodes = [];
     for (let i = 0; i < this.nodes.length; ++i) {
       if (this.nodes[i].id !== undefined) {
-        this.nodes[i].color = d3.schemeCategory20c[Math.round(Math.random() * (20 - 0) + 0)];
-        cleanNodes.push(this.nodes[i]);
+
+        const currentNode = this.nodes[i];
+
+        currentNode.color = d3.schemeCategory20c[Math.round(Math.random() * (20 - 0) + 0)];
+
+        currentNode.inLinksCount = this.links.filter(function(p) {
+          if (p.target !== undefined) {
+            return p.target === currentNode.id;
+          }
+        }).length;
+
+        currentNode.outLinksCount = this.links.filter(function(p) {
+          if (p.source !== undefined) {
+            return p.source === currentNode.id;
+         }
+        }).length;
+
+        cleanNodes.push(currentNode);
       }
     }
 

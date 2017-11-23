@@ -37,6 +37,13 @@ export class NodeVisualComponent implements AfterContentInit {
     return this.node.color;
   }
 
+  get inLinksCount() {
+    return this.node.inLinksCount;
+  }
+  get outLinksCount() {
+    return this.node.outLinksCount;
+  }
+
   onClick() {
     console.log(this.node);
     this.appService.sendMessage(this.node);
