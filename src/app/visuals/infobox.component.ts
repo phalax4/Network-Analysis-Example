@@ -5,9 +5,9 @@ import {Subscription} from 'rxjs/Subscription';
 @Component({
   selector: 'app-infobox',
   template: `
-    <mat-card>
+    <mat-card tabindex="-1">
       <mat-card-header>
-        <mat-card-title><h4>Node Information</h4></mat-card-title>
+        <mat-card-title><h4 mat-line>Node Info</h4></mat-card-title>
       </mat-card-header>
 
       <mat-card-content>
@@ -21,7 +21,7 @@ import {Subscription} from 'rxjs/Subscription';
             </p></mat-list-item>
           <mat-list-item>
             <p>
-              PageRank: {{message.entity.rank}}
+              PageRank: {{message.entity.rank.toFixed(6)}}
             </p></mat-list-item>
           <mat-list-item><p>Alias: {{message.entity.id}}.html</p></mat-list-item>
           <mat-list-item><p>Color: {{message.entity.color}}</p></mat-list-item>

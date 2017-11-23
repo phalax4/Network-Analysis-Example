@@ -7,10 +7,6 @@
 }
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 
-ng-sidebar-container {
-  height: 100vh;
-}
-
 .mainContent {
 }
 .mainToolbar{
@@ -23,10 +19,27 @@ ng-sidebar-container {
   width: 100%  !important;
 }
 
+#test-section {
+  padding-top: 70px;
+}
+
+.container {
+  overflow: hidden
+}
 .more-content {
   background-color: #37393a;
 }
 
+.example-container {
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(169, 190, 209, 0.45),
+      rgba(191, 191, 191, 0.45)
+    )
+      /* bottom, image */
+   /* ,url(http://www.hdnicewallpapers.com/Walls/Big/Drawings%20and%20Paintings/Best_Nature_Painting_Pics.jpg);*/
+}
 .example-sidenav {
   padding: 20px;
 }

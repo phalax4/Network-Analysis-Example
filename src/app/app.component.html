@@ -7,57 +7,93 @@
     </button>￼
   </mat-toolbar>
   <mat-sidenav #sidenav class="example-sidenav" opened="false">
-    Close
+    <button cdk-focus-start mat-button (click)="sidenav.toggle()">
+      Close
+    </button>
     <mat-list>
-      <mat-list-item>Home</mat-list-item>
-      <mat-list-item>Graph</mat-list-item>
-      <mat-list-item>Explanation</mat-list-item>
+      <h3 matSubheader>Site</h3>
+      <mat-divider></mat-divider>
+
+      <mat-list-item>
+        <button tabindex="-1" mat-button>
+          Home
+        </button>
+      </mat-list-item>
+      <mat-list-item> <button tabindex="-1" mat-button>
+        About
+      </button></mat-list-item>
+      <mat-list-item> <button tabindex="-1" mat-button>
+        Portfolio
+      </button></mat-list-item>
+    </mat-list>
+    <mat-list>
+      <h3 matSubheader>Current</h3>
+      <mat-divider></mat-divider>
+
+      <mat-list-item>
+        <button tabindex="-1" mat-button>
+          Graph
+        </button>
+      </mat-list-item>
+      <mat-list-item> <button tabindex="-1" mat-button>
+        Article
+      </button></mat-list-item>
     </mat-list>
   </mat-sidenav>
 
   <mat-toolbar class="dummy"></mat-toolbar>
-<div *ngIf="nodes$ && links$" class = "mainContent" >
-<div class="bounds">
+  <div class="container">
+    <div *ngIf="nodes$ && links$" class = "mainContent" >
+      <div class="bounds">
 
-  <div class="content"
-       fxLayout="row"
-       fxLayout.xs="column"
-       fxFlexFill >
+        <div class="content"
+             fxLayout="row"
+             fxLayout.xs="column"
+             fxFlexFill >
 
-    <div fxFlex="80" class="sec1" fxFlex.xs="55" >
+          <div fxFlex="80" class="sec1" fxFlex.xs="55" >
 
-      <mat-card class="graphsec">
-      <div >
-        <graph [nodes]="nodes$" [links]="links$"></graph>
+            <mat-card class="graphsec">
+              <div >
+                <graph [nodes]="nodes$" [links]="links$"></graph>
+              </div>
+            </mat-card>
+
+          </div>
+          <div fxFlex="20" class="sec3" fxFlex.xs="15">
+            <app-infobox></app-infobox>
+          </div>
+
+        </div>
+
       </div>
-      </mat-card>
 
-    </div>
-    <div fxFlex="20" class="sec3" fxFlex.xs="15">
-      <app-infobox></app-infobox>
-    </div>
+      <div class="bounds2"  >
+        <div class="content2"
+             fxLayout="column"
+             fxLayout.xs="column"
+             fxFlexFill >
 
+          <div fxFlex="100" class="sec12" fxFlex.xs="100">
+            <button scrollTo scrollTargetSelector="#test-section" mat-fab class="more-content">
+              <mat-icon class="md-24; md-light">expand_more</mat-icon>
+            </button>
+
+            <hr>
+
+      <div  id="test-section">
+            <h2 style="color:#37393a;">Page Rank & Zipf's Law</h2>
+      </div>
+          </div>
+
+          <div fxFlex="100" class="sec12" fxFlex.xs="100">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
   </div>
 
-</div>
-
-<div class="bounds2">
-  <div class="content2"
-       fxLayout="row"
-       fxLayout.xs="column"
-       fxFlexFill >
-
-    <div fxFlex="100" class="sec12" fxFlex.xs="100">
-      <button mat-fab class="more-content">
-        <mat-icon class="md-24; md-light">expand_more</mat-icon>
-      </button>
-
-      <h2 style="color:#37393a;">Page Rank</h2>
-
-    </div>
-
-  </div>
-
-</div>
-</div>
 </mat-sidenav-container>

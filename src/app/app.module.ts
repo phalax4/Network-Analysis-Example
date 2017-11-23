@@ -22,6 +22,7 @@ import { SidebarModule } from 'ng-sidebar';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {ScrollToModule} from 'ng2-scroll-to';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {MatButtonModule} from '@angular/material/button';
     SidebarModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    ScrollToModule.forRoot(),
   ],
   providers: [D3Service, AppService],
   bootstrap: [AppComponent]
