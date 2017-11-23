@@ -1,24 +1,22 @@
 
 
 <mat-sidenav-container class="example-container">
-  <mat-toolbar>
+  <mat-toolbar class="mainToolbar">
     <button mat-button (click)="sidenav.toggle()">
       <mat-icon class="md-24; md-light">menu</mat-icon>
-
     </button>￼
   </mat-toolbar>
-
   <mat-sidenav #sidenav class="example-sidenav" opened="false">
-    Jolly good!
+    Close
     <mat-list>
-      <mat-list-item>Item 1</mat-list-item>
-      <mat-list-item>Item 2</mat-list-item>
-      <mat-list-item>Item 3</mat-list-item>
+      <mat-list-item>Home</mat-list-item>
+      <mat-list-item>Graph</mat-list-item>
+      <mat-list-item>Explanation</mat-list-item>
     </mat-list>
   </mat-sidenav>
 
-
-<div *ngIf="nodes$ && links$" >
+  <mat-toolbar class="dummy"></mat-toolbar>
+<div *ngIf="nodes$ && links$" class = "mainContent" >
 <div class="bounds">
 
   <div class="content"

@@ -10,9 +10,17 @@
 ng-sidebar-container {
   height: 100vh;
 }
-mat-toolbar{
-  margin: 0;
+
+.mainContent {
+}
+.mainToolbar{
+  margin:0;
   background-color: #37393a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
 }
 
 .more-content {
