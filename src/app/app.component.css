@@ -1,5 +1,6 @@
 .content {
   background-color: #c7d3dd;
+  overflow: visible;
 }
 .bounds {
   background-color:#ddd;
@@ -20,11 +21,11 @@
 }
 
 #test-section {
-  padding-top: 70px;
+  padding-top: 8%;
 }
 
 .container {
-  overflow: hidden
+  overflow:hidden
 }
 .more-content {
   background-color: #37393a;
@@ -34,14 +35,17 @@
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(169, 190, 209, 0.45),
+      rgba(20, 20, 20, 0.75),
       rgba(191, 191, 191, 0.45)
     )
       /* bottom, image */
-   /* ,url(http://www.hdnicewallpapers.com/Walls/Big/Drawings%20and%20Paintings/Best_Nature_Painting_Pics.jpg);*/
+    ,url(https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb);
+    background-attachment: fixed
 }
 .example-sidenav {
   padding: 20px;
+  position: fixed;
+
 }
 .graphsec {
   background-color: #77b6ea;
@@ -55,7 +59,7 @@
 
 .bounds2 {
   background-color:#ddd;
-  height: 800px;
+  height: 1500px;
 }
 
 .sec12 {

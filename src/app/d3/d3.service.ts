@@ -23,23 +23,8 @@ export class D3Service {
 
     zoom = d3.zoom().on('zoom', zoomed);
     /** Add a second call in order to set the inital zoom **/
-    svg.call(zoom);
-      // .call(zoom.transform, d3.zoomIdentity.translate((window.innerWidth / 8) - 100, (window.innerHeight / 8) + 100).scale(0.75));
-  }
-
-  zoomViewInit(svgElement, containerElement){
-    let svg, container, zoomed, zoom;
-    container = d3.select(containerElement);
-    svg = d3.select(svgElement);
-
-    zoomed = () => {
-      const transform = d3.event.transform;
-      container.attr('transform', 'translate(' + 10000 + ',' + transform.y + ') scale(' + 0.2 + ')');
-    }
-
-    zoom = d3.zoom().on('zoom', zoomed);
-    svg.call(zoom);
-
+    svg.call(zoom)
+      .call(zoom.transform, d3.zoomIdentity.scale(0.9));
   }
 
 

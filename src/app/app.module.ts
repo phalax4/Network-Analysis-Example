@@ -23,6 +23,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {ScrollToModule} from 'ng2-scroll-to';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,8 @@ import {ScrollToModule} from 'ng2-scroll-to';
     MatIconModule,
     MatButtonModule,
     ScrollToModule.forRoot(),
+    ChartsModule
+
   ],
   providers: [D3Service, AppService],
   bootstrap: [AppComponent]
