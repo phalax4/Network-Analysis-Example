@@ -24,7 +24,7 @@ export class D3Service {
     zoom = d3.zoom().on('zoom', zoomed);
     /** Add a second call in order to set the inital zoom **/
     svg.call(zoom)
-      .call(zoom.transform, d3.zoomIdentity.scale(0.9));
+     .call(zoom.transform, d3.zoomIdentity.scale(1.1));
   }
 
 

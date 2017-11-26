@@ -1,6 +1,6 @@
 .content {
   background-color: #c7d3dd;
-  overflow: visible;
+  overflow: hidden;
 }
 .bounds {
   background-color:#ddd;
@@ -21,7 +21,7 @@
 }
 
 #test-section {
-  padding-top: 8%;
+  padding-top: 7%;
 }
 
 .container {
@@ -48,7 +48,7 @@
 
 }
 .graphsec {
-  background-color: #77b6ea;
+  background-color: lightgray;
 }
 
 .sec3 {
@@ -65,7 +65,9 @@
 .sec12 {
   background: #FFFFFF;
   color:darkblue;
-  text-transform: uppercase
+  text-transform: uppercase;
+  text-align:center;
+  padding-top: 2%;
 }
 
 .sec22 {
@@ -79,8 +81,7 @@
   color:darkblue;
   text-transform: uppercase
 }
-
-.sec12, .sec22, .sec32 {
+.sec22, .sec32 {
   padding-top:20px;
   text-align:center
 }
@@ -88,4 +89,25 @@
 .content2 {
   min-width: 300px;
   /*height: 400px;*/
+}
+
+.popularity {
+  background: #FFFFFF;
+
+}
+
+.pagerank {
+  background: whitesmoke;
+}
+
+.other {
+  background: antiquewhite;
+}
+
+.contact {
+  background: navajowhite;
+}
+
+.credits {
+  padding-left: 5%;
 }

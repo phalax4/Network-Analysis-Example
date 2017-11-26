@@ -7,11 +7,11 @@ import {Subscription} from 'rxjs/Subscription';
   template: `
     <mat-card tabindex="-1">
       <mat-card-header>
-        <mat-card-title><h4 mat-line>Node Info</h4></mat-card-title>
+        <mat-card-title matTooltip="Click on a node!" matTooltipPosition="after"><h4 mat-line>Node Info</h4></mat-card-title>
       </mat-card-header>
 
       <mat-card-content>
-        <hr class="style-eight">
+        <hr class="style-eight" matTooltip="Node info displayed below!" matTooltipPosition="after">
         <div *ngIf="message">
 
         <mat-list dense>

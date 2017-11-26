@@ -24,6 +24,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {ScrollToModule} from 'ng2-scroll-to';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import {BarChartDemoComponent} from './visuals/shared/barchartdemo.component';
+import {InViewportModule} from 'ng-in-viewport';
+import 'intersection-observer';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,8 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     GraphComponent,
     ...SHARED_VISUALS,
     ...D3_DIRECTIVES,
-    InfoboxComponent
+    InfoboxComponent,
+    BarChartDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -47,8 +52,9 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     MatIconModule,
     MatButtonModule,
     ScrollToModule.forRoot(),
-    ChartsModule
-
+    ChartsModule,
+    InViewportModule.forRoot(),
+    MatTooltipModule
   ],
   providers: [D3Service, AppService],
   bootstrap: [AppComponent]

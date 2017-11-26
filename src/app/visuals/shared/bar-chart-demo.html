@@ -1,0 +1,15 @@
+<div class="parent-container-bar-graph">
+  <div style="display: block; height=100px">
+    <canvas baseChart #baseChart="base-chart"
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"
+            (inViewportAction)="randomize()"
+            in-viewport
+            [inViewportOptions]="{ partial: false}"></canvas>
+  </div>
+</div>

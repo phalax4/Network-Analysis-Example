@@ -42,7 +42,15 @@
   </mat-sidenav>
 
   <mat-toolbar class="dummy"></mat-toolbar>
-  <div class="container">
+
+  <!-- Begin Container -->
+  <div class="content3"
+       fxLayout="row"
+       fxLayout.xs="column"
+       fxFlexFill >
+    <div fxFlex="10"></div>
+    <div fxFlex="80">
+      <!--Begin Main content -->
     <div *ngIf="nodes$ && links$" class = "mainContent" >
       <div class="bounds">
 
@@ -54,9 +62,15 @@
           <div fxFlex="80" class="sec1" fxFlex.xs="55" >
 
             <mat-card class="graphsec">
+
               <div >
                 <graph [nodes]="nodes$" [links]="links$"></graph>
               </div>
+              <mat-card-footer>
+                <mat-card-subtitle class="credits">Graph of CS Dept. Public Course Pages</mat-card-subtitle>
+
+              </mat-card-footer>
+
             </mat-card>
 
           </div>
@@ -74,7 +88,7 @@
              fxLayout.xs="column"
              fxFlexFill >
 
-          <div fxFlex="100" class="sec12" fxFlex.xs="100">
+          <div fxFlex="20" class="sec12" fxFlex.xs="20">
             <button scrollTo scrollTargetSelector="#test-section" mat-fab class="more-content">
               <mat-icon class="md-24; md-light">expand_more</mat-icon>
             </button>
@@ -83,16 +97,42 @@
 
             <div  id="test-section">
               <h2 style="color:#37393a;">Page Rank & Zipf's Law</h2>
+
             </div>
           </div>
-
-
-
+          <div fxFlex="30" class="popularity" fxFlex.xs="40">
+            <div class="content-zipf"
+                 fxLayout="row"
+                 fxLayout.xs="column"
+                 fxFlexFill fxLayoutGap="5%">
+              <div fxFlex="70" class="graph" fxFlex.xs="50">
+                <bar-chart-demo></bar-chart-demo>
+              </div>
+              <div fxFlex="30" fxFlex.xs="50">
+                Zipfs law can be interpreted as the theory of popularity. The rich get richer. This is a phenomenon where
+                there the few entities are incredibly common while the greater majority are relatively rare. Data is from the brown corpus and generated using NLTK.
+              </div>
+            </div>
+          </div>
+          <div fxFlex="30" class="pagerank" fxFlex.xs="40">
+            Hello
+          </div>
+          <div fxFlex="30" class="other" fxFlex.xs="40">
+            Hello
+          </div>
+          <div fxFlex="10" class="contact" fxFlex.xs="40">
+            Like this editorial? Check out my portfolio.
+          </div>
 
         </div>
 
       </div>
     </div>
+      <!--End Main Content -->
+    </div>
+    <div fxFlex="10"></div>
+
   </div>
+  <!-- End container -->
 
 </mat-sidenav-container>
