@@ -4,6 +4,7 @@ import { Node, Link } from './d3';
 import { AppService } from './app.service';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import {Observable} from 'rxjs/Observable';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements DoCheck {
+export class AppComponent implements OnInit {
   nodes$: Observable<Node[]>;
   links$: Observable<Link[]>;
 
@@ -36,8 +37,8 @@ export class AppComponent implements DoCheck {
     });
   }
 
-  ngDoCheck () {
-    // console.log(this.nodes$);
+  ngOnInit () {
+    AOS.init();
   }
 
 }

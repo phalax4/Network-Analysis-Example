@@ -4,7 +4,6 @@ import { environment } from './environments/environment';
 import { AppModule } from './app/app.module';
 import 'chart.js/src/chart.js';
 import 'hammerjs';
-
 if (environment.production) {
   enableProdMode();
 }
