@@ -35,12 +35,12 @@
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(20, 20, 20, 0.75),
-      rgba(191, 191, 191, 0.45)
+      rgba(191, 191, 191, 0.75),
+      rgba(255, 255, 255, 0)
     )
-      /* bottom, image */
+      /* bottom, image
     ,url(https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb);
-    background-attachment: fixed
+    background-attachment: fixed*/
 }
 .example-sidenav {
   padding: 20px;
@@ -101,11 +101,12 @@
 }
 
 .graph {
-  padding-left: 5%;
+  padding-left: 3%;
+  margin-left: 3%;
 }
 
 .other {
-  background: antiquewhite;
+  background: beige;
 }
 
 .contact {
@@ -123,4 +124,105 @@
 
 [aos="fade"].aos-animate {
   opacity: 1;
+}
+
+.popularity-text{
+  justify-content: left;
+  flex-direction: column;
+  padding-right: 5%;
+}
+
+
+
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #666;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+
+  /*Borders - (Optional)*/
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-right-style: solid;
+  border-right-width: 2px;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+  color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+/*Aqua Color Palette*/
+blockquote.aqua{
+  border-left-color: #4fc2e5;
+  border-right-color: #3bb0d6;
+}
+
+span.Caqua{
+  color:#3bb0d6;
+}
+
+h2{
+  text-align:left;
+  font-size:16px;
+  font-family: 'Francois One', sans-serif;
+}
+span{
+  font-weight:bolder;
+
+}
+.heading{
+  font-family:Montez;
+  text-align:center;
+  font-size:30px;
+}
+
+/*Blue Jeans Color Palette*/
+blockquote.bluejeans{
+  border-left-color: #5e9de6;
+  border-right-color: #4b8ad6;
 }

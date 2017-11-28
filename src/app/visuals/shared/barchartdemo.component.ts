@@ -9,7 +9,7 @@ import {BaseChartDirective} from "ng2-charts";
 
 export class BarChartDemoComponent {
   public lineChartOptions: any = {
-   // maintainAspectRatio: true,
+   maintainAspectRatio: true,
     responsive: true,
   };
 
