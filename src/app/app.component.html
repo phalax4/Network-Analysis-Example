@@ -51,94 +51,109 @@
     <div fxFlex="10"></div>
     <div fxFlex="80">
       <!--Begin Main content -->
-    <div *ngIf="nodes$ && links$" class = "mainContent" >
-      <div class="bounds">
+      <div *ngIf="nodes$ && links$" class = "mainContent" >
+        <div class="bounds">
 
-        <div class="content"
-             fxLayout="row"
-             fxLayout.xs="column"
-             fxFlexFill >
+          <div class="content"
+               fxLayout="row"
+               fxLayout.xs="column"
+               fxFlexFill >
 
-          <div fxFlex="80" class="sec1" fxFlex.xs="55" >
+            <div fxFlex="80" class="sec1" fxFlex.xs="55" >
 
-            <mat-card class="graphsec">
+              <mat-card class="graphsec">
 
-              <div >
-                <graph [nodes]="nodes$" [links]="links$"></graph>
-              </div>
-              <mat-card-footer>
-                <mat-card-subtitle class="credits">Graph of CS Dept. Public Course Pages</mat-card-subtitle>
+                <div >
+                  <graph [nodes]="nodes$" [links]="links$"></graph>
+                </div>
+                <mat-card-footer>
+                  <mat-card-subtitle class="credits">Graph of CS Dept. Public Course Pages</mat-card-subtitle>
 
-              </mat-card-footer>
+                </mat-card-footer>
 
-            </mat-card>
+              </mat-card>
 
-          </div>
-          <div fxFlex="20" class="sec3" fxFlex.xs="15">
-            <app-infobox></app-infobox>
+            </div>
+            <div fxFlex="20" class="sec3" fxFlex.xs="15">
+              <app-infobox></app-infobox>
+            </div>
+
           </div>
 
         </div>
 
-      </div>
+        <div class="bounds2"  >
+          <div class="content2"
+               fxLayout="column"
+               fxLayout.xs="column"
+               fxFlexFill >
 
-      <div class="bounds2"  >
-        <div class="content2"
-             fxLayout="column"
-             fxLayout.xs="column"
-             fxFlexFill >
+            <div fxFlex="20" class="sec12" fxFlex.xs="20">
+              <button scrollTo scrollTargetSelector="#test-section" mat-fab class="more-content">
+                <mat-icon class="md-24; md-light">expand_more</mat-icon>
+              </button>
 
-          <div fxFlex="20" class="sec12" fxFlex.xs="20">
-            <button scrollTo scrollTargetSelector="#test-section" mat-fab class="more-content">
-              <mat-icon class="md-24; md-light">expand_more</mat-icon>
-            </button>
+              <div  id="test-section">
+                <h1 style="color:#37393a;"data-aos-duration="600" data-aos-delay="300" data-aos="fade-up" data-aos-once="true">Page Rank & Zipf's Law</h1>
 
-            <div  id="test-section">
-              <h1 style="color:#37393a;"data-aos-duration="600" data-aos-delay="300" data-aos="fade-up" data-aos-once="true">Page Rank & Zipf's Law</h1>
-
-            </div>
-          </div>
-          <div fxFlex="30" class="popularity" fxFlex.xs="40">
-            <div class="content-zipf"
-                 fxLayout="row"
-                 fxLayout.xs="column"
-                 fxFlexFill fxLayoutGap=1%>
-              <div fxFlex="40" class="graph" fxFlex.xs="60">
-                <bar-chart-demo></bar-chart-demo>
-              </div>
-              <div fxFlex="60" class="popularity-text" fxFlex.xs="40">
-                <blockquote class="aqua">
-                  <h1><span class="Caqua">The Rich get Richer </span> - Herbert Simon</h1>
-                </blockquote>
-                <p>
-                  Zipfs law can be interpreted as the theory of popularity. The rich get richer. This is a phenomenon where
-                there the few entities are incredibly common while the greater majority are relatively rare. Data is from the brown corpus and generated using NLTK.
-                </p>
               </div>
             </div>
-          </div>
-          <div fxFlex="30" class="pagerank" fxFlex.xs="40">
-            <blockquote class="bluejeans">
-              <h1><span class="Cbluejeans">BLUEJEANS</span> - Blockquote Color Palette</h1>
-              <p>Use this class for blockquote layout.</p>
-              <code>
-                &lt;blockquote class="<span class="Cbluejeans">bluejeans</span>"&gt;
-                Some Text...
-                &lt;/blockquote&gt;
-              </code>
-            </blockquote>
-          </div>
-          <div fxFlex="5" class="other" fxFlex.xs="40">
-            Hello
-          </div>
-          <div fxFlex="5" class="contact" fxFlex.xs="40">
-            Like this article? Check out my portfolio.
+            <div fxFlex="30" class="popularity" fxFlex.xs="40">
+              <div class="content-zipf"
+                   fxLayout="row"
+                   fxLayout.xs="column"
+                   fxFlexFill fxLayoutGap=1%>
+                <div fxFlex="40" class="graph" fxFlex.xs="60">
+                  <bar-chart-demo></bar-chart-demo>
+                </div>
+                <div fxFlex="60" class="popularity-text" fxFlex.xs="40">
+                  <blockquote class="aqua">
+                    <h1><span class="Caqua">The Rich get Richer </span> - Herbert Simon</h1>
+                  </blockquote>
+                  <p>
+                    Zipfs law can be interpreted as the theory of popularity. The rich get richer. This is a phenomenon where
+                    there the few entities are incredibly common while the greater majority are relatively rare. Data is from the brown corpus and generated using NLTK.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div fxFlex="30" class="pagerank" fxFlex.xs="40">
+              <div class="content-zipf"
+                   fxLayout="row"
+                   fxLayout.xs="column"
+                   fxFlexFill fxLayoutGap=1%>
+                <div fxFlex="40">
+                  Blah bal hajekfhawl
+                </div>
+                <div fxFlex="60">
+
+                  <blockquote class="bluejeans">
+                    <h1><span class="Cbluejeans">BLUEJEANS</span> - Blockquote Color Palette</h1>
+                    <p>Use this class for blockquote layout.</p>
+                    <code>
+                      &lt;blockquote class="<span class="Cbluejeans">bluejeans</span>"&gt;
+                      Some Text...
+                      &lt;/blockquote&gt;
+                    </code>
+                  </blockquote>
+                </div>
+
+              </div>
+
+
+
+            </div>
+            <div fxFlex="5" class="other" fxFlex.xs="40">
+              Hello
+            </div>
+            <div fxFlex="5" class="contact" fxFlex.xs="40">
+              Like this article? Check out my portfolio.
+            </div>
+
           </div>
 
         </div>
-
       </div>
-    </div>
       <!--End Main Content -->
     </div>
     <div fxFlex="10"></div>

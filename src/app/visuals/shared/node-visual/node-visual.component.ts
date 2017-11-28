@@ -30,7 +30,7 @@ export class NodeVisualComponent implements AfterContentInit {
   }
 
   get r() {
-    return Math.log2(this.node.rank * 5000);
+    return Math.log2(this.node.rank * 7000);
   }
 
   get color() {

@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   }
   constructor(appService: AppService, private http: HttpClient) {
 
-    this.http.get('assets/pagerank.json').subscribe(data => {
+    this.http.get('assets/pagerank-500.json').subscribe(data => {
       // Read the result field from the JSON response.
       // console.log(data['nodes']);
       this.nodes$ = data['nodes'];
