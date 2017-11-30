@@ -28,6 +28,7 @@ import {BarChartDemoComponent} from './visuals/shared/barchartdemo.component';
 import {InViewportModule} from 'ng-in-viewport';
 import 'intersection-observer';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     ScrollToModule.forRoot(),
     ChartsModule,
     InViewportModule.forRoot(),
-    MatTooltipModule
+    MatTooltipModule,
+    MatExpansionModule
   ],
   providers: [D3Service, AppService],
   bootstrap: [AppComponent]

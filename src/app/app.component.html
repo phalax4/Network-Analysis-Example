@@ -1,10 +1,9 @@
-
-
 <mat-sidenav-container class="example-container">
   <mat-toolbar class="mainToolbar">
     <button mat-button (click)="sidenav.toggle()">
       <mat-icon class="md-24; md-light">menu</mat-icon>
-    </button>￼
+    </button>
+    ￼
   </mat-toolbar>
   <mat-sidenav #sidenav class="example-sidenav" opened="false">
     <button cdk-focus-start mat-button (click)="sidenav.toggle()">
@@ -19,12 +18,16 @@
           Home
         </button>
       </mat-list-item>
-      <mat-list-item> <button tabindex="-1" mat-button>
-        About
-      </button></mat-list-item>
-      <mat-list-item> <button tabindex="-1" mat-button>
-        Portfolio
-      </button></mat-list-item>
+      <mat-list-item>
+        <button tabindex="-1" mat-button>
+          About
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button tabindex="-1" mat-button>
+          Portfolio
+        </button>
+      </mat-list-item>
     </mat-list>
     <mat-list>
       <h3 matSubheader>Current</h3>
@@ -35,9 +38,11 @@
           Graph
         </button>
       </mat-list-item>
-      <mat-list-item> <button tabindex="-1" mat-button>
-        Article
-      </button></mat-list-item>
+      <mat-list-item>
+        <button tabindex="-1" mat-button>
+          Article
+        </button>
+      </mat-list-item>
     </mat-list>
   </mat-sidenav>
 
@@ -47,23 +52,23 @@
   <div class="content3"
        fxLayout="row"
        fxLayout.xs="column"
-       fxFlexFill >
-    <div fxFlex="10"></div>
-    <div fxFlex="80">
+       fxFlexFill>
+    <div fxFlex="10" fxFlex.xs="0"></div>
+    <div fxFlex="80" fxFlex.xs="100">
       <!--Begin Main content -->
-      <div *ngIf="nodes$ && links$" class = "mainContent" >
+      <div *ngIf="nodes$ && links$" class="mainContent">
         <div class="bounds">
 
           <div class="content"
                fxLayout="row"
                fxLayout.xs="column"
-               fxFlexFill >
+               fxFlexFill>
 
-            <div fxFlex="80" class="sec1" fxFlex.xs="55" >
+            <div fxFlex="80" class="sec1" fxFlex.xs="55">
 
               <mat-card class="graphsec">
 
-                <div >
+                <div>
                   <graph [nodes]="nodes$" [links]="links$"></graph>
                 </div>
                 <mat-card-footer>
@@ -82,19 +87,20 @@
 
         </div>
 
-        <div class="bounds2"  >
+        <div class="bounds2">
           <div class="content2"
                fxLayout="column"
                fxLayout.xs="column"
-               fxFlexFill >
+               fxFlexFill>
 
             <div fxFlex="20" class="sec12" fxFlex.xs="20">
               <button scrollTo scrollTargetSelector="#test-section" mat-fab class="more-content">
                 <mat-icon class="md-24; md-light">expand_more</mat-icon>
               </button>
 
-              <div  id="test-section">
-                <h1 style="color:#37393a;"data-aos-duration="600" data-aos-delay="300" data-aos="fade-up" data-aos-once="true">Page Rank & Zipf's Law</h1>
+              <div id="test-section">
+                <h1 style="color:#37393a;" data-aos-duration="600" data-aos-delay="300" data-aos="fade-up"
+                    data-aos-once="true">Page Rank & Zipf's Law</h1>
 
               </div>
             </div>
@@ -111,8 +117,14 @@
                     <h1><span class="Caqua">The Rich get Richer </span> - Herbert Simon</h1>
                   </blockquote>
                   <p>
-                    Zipfs law can be interpreted as the theory of popularity. The rich get richer. This is a phenomenon where
-                    there the few entities are incredibly common while the greater majority are relatively rare. Data is from the brown corpus and generated using NLTK.
+                   Zipf's law is the statistical occurrence where a few entities gather the most of a distribution
+                    while the majority of entities have very little of it. In information retrieval this translates to the long-tailed curve
+                    on the left, where there are a few words that occur many times and the majority of
+                    words are very rare in occurence. Herbet Simon aptly connects Zipf's law to the real world. Those with
+                    great wealth, become even more wealthy at a faster rate, while the majority of people will
+                    likely never be ultra wealthy. Not only does Zipf's law apply to statitical analysis of text corpuses,
+                    but it also helps explain popularity, social networks, populations and many other
+                    organically growing phenonmons.
                   </p>
                 </div>
               </div>
@@ -122,31 +134,49 @@
                    fxLayout="row"
                    fxLayout.xs="column"
                    fxFlexFill fxLayoutGap=1%>
-                <div fxFlex="40">
-                  Blah bal hajekfhawl
-                </div>
-                <div fxFlex="60">
+                <div fxFlex="40" class="pagerank-text">
 
                   <blockquote class="bluejeans">
-                    <h1><span class="Cbluejeans">BLUEJEANS</span> - Blockquote Color Palette</h1>
-                    <p>Use this class for blockquote layout.</p>
-                    <code>
-                      &lt;blockquote class="<span class="Cbluejeans">bluejeans</span>"&gt;
-                      Some Text...
-                      &lt;/blockquote&gt;
-                    </code>
+                    <h1><span class="Cbluejeans">Man is by nature a social animal </span> - Aristotle</h1>
                   </blockquote>
+                </div>
+                <div fxFlex="60">
+                  <h3>How does Zipf's Law apply to Page Rank then?</h3>
                 </div>
 
               </div>
 
 
+            </div>
+            <div fxFlex="10" class="other" fxFlex.xs="40">
+              Technical Specifications
+              <mat-accordion>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Personal data
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Type your name and age
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
 
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                     (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
+              </mat-accordion>
             </div>
-            <div fxFlex="5" class="other" fxFlex.xs="40">
-              Hello
-            </div>
-            <div fxFlex="5" class="contact" fxFlex.xs="40">
+            <div fxFlex="10" class="contact" fxFlex.xs="40">
               Like this article? Check out my portfolio.
             </div>
 
@@ -156,9 +186,21 @@
       </div>
       <!--End Main Content -->
     </div>
-    <div fxFlex="10"></div>
+    <div fxFlex="10" fxFlex.xs="0"></div>
 
   </div>
+  <div class="content4"
+       fxLayout="row"
+       fxLayout.xs="column"
+       fxFlexFill>
+    <div fxFlex="10" fxFlex.xs="0"></div>
+    <div fxFlex="80" fxFlex.xs="100">
+
+    </div>
+    <div fxFlex="10" fxFlex.xs="0"></div>
+
+  </div>
+
   <!-- End container -->
 
 </mat-sidenav-container>

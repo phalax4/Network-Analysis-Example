@@ -35,8 +35,8 @@
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(191, 191, 191, 0.75),
-      rgba(255, 255, 255, 0)
+      rgb(244, 230, 230),
+      rgba(114, 204, 234, 0.75)
     )
       /* bottom, image
     ,url(https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb);
@@ -97,7 +97,7 @@
 }
 
 .pagerank {
-  background: whitesmoke;
+  background: #FFFFFF;
 }
 
 .graph {
@@ -226,3 +226,15 @@ blockquote.bluejeans{
   border-left-color: #5e9de6;
   border-right-color: #4b8ad6;
 }
+
+.content4{
+  padding-bottom:5%;
+}
+
+
+.pagerank-text{
+  justify-content: right;
+  flex-direction: column;
+  padding-left: 5%;
+}
+
