@@ -130,7 +130,7 @@
               </div>
             </div>
             <div fxFlex="30" class="pagerank" fxFlex.xs="40">
-              <div class="content-zipf"
+              <div class="content-zipflaw"
                    fxLayout="row"
                    fxLayout.xs="column"
                    fxFlexFill fxLayoutGap=1%>
@@ -142,42 +142,57 @@
                 </div>
                 <div fxFlex="60">
                   <h3>How does Zipf's Law apply to Page Rank then?</h3>
+                  <p>Page Rank can be thought of as a way to measure popularity. More popular pages get rated up more
+                    and more, getting most of the page rank score while the majority of nodes only get the minimum score.
+                    Popularity in relation to page rank can be thought of as many authoritative pages pointing to
+                    a another page (making it popular).
+                    Clearly a web graph will exhibit Zipf's Law by clustering into different spheres. This is even more true
+                    for social networks, where social creatures will form groups. We can see it in
+                    our society, with viral videos/posts and popular youtube stars. Popularity begets more popularity.
+                    When Zipf's law applies to graphs, it can
+                    be said the graph is a Free-Scale graph. This was first investigated by Stanely Milgram who fathered
+                    the concept of 6-degrees of separation. 6 degrees of separation of nodes which can be thought
+                    of as people is a property of Free-Scale graphs. Page rank then can effectively measure which nodes will
+                    gather the most clusterings around it. The graph above shows dense clustering interspersed by
+                    the rare occasional links connecting dense clustering together, demonstrating this.
+                  </p>
                 </div>
 
               </div>
 
 
             </div>
-            <div fxFlex="10" class="other" fxFlex.xs="40">
-              Technical Specifications
+            <div fxFlex="30" class="contact" fxFlex.xs="40">
               <mat-accordion>
                 <mat-expansion-panel>
                   <mat-expansion-panel-header>
                     <mat-panel-title>
-                      Personal data
+                      Technical Specifications
                     </mat-panel-title>
                     <mat-panel-description>
-                      Type your name and age
+                      Spidering, Computation, Data
                     </mat-panel-description>
                   </mat-expansion-panel-header>
+                  <h3>About the Graph Data</h3>
+                  <h3>Spidering (Data Collection)</h3>
+                  Built the graph using a Java spider
+                  <h3>Page Rank Calculation</h3>
+                  Done by using Neo4j graph structure along with python code to calculate page rank.
+                  Result was checked against the networkx python library that has another page rank implementation.
+                  Results differed because of a few additions and tweaks to the original algorithm.
+                  Possible loss of precision due to very small values being used.
+                  <h3>Data Visualization</h3>
+                  Used d3 as the base library for interactive force directed graph. See here for the base code used since
+                  Angular does not have a pure angular component d3.js library. Shared service used
+                  to enable information pop up on-demand in UI.
+                  <p>This is the primary content of the panel.</p>
 
+                  <mat-action-row>
+                    <button mat-button>To Blog Post</button>
+                  </mat-action-row>
                 </mat-expansion-panel>
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      Self aware panel
-                    </mat-panel-title>
-                    <mat-panel-description>
-                      Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
+
               </mat-accordion>
-            </div>
-            <div fxFlex="10" class="contact" fxFlex.xs="40">
-              Like this article? Check out my portfolio.
             </div>
 
           </div>

@@ -110,7 +110,7 @@
 }
 
 .contact {
-  background: navajowhite;
+  background: #ffffff;
 }
 
 .credits {
@@ -230,11 +230,22 @@ blockquote.bluejeans{
 .content4{
   padding-bottom:5%;
 }
-
-
-.pagerank-text{
-  justify-content: right;
-  flex-direction: column;
-  padding-left: 5%;
+span.Cbluejeans{
+  color:#4b8ad6;
 }
 
+.pagerank-text{
+  justify-content: left;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right:2%;
+}
+
+.content-zipflaw {
+  padding-top: 6%;
+}
+
+.text-center {
+  content-align: center;
+  text-align:center;
+}
