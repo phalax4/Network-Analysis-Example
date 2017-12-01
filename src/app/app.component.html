@@ -152,7 +152,7 @@
                     When Zipf's law applies to graphs, it can
                     be said the graph is a Free-Scale graph. This was first investigated by Stanely Milgram who fathered
                     the concept of 6-degrees of separation. 6 degrees of separation of nodes which can be thought
-                    of as people is a property of Free-Scale graphs. Page rank then can effectively measure which nodes will
+                    of as people is a property of Scale-Free graphs. Page rank then can effectively measure which nodes will
                     gather the most clusterings around it. The graph above shows dense clustering interspersed by
                     the rare occasional links connecting dense clustering together, demonstrating this.
                   </p>
@@ -162,38 +162,63 @@
 
 
             </div>
-            <div fxFlex="30" class="contact" fxFlex.xs="40">
-              <mat-accordion>
-                <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      Technical Specifications
-                    </mat-panel-title>
-                    <mat-panel-description>
-                      Spidering, Computation, Data
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <h3>About the Graph Data</h3>
-                  <h3>Spidering (Data Collection)</h3>
-                  Built the graph using a Java spider
-                  <h3>Page Rank Calculation</h3>
-                  Done by using Neo4j graph structure along with python code to calculate page rank.
-                  Result was checked against the networkx python library that has another page rank implementation.
-                  Results differed because of a few additions and tweaks to the original algorithm.
-                  Possible loss of precision due to very small values being used.
-                  <h3>Data Visualization</h3>
-                  Used d3 as the base library for interactive force directed graph. See here for the base code used since
-                  Angular does not have a pure angular component d3.js library. Shared service used
-                  to enable information pop up on-demand in UI.
-                  <p>This is the primary content of the panel.</p>
+            <div fxFlex="20" class="contact" fxFlex.xs="40">
+              <div class="resources">
+              <h3>Additional Resources and Readings</h3>
+              <mat-list class="rsrc-list">
+                <mat-list-item><mat-icon mat-list-icon>explore</mat-icon><a href="http://infolab.stanford.edu/~backrub/google.html">More on Page Rank</a></mat-list-item>
+                <mat-list-item><mat-icon mat-list-icon>explore</mat-icon><a href="http://mathworld.wolfram.com/Scale-FreeNetwork.html">6 degrees of separation graphs</a></mat-list-item>
+                <mat-list-item><mat-icon mat-list-icon>explore</mat-icon><a href="https://nlp.stanford.edu/IR-book/html/htmledition/zipfs-law-modeling-the-distribution-of-terms-1.html">
+                  Zipfs Law
+                </a></mat-list-item>
+              </mat-list>
 
-                  <mat-action-row>
-                    <button mat-button>To Blog Post</button>
-                  </mat-action-row>
-                </mat-expansion-panel>
-
-              </mat-accordion>
+              </div>
             </div>
+            <div fxFlex="10">
+              <i class="icon ion-social-linkedin-outline"></i>
+              <i class="icon ion-social-github"></i>
+              <i class="icon ion-social-googleplus"></i>
+              <i class="icon ion-social-twitter"></i>
+              <i class="icon ion-social-facebook"></i>
+
+            </div>
+
+            <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Technical Specifications
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Spidering, Computation, Data
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <h3>About the Graph Data</h3>
+                <h3>Spidering (Data Collection)</h3>
+                Built the graph using a Java spider
+                <h3>Page Rank Calculation</h3>
+                Done by using Neo4j graph structure along with python code to calculate page rank.
+                Result was checked against the networkx python library that has another page rank implementation.
+                Results differed because of a few additions and tweaks to the original algorithm.
+                Possible loss of precision due to very small values being used.
+                <h3>Data Visualization</h3>
+                Used d3 as the base library for interactive force directed graph. See here for the base code used since
+                Angular does not have a pure angular component d3.js library. Shared service used
+                to enable information pop up on-demand in UI.
+                <p>This is the primary content of the panel. sgkajsbljanslgknaklsgnlkasnvklgnar
+                  anlgnalrgnlarknglakngr
+                  anlsrgknalwknrgawnrgkanwrlkgnawlrkgnajng;albgl;awrglarhglhawrljghal;rhgl;arhgl;ahg;ha;lgha
+                  aogwa;h;awhgoiwahgoasbjladfbljashghawr;oghao;riwgho;ahgo;iahg
+                  asorgoawh</p>
+
+                <mat-action-row>
+                  <button mat-button>To Blog Post</button>
+                </mat-action-row>
+              </mat-expansion-panel>
+
+            </mat-accordion>
+
 
           </div>
 

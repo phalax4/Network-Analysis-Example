@@ -58,7 +58,7 @@
 }
 
 .bounds2 {
-  background-color:#ddd;
+  background-color:#FFFFFF;
   height: 1500px;
 }
 
@@ -132,8 +132,18 @@
   padding-right: 5%;
 }
 
+.resources{
+  text-align:center;
+  justify-content: center;
 
+}
 
+.rsrc-list{
+  display: inline-block;
+}
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
 
 blockquote{
   display:block;
