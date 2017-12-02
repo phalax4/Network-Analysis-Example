@@ -195,8 +195,13 @@
                   </mat-panel-description>
                 </mat-expansion-panel-header>
                 <h3>About the Graph Data</h3>
+                Nodes of the graph are a web page in the CS Departments public network.
+                Links are the hyperlinks linking different pages together. The dense core of the
+                graph is from the toy dataset constructed by the IR class as both Hubs and Authorities.
                 <h3>Spidering (Data Collection)</h3>
-                Built the graph using a Java spider
+                Built the graph using a Java spider, which was then loaded into Neo4j using python from
+                a graph flat file. The Spider uses Breadth-First-Search and respects
+                any Robot Exclusion protocols. From there python can interface with Neo4j to do graph manipulation.
                 <h3>Page Rank Calculation</h3>
                 Done by using Neo4j graph structure along with python code to calculate page rank.
                 Result was checked against the networkx python library that has another page rank implementation.
@@ -205,15 +210,11 @@
                 <h3>Data Visualization</h3>
                 Used d3 as the base library for interactive force directed graph. See here for the base code used since
                 Angular does not have a pure angular component d3.js library. Shared service used
-                to enable information pop up on-demand in UI.
-                <p>This is the primary content of the panel. sgkajsbljanslgknaklsgnlkasnvklgnar
-                  anlgnalrgnlarknglakngr
-                  anlsrgknalwknrgawnrgkanwrlkgnawlrkgnajng;albgl;awrglarhglhawrljghal;rhgl;arhgl;ahg;ha;lgha
-                  aogwa;h;awhgoiwahgoasbjladfbljashghawr;oghao;riwgho;ahgo;iahg
-                  asorgoawh</p>
+                to enable information pop up on-demand in UI. The data is outputted from Neo4j using python, into the format
+                that D3 needs in order to work. Ranking of pages is logrithmically scaled due to the Page Rank
+                algorithm favoring some nodes heavily over others, making them incredibly large (Zipf's Law).
 
                 <mat-action-row>
-                  <button mat-button>To Blog Post</button>
                 </mat-action-row>
               </mat-expansion-panel>
 
