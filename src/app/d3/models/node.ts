@@ -21,7 +21,7 @@ export class Node implements d3.SimulationNodeDatum {
 
   constructor(id) {
     this.id = id;
-    this.color = d3.schemeCategory20[Math.round(Math.random() * (20 - 0) + 0)];
+    this.color = d3.schemeCategory10[Math.round(Math.random() * (20 - 0) + 0)];
   }
 
   normal = () => {

@@ -23,7 +23,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {ScrollToModule} from 'ng2-scroll-to';
-import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { ChartsModule } from 'ng2-charts';
 import {BarChartDemoComponent} from './visuals/shared/barchartdemo.component';
 import {InViewportModule} from 'ng-in-viewport';
 import 'intersection-observer';
@@ -54,7 +54,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatButtonModule,
     ScrollToModule.forRoot(),
     ChartsModule,
-    InViewportModule.forRoot(),
+    InViewportModule,
     MatTooltipModule,
     MatExpansionModule
   ],

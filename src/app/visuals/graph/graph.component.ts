@@ -43,7 +43,7 @@ export class GraphComponent implements OnInit, AfterViewInit {
 
         const currentNode = this.nodes[i];
 
-        currentNode.color = d3.schemeCategory20c[Math.round(Math.random() * (20 - 0) + 0)];
+        currentNode.color = d3.schemeCategory10[Math.round(Math.random() * (20 - 0) + 0)];
 
         currentNode.inLinksCount = this.links.filter(function(p) {
           if (p.target !== undefined) {
