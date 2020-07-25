@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Network-Analysis-Example-Migrated": {
+    "Network-Analysis-Example": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Network-Analysis-Example-Migrated",
+            "outputPath": "dist/Network-Analysis-Example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Network-Analysis-Example-Migrated:build"
+            "browserTarget": "Network-Analysis-Example:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Network-Analysis-Example-Migrated:build:production"
+              "browserTarget": "Network-Analysis-Example:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Network-Analysis-Example-Migrated:build"
+            "browserTarget": "Network-Analysis-Example:build"
           }
         },
         "test": {
@@ -110,15 +110,20 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Network-Analysis-Example-Migrated:serve"
+            "devServerTarget": "Network-Analysis-Example:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Network-Analysis-Example-Migrated:serve:production"
+              "devServerTarget": "Network-Analysis-Example:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "Network-Analysis-Example-Migrated"
+    }
+  },
+  "defaultProject": "Network-Analysis-Example"
 }
