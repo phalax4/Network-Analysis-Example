@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 imple static site with a D3 Graph Network of web pages from an Information Retrieval course. Also some additional informatin about Zipf's Law and how this applies to graph networks.
 
+Found here: phalax4.github.io/Network-Analysis-Example/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -34,3 +36,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ng build --prod --aot=false --build-optimizer=false --base-href="/Network-Analysis-Example/"
 ngh --dir dist/Network-Analysis-Example
+
+## Migration
+global install of latest angular cli
+Initialize new angular-cli repository
+copy over src folder
+npm install on select libraries in package.json
+replace polyfill.ts with generated one and add in only whats needed for certain libraries
