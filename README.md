@@ -4,9 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## About
 
-imple static site with a D3 Graph Network of web pages from an Information Retrieval course. Also some additional informatin about Zipf's Law and how this applies to graph networks.
+A simple static site with a D3 Graph Network of web pages from an Information Retrieval course. Also some additional informatin about Zipf's Law and how this applies to graph networks.
 
-Found here: phalax4.github.io/Network-Analysis-Example/
+Static site found here: phalax4.github.io/Network-Analysis-Example/
+
+Additional Jupyter notebook example for loading graph data into neo4j using python, enabling further analysis:
+    https://github.com/phalax4/Network-Analysis-Example/blob/master/SpideredToNeo4j.ipynb
 
 ## Development server
 
@@ -43,3 +46,7 @@ Initialize new angular-cli repository
 copy over src folder
 npm install on select libraries in package.json
 replace polyfill.ts with generated one and add in only whats needed for certain libraries
+
+## Credits
+https://medium.com/@jeanphilippelemieux/creating-a-responsive-graph-with-angular-and-d3-b45bb8065588
+https://github.com/keathmilligan/angular-d3js
